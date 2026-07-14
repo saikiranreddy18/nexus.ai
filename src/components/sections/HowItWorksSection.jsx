@@ -41,14 +41,15 @@ export default function HowItWorksSection() {
 
         <div className="relative grid gap-6 md:grid-cols-4">
           {STEPS.map((s, i) => (
-            <motion.div key={s.name} variants={fadeUp}>
+            <motion.div key={s.name} variants={fadeUp} className="h-full">
               <Tilt
-                className="glass halo h-full rounded-2xl p-6"
-                style={{ animationDelay: `${i * 0.5}s` }}
+                className={`sticker ${i % 3 === 0 ? '' : i % 3 === 1 ? 'pink' : 'cyan'} h-full p-6`}
                 max={8}
               >
-                <p className="font-display text-4xl font-bold text-white/10">{String(i + 1).padStart(2, '0')}</p>
-                <h3 className="mt-3 font-display text-xl font-semibold text-white">{s.name}</h3>
+                <p className="font-display text-4xl font-black italic text-lime-400" style={{ textShadow: '2px 2px 0 #000' }}>
+                  {String(i + 1).padStart(2, '0')}
+                </p>
+                <h3 className="mt-3 font-display text-xl font-black uppercase italic text-white">{s.name}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-300">{s.text}</p>
               </Tilt>
             </motion.div>

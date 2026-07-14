@@ -30,7 +30,7 @@ export default function PricingSection() {
             setCompare((c) => !c)
             track(EVENTS.CTA_CLICK, { cta: 'compare_all', location: 'pricing' })
           }}
-          className="glass rounded-full px-6 py-2.5 font-display text-sm font-medium text-cyan-300 hover:text-white"
+          className="nb-btn dark px-6 py-2.5 text-sm"
           aria-expanded={compare}
         >
           {compare ? 'Hide comparison' : 'Compare all plans'}
@@ -46,14 +46,14 @@ export default function PricingSection() {
             transition={{ duration: 0.4 }}
             className="overflow-hidden"
           >
-            <div className="glass mt-8 overflow-x-auto rounded-2xl p-2">
+            <div className="sticker mt-8 overflow-x-auto p-2" style={{ transform: 'none' }}>
               <table className="w-full min-w-[560px] text-sm">
                 <thead>
-                  <tr className="border-b border-white/10 text-left font-display">
-                    <th className="p-4 font-medium text-slate-400">Feature</th>
-                    <th className="p-4 text-exus-peach">Shishya · $3</th>
-                    <th className="p-4 text-exus-purple">Guru · $8</th>
-                    <th className="p-4 text-exus-cyan">Pandava · $50</th>
+                  <tr className="border-b-2 border-black text-left font-display font-black uppercase italic">
+                    <th className="p-4 text-slate-400">Feature</th>
+                    <th className="p-4 text-lime-400">Shishya · $3</th>
+                    <th className="p-4" style={{ color: '#ff2ea3' }}>Guru · $8</th>
+                    <th className="p-4 text-cyan-300">Pandava · $50</th>
                   </tr>
                 </thead>
                 <tbody>

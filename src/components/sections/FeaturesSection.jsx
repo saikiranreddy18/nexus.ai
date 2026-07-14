@@ -24,21 +24,18 @@ export default function FeaturesSection() {
     <SectionShell id="features" eyebrow="Capabilities" title="Everything orbits your role">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {FEATURES.map((f, i) => (
-          <motion.div key={f.name} variants={fadeUp} className={i % 2 === 1 ? 'lg:mt-10' : ''}>
+          <motion.div key={f.name} variants={fadeUp} className={`h-full ${i % 2 === 1 ? 'lg:mt-10' : ''}`}>
             <Tilt
-              className="glass halo h-full rounded-2xl p-6"
-              style={{
-                '--halo-soft': `${f.accent}26`,
-                '--halo-strong': `${f.accent}66`,
-                borderColor: `${f.accent}33`,
-                animationDelay: `${i * 0.65}s`,
-              }}
+              className={`sticker ${i % 3 === 0 ? '' : i % 3 === 1 ? 'pink' : 'cyan'} h-full p-6`}
               max={6}
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/10">
+              <div
+                className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl border-2 border-black bg-white/5"
+                style={{ boxShadow: '2px 2px 0 #000' }}
+              >
                 <Spark color={f.accent} />
               </div>
-              <h3 className="mb-2 font-display text-lg font-semibold text-white">{f.name}</h3>
+              <h3 className="mb-2 font-display text-lg font-black uppercase italic text-white">{f.name}</h3>
               <p className="text-sm leading-relaxed text-slate-300">{f.text}</p>
             </Tilt>
           </motion.div>

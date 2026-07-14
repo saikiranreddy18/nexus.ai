@@ -17,9 +17,9 @@ function makeGlowTexture(inner, outer) {
   return tex
 }
 
-export default function ParticleField({ reduced }) {
+export default function ParticleField({ reduced, mobile = false }) {
   const starsRef = useRef()
-  const count = reduced ? 700 : 2400
+  const count = reduced ? 700 : mobile ? 1200 : 2400
 
   const positions = useMemo(() => {
     const arr = new Float32Array(count * 3)

@@ -12,7 +12,11 @@ export default function CTASection() {
 
   return (
     <SectionShell id="cta" className="flex min-h-screen flex-col justify-center text-center">
-      <motion.h2 variants={fadeUp} className="text-glow mx-auto max-w-3xl font-display text-4xl font-bold tracking-tight text-white md:text-6xl">
+      <motion.div variants={fadeUp} className="mb-6 flex justify-center">
+        <span className="tape-label text-xs">✦ last call, explorer ✦</span>
+      </motion.div>
+
+      <motion.h2 variants={fadeUp} className="arcade-heading mx-auto max-w-3xl text-4xl md:text-6xl">
         Ready to Find Your AI Stack?
       </motion.h2>
 
@@ -44,7 +48,7 @@ export default function CTASection() {
             <a href="#how-it-works" className="transition-colors hover:text-cyan-300">How it works</a>
           </nav>
         </div>
-        <p className="mt-8 text-xs font-bold text-black" style={{ textShadow: '0px 0px 8px rgba(255, 255, 255, 1), 0px 0px 15px rgba(255, 255, 255, 0.8)' }}>
+        <p className="mt-8 font-display text-xs font-bold uppercase tracking-widest text-slate-500">
           © {new Date().getFullYear()} {BRAND}. All rights reserved.
         </p>
       </motion.footer>

@@ -11,3 +11,16 @@ createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+// Service worker: production only. In dev, we actively UNREGISTER any
+// existing SW so it can't serve a stale build from an earlier session.
+if ('serviceWorker' in navigator) {
+  if (import.meta.env.PROD) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {})
+    })
+  } else {
+    navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()))
+    if (window.caches) caches.keys().then((ks) => ks.forEach((k) => caches.delete(k)))
+  }
+}

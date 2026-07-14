@@ -26,7 +26,7 @@ function makeCoreTexture() {
 }
 
 // Procedural spiral galaxy: dense golden core, violet mid-band, blue outer arms.
-export default function Galaxy({ reduced }) {
+export default function Galaxy({ reduced, spin = !reduced }) {
   const group = useRef()
 
   const { positions, colors } = useMemo(() => {
@@ -75,14 +75,14 @@ export default function Galaxy({ reduced }) {
     if (!group.current) return
     if (galaxyState.explore) {
       // freeze the scroll sweep while exploring; keep a barely-there drift
-      group.current.rotation.y += reduced ? 0 : 0.0004
+      group.current.rotation.y += spin ? 0.0004 : 0
       return
     }
     const doc = document.documentElement
     const max = doc.scrollHeight - window.innerHeight
     const p = max > 0 ? Math.min(1, window.scrollY / max) : 0
     // slow sidereal rotation + scroll-coupled sweep
-    const base = reduced ? 0 : clock.elapsedTime * 0.018
+    const base = spin ? clock.elapsedTime * 0.018 : 0
     group.current.rotation.y = base + p * 2.4
   })
 

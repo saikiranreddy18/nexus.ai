@@ -18,12 +18,12 @@ export default function SectionShell({ id, eyebrow, title, children, className =
     <section id={id} ref={ref} className={`relative z-10 mx-auto w-full max-w-6xl px-5 py-24 md:py-32 ${className}`}>
       <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={stagger}>
         {eyebrow && (
-          <motion.p variants={fadeUp} className="mb-3 font-display text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
-            {eyebrow}
+          <motion.p variants={fadeUp} className="mb-4 font-display text-xs font-black uppercase tracking-[0.3em] text-lime-400">
+            ▸ {eyebrow}
           </motion.p>
         )}
         {title && (
-          <motion.h2 variants={fadeUp} className="mb-10 max-w-3xl font-display text-3xl font-bold text-white md:text-5xl">
+          <motion.h2 variants={fadeUp} className="arcade-heading mb-12 max-w-3xl text-3xl md:text-5xl">
             {title}
           </motion.h2>
         )}

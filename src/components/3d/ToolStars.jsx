@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { AI_TOOLS } from '../../utils/aiTools'
+import { TOOLS, CATEGORY_META } from '../../utils/toolsCatalog'
 
-// From orbit these are simply brighter, twinkling stars in the arms.
-// Hover one and the tool's name pops up above it; fly close and the
-// name resolves in-scene as crisp high-resolution type.
+// The galaxy hosts ALL 704 catalog tools as star sprites. Each domain gets a
+// distinct color from CATEGORY_META, so the spiral arms literally colour by
+// tool category. The pointer-hover tooltip resolves any star's name.
+// In-scene name sprites are rendered only for a small flagship subset — 704
+// text canvases would eat hundreds of MB, so most tools rely on the tooltip.
 
 function makeStarTexture(color) {
   const s = 128
@@ -23,7 +25,7 @@ function makeStarTexture(color) {
   return tex
 }
 
-function makeNameTexture(tool) {
+function makeNameTexture(name, color) {
   const w = 1024
   const h = 256
   const canvas = document.createElement('canvas')
@@ -33,18 +35,18 @@ function makeNameTexture(tool) {
 
   let size = 116
   ctx.font = `700 ${size}px "Space Grotesk", system-ui, sans-serif`
-  while (ctx.measureText(tool.name).width > w - 120 && size > 48) {
+  while (ctx.measureText(name).width > w - 120 && size > 48) {
     size -= 6
     ctx.font = `700 ${size}px "Space Grotesk", system-ui, sans-serif`
   }
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
-  ctx.shadowColor = tool.color
+  ctx.shadowColor = color
   ctx.shadowBlur = 42
   ctx.fillStyle = '#ffffff'
-  ctx.fillText(tool.name, w / 2, h / 2)
+  ctx.fillText(name, w / 2, h / 2)
   ctx.shadowBlur = 0
-  ctx.fillText(tool.name, w / 2, h / 2) // second pass keeps the core sharp
+  ctx.fillText(name, w / 2, h / 2)
 
   const tex = new THREE.CanvasTexture(canvas)
   tex.colorSpace = THREE.SRGBColorSpace
@@ -52,12 +54,30 @@ function makeNameTexture(tool) {
   return tex
 }
 
+// Flagships that get in-scene name sprites (memory-safe subset)
+const FLAGSHIP_NAMES = new Set([
+  'ChatGPT', 'Claude', 'Claude Code', 'Cursor', 'Copilot', 'GitHub Copilot',
+  'Gemini', 'Perplexity', 'Midjourney', 'Runway', 'ElevenLabs', 'Suno',
+  'NotebookLM', 'n8n', 'Zapier', 'Grammarly', 'Notion AI', 'Figma AI',
+  'Windsurf', 'Replit', 'v0', 'Lovable', 'Canva', 'Adobe Firefly',
+  'Stable Diffusion', 'Hugging Face', 'LangChain', 'Jasper', 'Synthesia',
+  'DeepL', 'Pika', 'Descript', 'Otter', 'Whisper', 'Llama', 'Mistral',
+])
+
 const RADIUS = 12
 const BRANCHES = 5
 const SPIN = 1.15
-const REVEAL_FAR = 7 // in-scene name starts fading in
-const REVEAL_NEAR = 3.2 // fully readable
-const HOVER_PX = 30 // pointer-to-star hit radius on screen
+const REVEAL_FAR = 7
+const REVEAL_NEAR = 3.2
+const HOVER_PX = 24
+
+// Cache one star texture per unique color (7 max) so all 704 sprites share
+// the same GPU textures — cheap in memory, no visual difference.
+const STAR_TEX_CACHE = new Map()
+function getStarTex(color) {
+  if (!STAR_TEX_CACHE.has(color)) STAR_TEX_CACHE.set(color, makeStarTexture(color))
+  return STAR_TEX_CACHE.get(color)
+}
 
 export default function ToolStars() {
   const starRefs = useRef([])
@@ -76,27 +96,45 @@ export default function ToolStars() {
     return () => window.removeEventListener('pointermove', onMove)
   }, [])
 
-  const items = useMemo(
-    () =>
-      AI_TOOLS.map((tool, i) => {
-        const r = 3.2 + (i / AI_TOOLS.length) * (RADIUS - 3.2)
-        const branchAngle = ((i % BRANCHES) / BRANCHES) * Math.PI * 2
-        const spinAngle = r * SPIN
-        const jitter = ((i * 2654435761) % 100) / 100 - 0.5 // deterministic
-        return {
-          tool,
-          position: [
-            Math.cos(branchAngle + spinAngle) * r + jitter * 1.4,
-            jitter * 0.8,
-            Math.sin(branchAngle + spinAngle) * r + jitter * 1.2,
-          ],
-          phase: (i * 1.7) % (Math.PI * 2),
-          speed: 0.6 + ((i * 37) % 10) / 10,
-          starTex: makeStarTexture(tool.color),
-          nameTex: makeNameTexture(tool),
-        }
-      }),
-    [],
+  const items = useMemo(() => {
+    // Deterministic order — sort by name so branch assignment is stable.
+    const sorted = [...TOOLS].sort((a, b) => a.name.localeCompare(b.name))
+    const total = sorted.length
+    return sorted.map((tool, i) => {
+      const color = CATEGORY_META[tool.category]?.color || '#22d3ee'
+      // Push most tools out into the arms; leave a sparse core.
+      const t = i / total
+      const r = 3.4 + Math.sqrt(t) * (RADIUS - 3.4)
+      const branchAngle = ((i % BRANCHES) / BRANCHES) * Math.PI * 2
+      const spinAngle = r * SPIN
+      // Deterministic per-tool jitter using a hash of the index
+      const h1 = ((i * 2654435761) >>> 0) / 4294967296 - 0.5
+      const h2 = ((i * 40503) >>> 0) / 4294967296 - 0.5
+      const h3 = ((i * 2246822519) >>> 0) / 4294967296 - 0.5
+      const spread = 0.4 + r * 0.09
+      return {
+        tool,
+        color,
+        isFlagship: FLAGSHIP_NAMES.has(tool.name),
+        position: [
+          Math.cos(branchAngle + spinAngle) * r + h1 * spread,
+          h2 * spread * 0.6,
+          Math.sin(branchAngle + spinAngle) * r + h3 * spread,
+        ],
+        phase: (i * 1.7) % (Math.PI * 2),
+        speed: 0.6 + ((i * 37) % 10) / 10,
+      }
+    })
+  }, [])
+
+  const starTextures = useMemo(
+    () => items.map((it) => getStarTex(it.color)),
+    [items],
+  )
+
+  const nameTextures = useMemo(
+    () => items.map((it) => (it.isFlagship ? makeNameTexture(it.tool.name, it.color) : null)),
+    [items],
   )
 
   useFrame(({ clock, camera }) => {
@@ -109,8 +147,7 @@ export default function ToolStars() {
 
     for (let i = 0; i < items.length; i++) {
       const star = starRefs.current[i]
-      const name = nameRefs.current[i]
-      if (!star || !name) continue
+      if (!star) continue
 
       star.getWorldPosition(worldPos.current)
 
@@ -134,20 +171,23 @@ export default function ToolStars() {
       const glint = Math.max(0, Math.sin(t * 0.31 + phase * 3.7) - 0.965) * 14
       const isHover = i === hovered.current
       star.material.opacity = isHover ? 1 : Math.min(1, breathe + glint)
-      const s = (isHover ? 0.55 : 0.32) + glint * 0.25
+      const s = (isHover ? 0.45 : 0.22) + glint * 0.2
       star.scale.set(s, s, 1)
 
-      // reveal the in-scene name when the camera flies close (or on hover)
-      const d = camera.position.distanceTo(worldPos.current)
-      const reveal = THREE.MathUtils.clamp((REVEAL_FAR - d) / (REVEAL_FAR - REVEAL_NEAR), 0, 1)
-      name.material.opacity = isHover ? Math.max(0.9, reveal) : reveal * reveal
+      // reveal the in-scene name only for flagships when the camera is close
+      const nameSprite = nameRefs.current[i]
+      if (nameSprite && nameTextures[i]) {
+        const d = camera.position.distanceTo(worldPos.current)
+        const reveal = THREE.MathUtils.clamp((REVEAL_FAR - d) / (REVEAL_FAR - REVEAL_NEAR), 0, 1)
+        nameSprite.material.opacity = isHover ? Math.max(0.9, reveal) : reveal * reveal
+      }
     }
 
     hovered.current = best
     if (tooltip) {
       if (best >= 0) {
         tooltip.textContent = items[best].tool.name
-        tooltip.style.borderColor = `${items[best].tool.color}88`
+        tooltip.style.borderColor = `${items[best].color}88`
         tooltip.style.left = `${bestX}px`
         tooltip.style.top = `${bestY - 18}px`
         tooltip.style.opacity = '1'
@@ -159,14 +199,33 @@ export default function ToolStars() {
 
   return (
     <group>
-      {items.map(({ tool, position, starTex, nameTex }, i) => (
-        <group key={tool.name} position={position}>
-          <sprite ref={(el) => (starRefs.current[i] = el)} scale={[0.32, 0.32, 1]}>
-            <spriteMaterial map={starTex} transparent depthWrite={false} blending={THREE.AdditiveBlending} />
+      {items.map((item, i) => (
+        <group key={item.tool.slug} position={item.position}>
+          <sprite
+            ref={(el) => (starRefs.current[i] = el)}
+            scale={[0.22, 0.22, 1]}
+          >
+            <spriteMaterial
+              map={starTextures[i]}
+              transparent
+              depthWrite={false}
+              blending={THREE.AdditiveBlending}
+            />
           </sprite>
-          <sprite ref={(el) => (nameRefs.current[i] = el)} position={[0, 0.34, 0]} scale={[2.3, 0.575, 1]}>
-            <spriteMaterial map={nameTex} transparent opacity={0} depthWrite={false} />
-          </sprite>
+          {item.isFlagship && nameTextures[i] && (
+            <sprite
+              ref={(el) => (nameRefs.current[i] = el)}
+              position={[0, 0.34, 0]}
+              scale={[2.3, 0.575, 1]}
+            >
+              <spriteMaterial
+                map={nameTextures[i]}
+                transparent
+                opacity={0}
+                depthWrite={false}
+              />
+            </sprite>
+          )}
         </group>
       ))}
     </group>

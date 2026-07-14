@@ -82,17 +82,17 @@ export default function GalaxyExplorer({ onClose }) {
       <button
         onClick={onClose}
         aria-label="Exit galaxy exploration"
-        className="glass absolute right-6 top-6 flex h-11 w-11 items-center justify-center rounded-full text-lg text-slate-300 hover:text-white"
+        className="nb-btn dark absolute right-6 top-6 flex h-11 w-11 items-center justify-center !rounded-full !p-0 text-lg"
       >
         ✕
       </button>
 
       <div className="absolute right-6 top-1/2 flex -translate-y-1/2 flex-col gap-2">
-        <button onClick={() => zoomBy(0.8)} aria-label="Zoom in" className="glass h-11 w-11 rounded-full font-display text-xl text-slate-200 hover:text-white">+</button>
-        <button onClick={() => zoomBy(1.25)} aria-label="Zoom out" className="glass h-11 w-11 rounded-full font-display text-xl text-slate-200 hover:text-white">−</button>
+        <button onClick={() => zoomBy(0.8)} aria-label="Zoom in" className="nb-btn dark h-11 w-11 !rounded-full !p-0 text-xl">+</button>
+        <button onClick={() => zoomBy(1.25)} aria-label="Zoom out" className="nb-btn dark h-11 w-11 !rounded-full !p-0 text-xl">−</button>
       </div>
 
-      <p className="glass pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full px-5 py-2 font-display text-xs uppercase tracking-[0.25em] text-slate-300">
+      <p className="tape-label pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px]" style={{ transform: 'translateX(-50%) rotate(-1.5deg)' }}>
         Drag to orbit · Scroll to zoom · Zoom in to meet the tools
       </p>
     </motion.div>

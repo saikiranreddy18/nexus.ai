@@ -4,8 +4,17 @@ import ParticleField from './ParticleField'
 import Galaxy from './Galaxy'
 import CameraController from './CameraController'
 
-export default function Scene({ reduced }) {
+// Quality tiers (mobile-first launch):
+//   full   — desktop: 70k-point galaxy, 2400 stars, pointer parallax, dpr 2
+//   mobile — phones: 24k-point galaxy, 1200 stars, LIVE rotation + camera
+//            flight (the "entering space" feel), dpr 1.5
+//   calm   — prefers-reduced-motion: static composition, dpr 1.25
+const DPR = { full: 2, mobile: 1.5, calm: 1.25 }
+
+export default function Scene({ mode = 'full' }) {
   const wrapRef = useRef(null)
+  const calm = mode === 'calm'
+  const mobile = mode === 'mobile'
 
   // Dim the universe while reading content sections; full brightness at the
   // hero and the final CTA where the galaxy is the star.
@@ -27,15 +36,15 @@ export default function Scene({ reduced }) {
     <div ref={wrapRef} className="fixed inset-0 z-0" aria-hidden="true">
       <Canvas
         camera={{ position: [0, 7.5, 14], fov: 52 }}
-        dpr={[1, reduced ? 1.25 : 2]}
-        gl={{ antialias: true, powerPreference: 'high-performance' }}
+        dpr={[1, DPR[mode]]}
+        gl={{ antialias: !mobile, powerPreference: 'high-performance' }}
       >
         <color attach="background" args={['#060609']} />
         <Suspense fallback={null}>
-          <ParticleField reduced={reduced} />
-          <Galaxy reduced={reduced} />
+          <ParticleField reduced={calm} mobile={mobile} />
+          <Galaxy reduced={calm || mobile} spin={!calm} />
         </Suspense>
-        <CameraController reduced={reduced} />
+        <CameraController reduced={calm} />
       </Canvas>
       {/* cinematic vignette */}
       <div

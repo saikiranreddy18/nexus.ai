@@ -11,14 +11,14 @@ export default function HeroSection({ onEnter }) {
 
   return (
     <section id="hero" ref={ref} className="pointer-events-none relative z-10 flex min-h-screen flex-col items-center justify-center px-5 text-center">
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.6 }}
-        className="mb-5 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 font-display text-[11px] font-medium uppercase tracking-[0.35em] text-slate-300 backdrop-blur-sm"
+      <motion.div
+        initial={{ opacity: 0, scale: 0.6, rotate: -18 }}
+        animate={{ opacity: 1, scale: 1, rotate: -6 }}
+        transition={{ delay: 0.9, type: 'spring', stiffness: 260, damping: 18 }}
+        className="mb-5"
       >
-        Launching soon
-      </motion.p>
+        <span className="tape-label" style={{ fontSize: 11 }}>✦ LAUNCHING SOON ✦</span>
+      </motion.div>
 
       <motion.p
         className="mb-6 font-display text-base font-semibold tracking-[0.55em] text-cyan-300 md:text-xl"
@@ -41,12 +41,10 @@ export default function HeroSection({ onEnter }) {
         initial={{ opacity: 0, y: 26 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2.2, duration: 0.8, ease: 'easeOut' }}
-        className="text-glow max-w-5xl font-display text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-8xl"
+        className="arcade-heading max-w-5xl text-5xl md:text-8xl leading-[0.94]"
+        style={{ letterSpacing: '-0.02em' }}
       >
-        Your AI Stack,{' '}
-        <span className="bg-gradient-to-r from-exus-purple via-exus-pink to-exus-cyan bg-clip-text text-transparent">
-          Personalized
-        </span>
+        YOUR AI STACK,<br/>PERSONALIZED
       </motion.h1>
 
       <motion.p
@@ -66,16 +64,16 @@ export default function HeroSection({ onEnter }) {
         transition={{ delay: 2.9, duration: 0.7 }}
         className="pointer-events-auto mt-10 flex flex-col items-center gap-5"
       >
-        <WaitlistForm location="hero" />
         <button
           onClick={() => {
             track(EVENTS.CTA_CLICK, { cta: 'find_your_stack', location: 'hero' })
             onEnter()
           }}
-          className="font-display text-sm font-medium tracking-wide text-slate-300 underline decoration-exus-cyan/50 underline-offset-4 transition-colors hover:text-white"
+          className="nb-btn text-base px-8 py-4"
         >
-          Or find your stack in 60 seconds →
+          ⚡ FIND YOUR STACK IN 60S
         </button>
+        <WaitlistForm location="hero" />
       </motion.div>
 
       <motion.div

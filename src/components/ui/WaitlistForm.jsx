@@ -38,15 +38,18 @@ export default function WaitlistForm({ location, autoFocus = false }) {
 
   if (state === 'done') {
     return (
-      <p className="font-display text-sm tracking-wide text-cyan-300" role="status">
-        You're on the list. We'll email you the moment NEXUS AI launches.
+      <p className="font-display text-sm font-black uppercase tracking-wide text-lime-400" role="status">
+        ✦ You're on the list — we'll ping you at launch ✦
       </p>
     )
   }
 
   return (
     <form onSubmit={submit} className="w-full max-w-md" noValidate>
-      <div className="glass flex items-center gap-2 rounded-full p-1.5 pl-5 focus-within:border-exus-cyan/50">
+      <div
+        className="flex items-center gap-2 rounded-full border-[3px] border-black bg-[#12121c]/90 p-1.5 pl-5"
+        style={{ boxShadow: '4px 4px 0 #000' }}
+      >
         <label htmlFor={`waitlist-${location}`} className="sr-only">Email address</label>
         <input
           id={`waitlist-${location}`}
@@ -58,14 +61,11 @@ export default function WaitlistForm({ location, autoFocus = false }) {
           className="w-full bg-transparent text-sm text-white placeholder:text-slate-500 focus:outline-none"
           aria-invalid={state === 'error'}
         />
-        <button
-          type="submit"
-          className="shrink-0 rounded-full bg-gradient-to-r from-exus-purple to-exus-cyan px-5 py-2.5 font-display text-sm font-semibold text-white transition-opacity hover:opacity-90"
-        >
+        <button type="submit" className="nb-btn shrink-0 px-5 py-2.5 text-xs">
           Join the waitlist
         </button>
       </div>
-      <p className={`mt-2 pl-5 text-xs ${state === 'error' ? 'text-exus-peach' : 'text-slate-500'}`}>
+      <p className={`mt-2 pl-5 text-xs font-bold ${state === 'error' ? 'text-exus-peach' : 'text-slate-500'}`}>
         {state === 'error'
           ? 'Please enter a valid email address.'
           : 'The application is in development — be first in when it ships.'}

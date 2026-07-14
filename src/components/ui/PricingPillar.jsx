@@ -3,46 +3,42 @@ import { fadeUp } from './SectionShell'
 import { useAnalytics } from '../../hooks/useAnalytics'
 import { EVENTS } from '../../utils/analyticsEvents'
 
+// Sticker-shadow color per plan so the three pillars read lime / pink / cyan.
+const STICKER_VARIANT = { shishya: '', guru: 'pink', pandava: 'cyan' }
+
 export default function PricingPillar({ plan }) {
   const track = useAnalytics()
 
   return (
     <motion.div variants={fadeUp} className={`relative ${plan.lift}`}>
       <div
-        className={`glass halo relative flex h-full flex-col rounded-2xl p-7 transition-transform duration-300 hover:-translate-y-2 ${plan.featured ? 'md:scale-[1.03]' : ''}`}
-        style={{
-          '--halo-soft': `${plan.accent}33`,
-          '--halo-strong': `${plan.accent}${plan.featured ? '99' : '77'}`,
-          borderColor: `${plan.accent}${plan.featured ? '66' : '44'}`,
-          animationDuration: '4.4s',
-        }}
+        className={`sticker ${STICKER_VARIANT[plan.id] ?? ''} relative flex h-full flex-col p-7 ${plan.featured ? 'md:scale-[1.03]' : ''}`}
         onMouseEnter={() => track(EVENTS.PLAN_HOVER, { plan: plan.id })}
       >
         {plan.badge && (
-          <span
-            className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full px-4 py-1 font-display text-xs font-semibold text-white"
-            style={{ background: plan.accent }}
-          >
+          <span className="tape-label absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap" style={{ fontSize: 10, padding: '5px 14px' }}>
             {plan.badge}
           </span>
         )}
         <div className="flex items-start justify-between">
           <div>
-            <p className="font-display text-[11px] font-medium uppercase tracking-[0.3em] text-slate-500">{plan.tier}</p>
-            <h3 className="mt-1 font-display text-2xl font-semibold text-white">{plan.name}</h3>
+            <p className="font-display text-[11px] font-black uppercase tracking-[0.3em] text-lime-400">{plan.tier}</p>
+            <h3 className="mt-1 font-display text-2xl font-black uppercase italic text-white">{plan.name}</h3>
           </div>
           <span aria-hidden="true" className="stone-emblem" style={{ color: plan.accent }}>
             {plan.devanagari}
           </span>
         </div>
         <p className="mt-3 flex items-baseline gap-1">
-          <span className="font-display text-5xl font-bold text-white">${plan.price}</span>
-          <span className="text-sm text-slate-400">/month</span>
+          <span className="font-display text-5xl font-black italic text-white" style={{ textShadow: '3px 3px 0 #000' }}>
+            ${plan.price}
+          </span>
+          <span className="text-sm font-bold text-slate-400">/month</span>
         </p>
         <p className="mt-3 text-xs text-slate-400">{plan.audience}</p>
 
         <ul className="mt-6 flex-1 space-y-2.5 text-sm text-slate-200">
-          {plan.plus && <li className="font-medium" style={{ color: plan.accent }}>{plan.plus}</li>}
+          {plan.plus && <li className="font-display font-black uppercase text-cyan-300">{plan.plus}</li>}
           {plan.features.map((f) => (
             <li key={f} className="flex gap-2">
               <span aria-hidden="true" style={{ color: plan.accent }}>✦</span>
@@ -54,8 +50,7 @@ export default function PricingPillar({ plan }) {
         <a
           href="#cta"
           onClick={() => track(EVENTS.PLAN_SELECT, { plan: plan.id, price: plan.price })}
-          className="mt-8 block w-full rounded-full py-3 text-center font-display font-semibold text-white transition-transform hover:scale-[1.02]"
-          style={{ background: `linear-gradient(120deg, ${plan.accent}, ${plan.accent}99)` }}
+          className={`nb-btn ${plan.id === 'guru' ? 'pink' : plan.id === 'pandava' ? 'cyan' : ''} mt-8 block w-full py-3 text-center text-sm`}
         >
           Reserve {plan.name} at launch
         </a>
