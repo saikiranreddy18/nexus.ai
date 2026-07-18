@@ -11,7 +11,7 @@ import CameraController from './CameraController'
 //   calm   — prefers-reduced-motion: static composition, dpr 1.25
 const DPR = { full: 2, mobile: 1.5, calm: 1.25 }
 
-export default function Scene({ mode = 'full' }) {
+export default function Scene({ mode = 'full', descend = false }) {
   const wrapRef = useRef(null)
   const calm = mode === 'calm'
   const mobile = mode === 'mobile'
@@ -39,10 +39,11 @@ export default function Scene({ mode = 'full' }) {
         dpr={[1, DPR[mode]]}
         gl={{ antialias: !mobile, powerPreference: 'high-performance' }}
       >
-        <color attach="background" args={['#060609']} />
+        {/* pixel-match the STARCHART page bg so the void has zero visible seam */}
+        <color attach="background" args={[descend ? '#0a0a0f' : '#060609']} />
         <Suspense fallback={null}>
           <ParticleField reduced={calm} mobile={mobile} />
-          <Galaxy reduced={calm || mobile} spin={!calm} />
+          <Galaxy reduced={calm || mobile} spin={!calm} descend={descend} />
         </Suspense>
         <CameraController reduced={calm} />
       </Canvas>

@@ -16,6 +16,8 @@ const ToolDetail = lazy(() => import('./pages/app/ToolDetail'))
 const Learning = lazy(() => import('./pages/app/Learning'))
 const Community = lazy(() => import('./pages/app/Community'))
 const Thread = lazy(() => import('./pages/app/Thread'))
+const NexusLanding = lazy(() => import('./pages/NexusLanding'))
+const Office = lazy(() => import('./pages/Office'))
 
 // Scroll + analytics on route change. initAnalytics() already fires the first
 // page_view, so skip the initial render to avoid double counting. Hash links
@@ -54,6 +56,8 @@ export default function App() {
       <Suspense fallback={<PageFallback />}>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/starchart" element={<NexusLanding />} />
+          <Route path="/office" element={<Office />} />
 
           <Route element={<OnboardingShell />}>
             <Route path="/quiz" element={<Quiz />} />

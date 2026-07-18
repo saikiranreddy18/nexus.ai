@@ -5,7 +5,15 @@
       "name": "nexus-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
-      "port": 5173
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "3d-office",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.mjs"],
+      "cwd": "${workspaceFolder}/3d-office",
+      "port": 3000
     }
   ]
 }

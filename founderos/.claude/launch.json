@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "founderos-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "C:\\Users\\SAI KIRAN\\Downloads\\nexus\\founderos",
+      "port": 3000
+    }
+  ]
+}
