@@ -1,0 +1,18 @@
+﻿{
+  "name": "startup-oracle",
+  "version": "1.0.0",
+  "description": "VC-partner AI advisor trained on 1000+ startup case studies",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "export:jsonl": "node scripts/export-jsonl.js",
+    "export:enriched": "node scripts/export-enriched-jsonl.js",
+    "check:training": "node scripts/check-training-data.js",
+    "finetune:openai": "node scripts/finetune-openai.js"
+  },
+  "keywords": ["venture-capital", "startup-advice", "vc-advisor", "rag"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Startup Oracle — VC Advisor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0e27;
+      --bg-light: #1a1f3a;
+      --text: #e0e6ff;
+      --text-muted: #9ca3af;
+      --accent: #6366f1;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, var(--bg) 0%, #1e1b4b 100%); color: var(--text); line-height: 1.6; min-height: 100vh; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    header { text-align: center; margin-bottom: 3rem; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(120deg, #818cf8, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { color: var(--text-muted); font-size: 1.1rem; }
+    .input-section { background: var(--bg-light); border: 1px solid #2d3748; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+    .input-group { display: flex; gap: 1rem; margin-bottom: 1rem; }
+    input[type="text"] { flex: 1; padding: 0.875rem 1rem; background: var(--bg); border: 1px solid #2d3748; border-radius: 8px; color: var(--text); font-size: 1rem; }
+    input[type="text"]:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1); }
+    button { padding: 0.875rem 2rem; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; }
+    button:hover { background: #818cf8; }
+    .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .example-chip { padding: 0.75rem 1rem; background: rgba(99, 102, 241, 0.1); border: 1px solid var(--accent); border-radius: 6px; cursor: pointer; color: var(--accent); font-size: 0.9rem; }
+    .example-chip:hover { background: rgba(99, 102, 241, 0.2); }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+    .stat-card { background: var(--bg-light); border: 1px solid #2d3748; border-radius: 8px; padding: 1.5rem; text-align: center; }
+    .stat-value { font-size: 2rem; font-weight: bold; color: var(--accent); }
+    .stat-label { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; }
+    .answer-section { background: var(--bg-light); border: 1px solid #2d3748; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; display: none; }
+    .answer-section.show { display: block; }
+    .answer-text { background: var(--bg); border-left: 3px solid var(--accent); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 4px; white-space: pre-wrap; word-break: break-word; }
+    .case-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+    .case-card { background: var(--bg); border: 1px solid #2d3748; border-radius: 8px; padding: 1.5rem; }
+    .case-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .case-outcome { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 600; font-size: 0.8rem; margin-bottom: 1rem; }
+    .case-outcome.success { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+    .case-outcome.failed { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+    .case-detail { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .loading { display: none; text-align: center; padding: 2rem; color: var(--text-muted); }
+    .loading.show { display: block; }
+    .error { background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; color: #ef4444; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; display: none; }
+    .error.show { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Startup Oracle</h1>
+      <p class="subtitle">VC-partner advice grounded in 10+ startup case studies</p>
+    </header>
+    <div id="stats" class="stats"></div>
+    <div class="input-section">
+      <div class="input-group">
+        <input type="text" id="query" placeholder="Pitch your startup or ask about a specific problem..." />
+        <button onclick="askOracle()">Advise</button>
+      </div>
+      <div class="examples">
+        <div class="example-chip" onclick="loadExample('Series A fintech startup')">Fintech</div>
+        <div class="example-chip" onclick="loadExample('Grocery delivery startup')">Grocery</div>
+        <div class="example-chip" onclick="loadExample('What kills startups?')">Risk</div>
+      </div>
+    </div>
+    <div id="error" class="error"></div>
+    <div id="loading" class="loading">Analyzing...</div>
+    <div id="answerSection" class="answer-section">
+      <div id="answerText" class="answer-text"></div>
+      <h3>Case Studies</h3>
+      <div id="caseGrid" class="case-grid"></div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const res = await fetch('/api/stats');
+        const data = await res.json();
+        const statsHtml = `<div class="stat-card"><div class="stat-value">${data.totalCases}</div><div class="stat-label">Total Cases</div></div><div class="stat-card"><div class="stat-value">${data.outcomes.failed || 0}</div><div class="stat-label">Failures</div></div><div class="stat-card"><div class="stat-value">${data.outcomes.success || 0}</div><div class="stat-label">Successes</div></div>`;
+        document.getElementById('stats').innerHTML = statsHtml;
+      } catch (e) { console.error('Stats error:', e); }
+      document.getElementById('query').addEventListener('keypress', (e) => { if (e.key === 'Enter') askOracle(); });
+    });
+    function loadExample(text) { document.getElementById('query').value = text; askOracle(); }
+    async function askOracle() {
+      const query = document.getElementById('query').value.trim();
+      if (!query) return;
+      const errorEl = document.getElementById('error');
+      const loadingEl = document.getElementById('loading');
+      const answerEl = document.getElementById('answerSection');
+      errorEl.classList.remove('show');
+      loadingEl.classList.add('show');
+      answerEl.classList.remove('show');
+      try {
+        const res = await fetch(`/api/advise?q=${encodeURIComponent(query)}`);
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Request failed');
+        document.getElementById('answerText').textContent = data.answer;
+        const caseHtml = data.cases.map(c => `<div class="case-card"><h4>${c.name}</h4><div class="case-outcome ${c.outcome}">${c.outcome === 'success' ? '✓' : '✗'} ${c.outcome}</div><div class="case-detail"><strong>Industry:</strong> ${c.industry}</div>${c.funding ? `<div class="case-detail"><strong>Funding:</strong> ${c.funding}</div>` : ''}<div class="case-detail">${c.summary}</div></div>`).join('');
+        document.getElementById('caseGrid').innerHTML = caseHtml;
+        loadingEl.classList.remove('show');
+        answerEl.classList.add('show');
+      } catch (e) {
+        errorEl.textContent = `Error: ${e.message}`;
+        errorEl.classList.add('show');
+        loadingEl.classList.remove('show');
+      }
+    }
+  </script>
+</body>
+</html>

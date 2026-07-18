@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Instacart",
+    "outcome": "success",
+    "industry": "grocery-delivery",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$8.6B",
+    "summary": "On-demand grocery delivery service. Scaled to 50+ markets, achieved profitability through network effects and scale.",
+    "causes": ["network-effects", "capital-efficiency"],
+    "lesson": "Network effects + time to scale beats unit economics in early phase if you can survive.",
+    "source": "Public filings",
+    "founders": ["Apoorva Mehta (CEO)", "Brandon Leonardo (COO)", "Max Mullen (CTO)"],
+    "timeline": [
+      { "date": "2012", "event": "Founded in San Francisco by Apoorva Mehta" },
+      { "date": "2014", "event": "Series B funding, expanded to 15 cities" },
+      { "date": "2016", "event": "Series D at $2B+ valuation" },
+      { "date": "2020", "event": "IPO; pandemic demand surge, profitability milestone" }
+    ],
+    "metrics": ["$39B TAM at launch", "50+ markets by 2019", "15-minute delivery times", "$2.3B annual revenue (2020)"],
+    "narrative": "Apoorva Mehta founded Instacart in 2012 after realizing grocery delivery was inefficient. The team built an on-demand logistics network, partnering with existing grocery chains rather than building stores. Early unit economics were poor—last-mile delivery cost was 40% of order value—but Mehta persisted through the 2014–2016 phase when many thought the model broken. By 2016, network effects kicked in: order frequency increased, delivery density improved, and unit costs fell. The 2020 pandemic accelerated demand 10x. Though Instacart took longer to profitability than expected, the team's focus on operational excellence and willingness to iterate on margins eventually won. They IPO'd and are now profitable, proving that some seemingly broken unit economics just need scale and time to fix."
+  },
+  {
+    "name": "Gopuff",
+    "outcome": "failed",
+    "industry": "delivery",
+    "founded": 2015,
+    "closed": 2024,
+    "funding": "$1.2B",
+    "summary": "Rapid delivery (15 min) for everyday items. Raised $1.2B but unit economics never scaled. Market contraction + excess competition forced bankruptcy.",
+    "causes": ["unit-economics", "overexpansion", "market-saturation"],
+    "lesson": "Raising capital ≠ sustainable model. Unit economics must work before scaling.",
+    "source": "Crunchbase",
+    "founders": ["JCedar Khalil (CEO)", "Rafael Ilishayev (CEO)"],
+    "timeline": [
+      { "date": "2015", "event": "Founded in Philadelphia" },
+      { "date": "2020", "event": "Series C, expanded to 500+ cities" },
+      { "date": "2022", "event": "$15M monthly burn rate; major layoffs" },
+      { "date": "2024", "event": "Bankruptcy; cease operations" }
+    ],
+    "metrics": ["$1.2B raised (2015–2022)", "500+ cities by peak", "15-minute delivery guarantee", "$500M+ annual burn by 2022"],
+    "narrative": "Gopuff (formerly Gopher) was founded in 2015 to do 15-minute delivery of everyday items. The founders raised aggressively—$1.2B total—fueling expansion to 500+ cities by 2022. But the unit economics never worked: delivery cost was 50% of order value, customer acquisition cost was $50+, and repeat purchase rates were weak. Competitors (DoorDash, Instacart, Amazon) had either better logistics or customer stickiness. By late 2022, Gopuff was burning $15M/month. They tried layoffs, market exits, and pivots but couldn't fix the core math. In 2024, they filed for bankruptcy. The lesson: $1.2B can't fix a broken model. Gopuff expanded first, thought unit economics would follow, but they don't."
+  },
+  {
+    "name": "Airbnb",
+    "outcome": "success",
+    "industry": "travel",
+    "founded": 2008,
+    "closed": null,
+    "funding": "$24.7B",
+    "summary": "Peer-to-peer lodging marketplace. Survived 2008 crash by focusing on quality, trust, and unit economics. Now $100B+ market cap.",
+    "causes": ["product-market-fit", "timing", "founder-quality"],
+    "lesson": "Founder resilience matters: Y Combinator rejected them; they shipped, iterated, and came back.",
+    "source": "Public filings",
+    "founders": ["Brian Chesky (CEO)", "Joe Gebbia (Chief Creative Officer)", "Nathan Blecharczyk (CTO)"],
+    "timeline": [
+      { "date": "2008", "event": "Founded during 2008 financial crisis; Airbed & Breakfast launched" },
+      { "date": "2009", "event": "Y Combinator rejection; cold-emailed 1000+ listings to build inventory" },
+      { "date": "2011", "event": "Series A funding; international expansion" },
+      { "date": "2020", "event": "IPO at $100B+ valuation; pandemic surge" }
+    ],
+    "metrics": ["$100B+ market cap at IPO", "7M+ listings", "1B+ guest arrivals (lifetime)", "$17B annual revenue (2023)"],
+    "narrative": "Brian Chesky and Joe Gebbia founded Airbnb (originally Airbed & Breakfast) in 2008 during the financial crisis with zero funding. Y Combinator rejected them twice. But they persisted: they traveled to NYC, physically visited top listings, took professional photos, helped hosts write better descriptions. This hands-on approach built trust and quality. By 2011, the platform had product-market fit. The founders' obsession with trust (designed ID verification, insurance) and supply quality (vs. quantity) differentiated them from competitors. They survived the cash crunch, raised Series A, and scaled globally. The pandemic accelerated travel demand, and Airbnb IPO'd at $100B+. Their resilience and focus on product quality over growth hacks proved the model."
+  },
+  {
+    "name": "Theranos",
+    "outcome": "failed",
+    "industry": "biotech",
+    "founded": 2003,
+    "closed": 2018,
+    "funding": "$700M",
+    "summary": "Blood-testing device startup led by Elizabeth Holmes. Promised revolutionary tech but devices never worked. Founder fraud + deception.",
+    "causes": ["fraud", "technology-failure", "founder-integrity"],
+    "lesson": "Due diligence on founder claims is critical. Verify technical claims independently.",
+    "source": "Bad Blood book + SEC filings",
+    "founders": ["Elizabeth Holmes (CEO, founder)"],
+    "timeline": [
+      { "date": "2003", "event": "Founded by Elizabeth Holmes, then 19" },
+      { "date": "2015", "event": "Valued at $9B; partnerships with Walgreens, Safeway" },
+      { "date": "2018", "event": "Fraudulent claims exposed; company dissolved" },
+      { "date": "2022", "event": "Holmes convicted of fraud; sentenced to prison" }
+    ],
+    "metrics": ["$700M raised", "$9B valuation at peak", "0 working devices shipped", "1000+ false/misleading claims"],
+    "narrative": "Elizabeth Holmes founded Theranos in 2003, claiming to have invented a revolutionary blood-testing device that could run 200+ tests from a single finger prick. Investors and board members (including Henry Kissinger, George Shultz) were mesmerized. She raised $700M and achieved a $9B valuation without shipping a single working product. In reality, the device never worked. Theranos covered this up, running tests on machines made by other companies and misrepresenting their capabilities to Walgreens and patients. Journalist John Carreyrou exposed the fraud in 2015. Theranos dissolved, and Holmes was convicted of fraud in 2022. The lesson: due diligence on technical founders must include independent verification. Investors relied on Holmes's narrative and board prestige instead of testing claims."
+  },
+  {
+    "name": "WeWork",
+    "outcome": "failed",
+    "industry": "real-estate",
+    "founded": 2010,
+    "closed": 2023,
+    "funding": "$33B",
+    "summary": "Shared workspace provider. Lost $47B in value post-IPO collapse. Burned cash at massive scale with negative unit economics.",
+    "causes": ["unit-economics", "cash-burn", "founder-distraction"],
+    "lesson": "Growth at all costs kills companies. The SoftBank model broke when liquidity dried up.",
+    "source": "Bloomberg + public filings",
+    "founders": ["Adam Neumann (CEO, founder)", "Miguel McKelvey (Chief Culture Officer)"],
+    "timeline": [
+      { "date": "2010", "event": "Founded as a co-working space in NYC" },
+      { "date": "2016", "event": "Series D; valuation reached $1B" },
+      { "date": "2019", "event": "SoftBank Vision Fund pumps $20B; $47B valuation" },
+      { "date": "2019", "event": "IPO attempt; CEO Adam Neumann quits; valuation collapses to $8B" }
+    ],
+    "metrics": ["$33B raised", "$47B valuation (SoftBank bubble)", "$47B value destruction", "$40B annual burn rate at peak"],
+    "narrative": "Adam Neumann founded WeWork in 2010 as a trendy co-working space in lower Manhattan. Early unit economics were actually okay—high-margin desk rentals. But growth temptation took over. SoftBank's Vision Fund invested $20B in 2017–2019, explicitly funding growth over profitability. Neumann pivoted to a capital-intensive model: lease large buildings, sublet desks, assume utilization rates would hit 90%+ (they didn't). By 2019, WeWork was burning $40B annually with negative unit economics and facing IPO scrutiny. Investors discovered Neumann's self-dealing (buying buildings at personal profit) and governance issues. The IPO collapsed. SoftBank took a $17B write-down. WeWork eventually filed bankruptcy in 2023. The lesson: capital ≠ sustainability. Once SoftBank dried up, the model collapsed immediately."
+  },
+  {
+    "name": "Zoom",
+    "outcome": "success",
+    "industry": "software",
+    "founded": 2011,
+    "closed": null,
+    "funding": "$80M",
+    "summary": "Video conferencing for enterprises. Profitability from year 3, 1000%+ growth by 2020. Clear unit economics and product-market fit.",
+    "causes": ["product-market-fit", "capital-efficiency", "timing"],
+    "lesson": "Great product + right market timing + unit economics = monster company. Zoom took off with COVID but was profitable before.",
+    "source": "S-1 filing",
+    "founders": ["Eric Yuan (CEO)"],
+    "timeline": [
+      { "date": "2011", "event": "Founded by Eric Yuan, former Cisco WebEx engineer" },
+      { "date": "2014", "event": "Profitability achieved; 1M meetings/day" },
+      { "date": "2019", "event": "IPO at $16B valuation" },
+      { "date": "2020", "event": "COVID surge; 300M meetings/day; $1B+ revenue" }
+    ],
+    "metrics": ["$80M raised (lean)", "$16B IPO valuation", "300M meetings/day by 2020", "$622M revenue (2020)"],
+    "narrative": "Eric Yuan founded Zoom in 2011 after frustration with Cisco's WebEx product (which he once led). He wanted reliable, simple video conferencing. Zoom focused obsessively on product quality: reliability, ease of use, zero-install joining, mobile support. The company achieved profitability by year 3—rare for a SaaS platform at scale. Unit economics were exceptional: low CAC (word of mouth), high retention (video quality builds habit), and good expansion revenue (free → pro upgrades). By 2019, Zoom was doing 1M meetings/day and IPO'd at $16B. Then COVID hit, and meetings jumped to 300M/day overnight. Zoom's reliability and simplicity made it the default for remote work. The company didn't cause the pandemic, but its product quality let it capture the inflection. Revenue hit $1B+ in 2020. Zoom proves that great product + capital efficiency + right timing = dominant outcome."
+  },
+  {
+    "name": "Amazon Fresh",
+    "outcome": "quasi-success",
+    "industry": "grocery-delivery",
+    "founded": 2007,
+    "closed": null,
+    "funding": "$4.5B (parent: Amazon)",
+    "summary": "Amazon's grocery delivery arm. Still not profitable despite $4B+ invested. Kept alive by Amazon's capital, but model struggles.",
+    "causes": ["unit-economics", "capital-burn", "logistics-cost"],
+    "lesson": "Even Amazon can't crack grocery last-mile profitably. Some markets resist network effects.",
+    "source": "Amazon investor relations",
+    "founders": [],
+    "timeline": [
+      { "date": "2007", "event": "Amazon Fresh launched in Seattle" },
+      { "date": "2016", "event": "Expanded to LA, SF, NYC" },
+      { "date": "2020", "event": "COVID surge; expanded to 150+ cities" },
+      { "date": "2024", "event": "Still not profitable; major market exits announced" }
+    ],
+    "metrics": ["$4.5B+ invested", "150+ cities at peak", "Zero profitability milestone", "$20-30B TAM in US"],
+    "narrative": "Amazon launched Fresh in 2007 to deliver groceries in 2 hours. The company has an unfair advantage: massive capital, logistics infrastructure (Amazon Prime), customer trust. But even with $4B+, Fresh never became profitable. Why? Grocery is a 2–3% margin business. Last-mile delivery costs 30% of order value. Customer acquisition is expensive ($50+), and churn is high. Amazon's logistics network helps, but not enough to overcome the unit economics gap. By 2024, Amazon exited multiple major markets (New York, LA) despite massive investment. The lesson: some markets are structurally broken, even for Amazon. Instacart succeeded because it built delivery density over 12 years. Amazon Fresh tried scale without the density foundation."
+  },
+  {
+    "name": "Slack",
+    "outcome": "success",
+    "industry": "software",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$884M",
+    "summary": "Team communication platform. Built product that users loved, strong enterprise unit economics, acquired by Salesforce for $27.7B.",
+    "causes": ["product-market-fit", "unit-economics", "enterprise-strategy"],
+    "lesson": "Enterprise SaaS with strong retention and expansion revenue is defensible.",
+    "source": "S-1 filing",
+    "founders": ["Stewart Butterfield (CEO)", "Eric Costello (CTO)"],
+    "timeline": [
+      { "date": "2013", "event": "Founded by Stewart Butterfield; spun out of failed gaming company Tiny Speck" },
+      { "date": "2014", "event": "1M DAU milestone" },
+      { "date": "2019", "event": "IPO at $23B valuation" },
+      { "date": "2021", "event": "Salesforce acquisition for $27.7B" }
+    ],
+    "metrics": ["$884M raised", "$27.7B acquisition price", "5M+ DAU at acquisition", "90%+ net revenue retention"],
+    "narrative": "Stewart Butterfield founded Slack in 2013 as a spinout of his failed gaming company Tiny Speck. The team built a messaging platform for teams, focusing obsessively on speed, ease of use, and integrations. Slack's product was so good that users adopted it without top-down mandates. Unit economics were excellent: low churn (engagement drives habit), high expansion revenue (seats + integrations), and good CAC payback (~6 months). Slack's 90%+ net revenue retention (customers spending more each year) was industry-leading. They went public in 2019 at $23B and were acquired by Salesforce for $27.7B in 2021. The acquisition was strategic: Slack's communication layer + Salesforce's CRM = better lock-in. The lesson: excellent product + strong unit economics + sticky users = acquisition premium."
+  },
+  {
+    "name": "Quibi",
+    "outcome": "failed",
+    "industry": "media",
+    "founded": 2018,
+    "closed": 2021,
+    "funding": "$1.75B",
+    "summary": "Short-form video platform led by Meg Whitman. Raised $1.75B but launched amid COVID lockdown. Burned $200M in 6 months. Shut down.",
+    "causes": ["unit-economics", "market-timing", "product-market-mismatch"],
+    "lesson": "Timing matters. Launching premium content in a free-content world + locked-down users = failed model.",
+    "source": "Deadline + Variety",
+    "founders": ["Meg Whitman (CEO)", "Jeffrey Katzenberg (founder)"],
+    "timeline": [
+      { "date": "2018", "event": "Founded by media veterans Meg Whitman and Jeffrey Katzenberg" },
+      { "date": "2020", "event": "Launched mid-pandemic with $1.75B raised; paywall only" },
+      { "date": "2020", "event": "500K users by mid-2020; $15 paywall too expensive" },
+      { "date": "2021", "event": "Shut down; zero acquisition value" }
+    ],
+    "metrics": ["$1.75B raised", "500K users at peak", "$200M burned in 6 months", "15-minute episodes (gimmick)"],
+    "narrative": "Jeffrey Katzenberg and Meg Whitman founded Quibi (short for 'quick bites') to create short-form premium video content. They raised $1.75B, hired Hollywood's best writers, and built a beautiful mobile-first app. But they launched in April 2020, during COVID lockdowns—when users were sitting at home, not on the go. Quibi's original premise (watch in 15 minutes while commuting) made no sense. They charged $15/month for a subscription-only platform at a time when YouTube, TikTok, and Netflix offered vastly more content for the same price or free. They tried free trials and pivots, but user acquisition was too expensive ($30+ CAC) with too low LTV. By October 2021, Quibi shut down, returning zero acquisition value to investors. The lesson: even $1.75B can't overcome market timing mismatch and user psychology."
+  },
+  {
+    "name": "Stripe",
+    "outcome": "success",
+    "industry": "fintech",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$1.3B (raised)",
+    "summary": "Payment processing for the internet. Profitability achieved, now $95B+ valuation. Clear unit economics, massive TAM, technical excellence.",
+    "causes": ["product-market-fit", "timing", "unit-economics"],
+    "lesson": "Boring + profitable beats shiny + broken. Stripe focused on reliability and developer experience.",
+    "source": "Public reports",
+    "founders": ["Patrick Collison (CEO)", "John Collison (President)"],
+    "timeline": [
+      { "date": "2010", "event": "Founded by Irish brothers Patrick and John Collison" },
+      { "date": "2014", "event": "Series C; $1.5B valuation" },
+      { "date": "2018", "event": "Series G; $20B+ valuation" },
+      { "date": "2024", "event": "Private at $95B+ valuation; consistently profitable" }
+    ],
+    "metrics": ["$1.3B raised", "$95B+ private valuation", "$20B annual payment volume", "99.99% uptime SLA"],
+    "narrative": "Patrick and John Collison founded Stripe in 2010 to simplify online payments. Before Stripe, payment APIs were complex, proprietary, and unreliable. Stripe's insight: developers want a simple REST API and excellent documentation. They obsessed over reliability (99.99% uptime), edge case handling, and developer ergonomics. Pricing was transparent (2.9% + 30¢). Unit economics were excellent: Stripe takes a small percentage of every transaction globally; no CAC (word of mouth among developers), high retention (payments are mission-critical). They've been profitable since ~2015 despite raising only $1.3B (lean by comparison). Stripe is now valued at $95B+ privately and processes $20B+ annually in payment volume. The lesson: solve a real problem with extreme reliability + great developer experience + profitable unit economics = defensible empire."
+  },
+  {
+    "name": "FTX",
+    "outcome": "failed",
+    "industry": "crypto",
+    "founded": 2019,
+    "closed": 2022,
+    "funding": "$32B",
+    "summary": "Crypto derivatives exchange led by Sam Bankman-Fried. $32B valuation evaporated in days due to fraud, bad loans, and mismanagement.",
+    "causes": ["fraud", "governance", "founder-integrity"],
+    "lesson": "Hype ≠ reality. Unicorn valuations based on narrative + celebrity founder = risk. Board should have oversight.",
+    "source": "SEC + criminal proceedings",
+    "founders": ["Sam Bankman-Fried (CEO)", "Gary Wang (CTO)"],
+    "timeline": [
+      { "date": "2019", "event": "Founded by Sam Bankman-Fried and Gary Wang" },
+      { "date": "2022", "event": "Series C-1 at $32B valuation; Superbowl ad, celebrity endorsements" },
+      { "date": "2022", "event": "November: CoinDesk reports Alameda Research balance-sheet concerns" },
+      { "date": "2022", "event": "November 8: FTX collapse announced; $8B shortfall exposed" }
+    ],
+    "metrics": ["$32B valuation (fake)", "$8B customer funds missing", "$500M personal loans to SBF", "0 governance oversight"],
+    "narrative": "Sam Bankman-Fried founded FTX in 2019 as a crypto derivatives exchange. The platform was legit initially, but SBF's ego and access to capital corrupted the model. In 2022, FTX raised at a $32B valuation, making SBF a billionaire. He used his wealth to buy celebrity endorsements (Tom Brady, Stephen Curry), run $100M Superbowl ads, and donate politically. Behind the scenes, SBF was loaning FTX customer funds ($8B+) to his trading firm Alameda Research with zero risk controls. When crypto prices crashed in late 2022, Alameda's positions blew up. On November 8, 2022, SBF's empire collapsed. Customers couldn't withdraw funds. The SEC, CFTC, and DOJ opened investigations. SBF was arrested, convicted of fraud, and sentenced to prison. The lesson: hype and celebrity founder status mask real governance failures. Investors were dazzled by SBF's wealth and PR; they didn't ask hard questions about risk controls or loan-out policies. Valuations based on narrative, not unit economics or governance, are fragile."
+  }
+]
