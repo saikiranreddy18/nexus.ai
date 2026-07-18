@@ -83,7 +83,7 @@ const server = http.createServer(async (req, res) => {
         const answer = await callLLM(systemPrompt, userMessage);
         return sendJSON(res, 200, { query: q, answer, caseCount: cases.length, cases });
       } catch (e) {
-        return sendJSON(res, 500, { error: \LLM error: \\ });
+        return sendJSON(res, 500, { error: `LLM error: ${e.message}` });
       }
     }
 
@@ -99,8 +99,8 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(\Startup Oracle running on http://localhost:\\);
-  console.log(\  /api/stats — dataset info\);
-  console.log(\  /api/search?q=... — retrieval only\);
-  console.log(\  /api/advise?q=... — full analysis with LLM\);
+  console.log(`Startup Oracle running on http://localhost:${PORT}`);
+  console.log(`  /api/stats — dataset info`);
+  console.log(`  /api/search?q=... — retrieval only`);
+  console.log(`  /api/advise?q=... — full analysis with LLM`);
 });

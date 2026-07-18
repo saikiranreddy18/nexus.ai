@@ -1,10 +1,10 @@
-﻿import https from 'https';
+import https from 'https';
 import http from 'http';
+import fs from 'fs';
 
 // Simple .env parser — no dependencies
 function loadEnv(path) {
   try {
-    const fs = require('fs');
     const content = fs.readFileSync(path, 'utf8');
     const env = {};
     content.split('\n').forEach(line => {
@@ -35,7 +35,7 @@ async function callLLM(systemPrompt, userMessage, model = null) {
     return callNvidia(systemPrompt, userMessage, selectedModel);
   }
 
-  throw new Error('No LLM API key configured');
+  throw new Error('No LLM API key configured (OPENROUTER_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY, NVIDIA_API_KEY)');
 }
 
 async function callOpenRouter(systemPrompt, userMessage, model) {
@@ -46,7 +46,7 @@ async function callOpenRouter(systemPrompt, userMessage, model) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': \Bearer \{envConfig.OPENROUTER_API_KEY}\,
+      'Authorization': `Bearer ${envConfig.OPENROUTER_API_KEY}`,
       'HTTP-Referer': 'https://startup-oracle.local',
     }
   };
@@ -84,6 +84,7 @@ async function callAnthropic(systemPrompt, userMessage, model) {
   };
 
   const response = await httpRequest(options, payload);
+
   if (response.content && response.content[0] && response.content[0].text) {
     return response.content[0].text;
   }
@@ -98,7 +99,7 @@ async function callOpenAI(systemPrompt, userMessage, model) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': \Bearer \{envConfig.OPENAI_API_KEY}\,
+      'Authorization': `Bearer ${envConfig.OPENAI_API_KEY}`,
     }
   };
 
@@ -124,7 +125,7 @@ async function callNvidia(systemPrompt, userMessage, model) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': \Bearer \{envConfig.NVIDIA_API_KEY}\,
+      'Authorization': `Bearer ${envConfig.NVIDIA_API_KEY}`,
     }
   };
 
@@ -153,12 +154,12 @@ function httpRequest(options, payload) {
         try {
           const parsed = JSON.parse(data);
           if (res.statusCode >= 400) {
-            reject(new Error(\API error (\{res.statusCode}): \{data}\));
+            reject(new Error(`API error (${res.statusCode}): ${data}`));
           } else {
             resolve(parsed);
           }
         } catch (e) {
-          reject(new Error(\Failed to parse response: \{data}\));
+          reject(new Error(`Failed to parse response: ${data}`));
         }
       });
     });

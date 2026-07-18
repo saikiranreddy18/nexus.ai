@@ -1,4 +1,4 @@
-﻿import fs from 'fs';
+import fs from 'fs';
 
 let casesCache = null;
 
@@ -8,7 +8,7 @@ function loadCases() {
     const data = fs.readFileSync('./data/enriched-master.json', 'utf8');
     casesCache = JSON.parse(data);
     casesCache.forEach(c => {
-      c._tokens = new Set(tokenize(\\ \ \ \\));
+      c._tokens = new Set(tokenize(`${c.name} ${c.industry} ${c.summary} ${(c.causes || []).join(' ')}`));
     });
     return casesCache;
   } catch {
@@ -16,7 +16,7 @@ function loadCases() {
       const data = fs.readFileSync('./data/cases.json', 'utf8');
       casesCache = JSON.parse(data);
       casesCache.forEach(c => {
-        c._tokens = new Set(tokenize(\\ \ \ \\));
+        c._tokens = new Set(tokenize(`${c.name} ${c.industry} ${c.summary} ${(c.causes || []).join(' ')}`));
       });
       return casesCache;
     } catch {
