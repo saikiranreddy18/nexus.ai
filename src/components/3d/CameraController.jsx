@@ -4,14 +4,14 @@ import * as THREE from 'three'
 import { galaxyState, GALAXY_CENTER } from '../../state/galaxyStore'
 
 // Scroll-driven flight over the galaxy. Waypoints are [progress, x, y, z].
-// The galaxy disk sits in the XZ plane, so altitude (y) sets how edge-on
-// the view is; the path banks around the disk and returns to the opening shot.
+// The galaxy disk sits in the XZ plane, tilted at ~25° for immersive depth.
+// Camera path creates the sensation of flying through the galaxy as user scrolls.
 const WAYPOINTS = [
-  [0.0, 0, 7.5, 14],   // hero: elevated three-quarter view
-  [0.22, 5.5, 4.6, 11.5], // descend and bank right
-  [0.45, 9.5, 2.4, 5],  // skim low across the disk plane
-  [0.68, 4.5, 6.5, -8.5], // swing behind the galaxy
-  [1.0, 0, 8.5, 13.5], // final CTA: pull back to the portal view
+  [0.0, 0, 6.5, 15],   // hero: elevated view, far from galaxy
+  [0.22, 4.5, 5.2, 12], // descend and approach from side
+  [0.45, 8, 3.2, 6],    // skim low across the disk plane
+  [0.68, 5, 5.8, -7],   // swing around behind the galaxy
+  [1.0, 0, 7, 14],      // final: retreat to portal view
 ]
 
 function sampleWaypoints(p) {
@@ -27,10 +27,12 @@ function sampleWaypoints(p) {
   return WAYPOINTS[WAYPOINTS.length - 1].slice(1)
 }
 
-export default function CameraController({ reduced }) {
+export default function CameraController({ reduced, scrollShake = false }) {
   const { camera } = useThree()
   const mouse = useRef({ x: 0, y: 0 })
   const target = useRef(new THREE.Vector3())
+  const targetRotation = useRef(new THREE.Quaternion())
+  const currentRotation = useRef(new THREE.Quaternion())
 
   useFrame(({ pointer }) => {
     if (galaxyState.explore) {
@@ -53,12 +55,37 @@ export default function CameraController({ reduced }) {
     const p = max > 0 ? Math.min(1, window.scrollY / max) : 0
 
     const [x, y, z] = sampleWaypoints(p)
+
+    // Smooth mouse parallax (subtle)
     if (!reduced) {
-      mouse.current.x += (pointer.x - mouse.current.x) * 0.04
-      mouse.current.y += (pointer.y - mouse.current.y) * 0.04
+      mouse.current.x += (pointer.x - mouse.current.x) * 0.03
+      mouse.current.y += (pointer.y - mouse.current.y) * 0.03
     }
-    target.current.set(x + mouse.current.x * 0.9, y + mouse.current.y * 0.6, z)
-    camera.position.lerp(target.current, 0.055)
+
+    // Target camera position with very smooth easing
+    target.current.set(
+      x + mouse.current.x * 0.6,
+      y + mouse.current.y * 0.4,
+      z
+    )
+
+    // Ultra-smooth position lerp (very slow to feel floaty/traveling)
+    camera.position.lerp(target.current, 0.035)
+
+    // Smooth axis tilt based on scroll progress
+    // This creates the rotating/tilting effect as you scroll through the galaxy
+    const tiltX = 0.12 + p * 0.35 // Gradually tilt down as you scroll
+    const tiltY = p * 2.8 // Rotate around Y axis smoothly
+    const tiltZ = Math.sin(p * Math.PI) * 0.15 // Subtle rolling motion
+
+    // Create smooth rotation quaternion
+    const euler = new THREE.Euler(tiltX, tiltY, tiltZ, 'YXZ')
+    targetRotation.current.setFromEuler(euler)
+
+    // Smoothly interpolate camera rotation
+    currentRotation.current.slerp(targetRotation.current, 0.04)
+    camera.quaternion.copy(currentRotation.current)
+
     camera.lookAt(0, 0, 0)
   })
 

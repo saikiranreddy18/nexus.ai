@@ -11,7 +11,7 @@ import CameraController from './CameraController'
 //   calm   — prefers-reduced-motion: static composition, dpr 1.25
 const DPR = { full: 2, mobile: 1.5, calm: 1.25 }
 
-export default function Scene({ mode = 'full', descend = false }) {
+export default function Scene({ mode = 'full', descend = false, scrollShake = false }) {
   const wrapRef = useRef(null)
   const calm = mode === 'calm'
   const mobile = mode === 'mobile'
@@ -45,7 +45,7 @@ export default function Scene({ mode = 'full', descend = false }) {
           <ParticleField reduced={calm} mobile={mobile} />
           <Galaxy reduced={calm || mobile} spin={!calm} descend={descend} />
         </Suspense>
-        <CameraController reduced={calm} />
+        <CameraController reduced={calm} scrollShake={scrollShake} />
       </Canvas>
       {/* cinematic vignette */}
       <div
