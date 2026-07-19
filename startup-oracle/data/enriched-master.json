@@ -1351,6 +1351,23 @@
     "source": "TechCrunch, The Verge"
   },
   {
+    "name": "Anki (Cozmo/Vector)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": 2019,
+    "funding": "$182M",
+    "summary": "Robotics company behind Cozmo and Vector, small AI-powered companion robots with personality-driven interactions and cloud-based assistant features. Despite strong consumer reviews and hundreds of millions raised, Anki abruptly shut down in April 2019 after failing to close a final funding round.",
+    "causes": [
+      "capital-intensity",
+      "cash-burn",
+      "ran-out-of-money",
+      "unit-economics"
+    ],
+    "lesson": "Consumer robotics with expensive hardware BOMs and cloud AI backends need a much larger war chest and faster path to profitability than most investors expect.",
+    "source": "TechCrunch, IEEE Spectrum shutdown coverage April 2019"
+  },
+  {
     "name": "Anorak",
     "outcome": "failed",
     "industry": "insurance-tech",
@@ -1776,6 +1793,22 @@
     "source": "Radiology Business and industry coverage of early cloud imaging-AI platforms"
   },
   {
+    "name": "Arthur AI",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2018,
+    "closed": null,
+    "funding": "~$60M (Series A-C, including $58M Series C in 2021)",
+    "summary": "New York-based model monitoring and bias/explainability platform that has repeatedly repositioned itself — from fairness and explainability tooling, to general ML observability, to LLM evaluation, to an open-source 'Arthur Engine' in 2026 — without a large disclosed funding round since its 2021 Series C, a sign of prolonged difficulty finding a durable, fundable product-market fit as the category shifted rapidly under it.",
+    "causes": [
+      "pivot-failure",
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Repeated strategic repositioning in response to a fast-moving market (bias/XAI to MLOps to LLMOps) can signal an inability to commit to a defensible niche before better-capitalized, more focused competitors take the category.",
+    "source": "Crunchbase; Arthur AI product/blog history"
+  },
+  {
     "name": "Article One Partners",
     "outcome": "failed",
     "industry": "legal-tech-compliance",
@@ -1919,6 +1952,22 @@
     "source": "TechCrunch reporting on Assist's 2018 shutdown"
   },
   {
+    "name": "Assist (Assist.com)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2014,
+    "closed": 2016,
+    "funding": "$11.5M",
+    "summary": "Built a chatbot platform letting businesses create conversational assistants for tasks like ordering food or booking travel, marketed as a consumer-facing 'personal assistant of assistants.' Shut down in 2016 after concluding the standalone bot-marketplace model was not commercially viable and pivoted the team into an enterprise chatbot-building tool.",
+    "causes": [
+      "product-market-mismatch",
+      "pivot-failure",
+      "cash-burn"
+    ],
+    "lesson": "A platform betting on many third-party bots needs those bots to have retention on their own; aggregation alone doesn't create consumer demand.",
+    "source": "VentureBeat, TechCrunch 2016"
+  },
+  {
     "name": "Assist Inc.",
     "outcome": "failed",
     "industry": "ai-voice-speech",
@@ -1982,6 +2031,22 @@
     ],
     "lesson": "Taking an esports org public assumes recurring event and sponsorship revenue that can vanish overnight in a crisis.",
     "source": "news reports"
+  },
+  {
+    "name": "Astro (formerly Cue)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": 2019,
+    "funding": "$16M",
+    "summary": "Cue was a personal search/assistant app acquired by Apple in 2013 for talent; its team later relaunched as Astro, an AI-powered email triage app. Slack acquired Astro's team in 2018 and shut the product down the following year to fold ideas into Slack's own roadmap.",
+    "causes": [
+      "outcompeted",
+      "pivot-failure",
+      "product-market-mismatch"
+    ],
+    "lesson": "Repeated pivots (personal search to email AI) without a clear standalone business model often end in an acqui-hire rather than an independent outcome.",
+    "source": "TechCrunch acquisition coverage, Slack blog 2018"
   },
   {
     "name": "atai Life Sciences",
@@ -4274,22 +4339,6 @@
     ],
     "lesson": "A SPAC listing does not fix a fundamentally unprofitable bulk-goods logistics model.",
     "source": "Reuters/press coverage of Boxed's 2024 Chapter 11 filing"
-  },
-  {
-    "name": "Braintrust",
-    "outcome": "failed",
-    "industry": "b2b-marketplaces",
-    "founded": 2018,
-    "closed": null,
-    "funding": "~$45M raised plus token financing",
-    "summary": "Blockchain-token-based freelance talent marketplace whose BTRST token value collapsed and whose growth stalled well short of its ambitious projections after the broader crypto downturn.",
-    "causes": [
-      "market-timing",
-      "product-market-mismatch",
-      "governance"
-    ],
-    "lesson": "Tying a marketplace's core incentive mechanism to a volatile token adds a second, unrelated failure mode on top of normal marketplace risk.",
-    "source": "Crypto/tech press coverage of Braintrust's token and growth struggles"
   },
   {
     "name": "Branch Insurance",
@@ -6621,6 +6670,22 @@
     "source": "GeekWire coverage of Context Relevant's 2017 shutdown"
   },
   {
+    "name": "Context.ai",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": 2025,
+    "funding": "$3.5M seed (GV, Theory Ventures)",
+    "summary": "GV-backed startup building analytics and evaluation tooling to help companies understand how users interact with their LLM-powered products. After 'a few pivots' in its two years of operation, Context.ai was acquired by OpenAI in an acqui-hire in April 2025; the company wound down its own products and its co-founders joined OpenAI to work on model evaluation tooling internally.",
+    "causes": [
+      "pivot-failure",
+      "product-market-fit",
+      "outcompeted"
+    ],
+    "lesson": "An acqui-hire that shuts down the acquired product is a failure outcome for the independent business and its investors, even when it is a good outcome for the founding team personally.",
+    "source": "TechCrunch 'OpenAI hires team behind GV-backed AI eval platform Context.ai' (2025)"
+  },
+  {
     "name": "Continual",
     "outcome": "failed",
     "industry": "ai-data-infra",
@@ -7624,6 +7689,22 @@
     "source": "TechCrunch reporting on Daqri shutdown, 2019"
   },
   {
+    "name": "Dashbot",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2016,
+    "closed": 2022,
+    "funding": "$15.6M (Bessemer Venture Partners, ff Venture Capital)",
+    "summary": "San Francisco-based conversational analytics platform that tracked and analyzed chatbot and voice-assistant interactions, an early precursor to today's prompt/LLM observability category. Despite raising over $15M, Dashbot permanently ceased operations as the first-generation chatbot wave it depended on failed to reach the scale investors expected.",
+    "causes": [
+      "product-market-mismatch",
+      "market-timing",
+      "outcompeted"
+    ],
+    "lesson": "Building analytics infrastructure for a hyped-but-immature interaction paradigm (early chatbots) is risky — if the underlying application layer doesn't reach scale, the observability layer built on top of it dies with it.",
+    "source": "Crunchbase/Tracxn company status records"
+  },
+  {
     "name": "Data Capital Management",
     "outcome": "failed",
     "industry": "ai-finance",
@@ -7685,6 +7766,22 @@
     ],
     "lesson": "A large late-stage valuation built on the pre-LLM AutoML paradigm became a liability once the market's attention and budgets pivoted rapidly to generative AI infrastructure.",
     "source": "Reports on DataRobot layoffs and valuation decline, Forbes/TechCrunch 2022-2024"
+  },
+  {
+    "name": "DataScience.com",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2014,
+    "closed": 2018,
+    "funding": "~$12M (venture funding pre-acquisition)",
+    "summary": "Data-science collaboration and model workspace platform used by enterprise teams to build, track and monitor models. Acquired by Oracle in 2018 for an undisclosed sum; the DataScience.com brand and standalone product were subsequently discontinued as its capabilities were folded into (and eventually superseded by) Oracle's own cloud data-science and machine-learning services.",
+    "causes": [
+      "outcompeted",
+      "capital-intensity",
+      "enterprise-strategy"
+    ],
+    "lesson": "Being acquired by a hyperscaler is not the same as surviving: large acquirers frequently absorb the technology and sunset the independent product and brand within a few years.",
+    "source": "Oracle press release (2018); VentureBeat acquisition coverage"
   },
   {
     "name": "Daybreak Health",
@@ -8447,6 +8544,22 @@
     ],
     "lesson": "Optimizing prescription volume through algorithmic shortcuts in controlled-substance care invites criminal liability.",
     "source": "Department of Justice press release, Bloomberg"
+  },
+  {
+    "name": "Donna (OnTheGo Technologies)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2012,
+    "closed": 2015,
+    "funding": "$4.2M",
+    "summary": "Mobile AI personal assistant app ('Donna') that combined calendar, weather, and traffic data to proactively suggest when to leave for appointments. The app was discontinued around 2015 after failing to differentiate from free features being rolled into Google Now and native OS assistants.",
+    "causes": [
+      "outcompeted",
+      "market-timing",
+      "cash-burn"
+    ],
+    "lesson": "Predictive, context-aware assistant features are quickly commoditized once platform owners (Google, Apple) add them natively for free.",
+    "source": "Crunchbase, TechCrunch coverage 2012-2015"
   },
   {
     "name": "DoNotPay",
@@ -9223,6 +9336,21 @@
     "source": "DeFi post-mortem coverage of algorithmic stablecoin collapses, 2021"
   },
   {
+    "name": "Emu",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2011,
+    "closed": 2014,
+    "funding": "$3M",
+    "summary": "Messaging app with a built-in AI assistant that could parse conversations to auto-schedule events, set reminders, and book restaurants. Acquired by Google in 2014 primarily for talent; the standalone Emu app was shut down shortly after and its features never fully surfaced in a Google product.",
+    "causes": [
+      "governance",
+      "product-market-mismatch"
+    ],
+    "lesson": "An AI-assistant-inside-messaging concept can be ahead of its time; being acquired for the team doesn't guarantee the product vision survives.",
+    "source": "TechCrunch acquisition and shutdown coverage 2014"
+  },
+  {
     "name": "Encore Discovery Solutions",
     "outcome": "failed",
     "industry": "legal-tech-compliance",
@@ -9919,6 +10047,22 @@
     ],
     "lesson": "Micro-fulfillment robotics requires deep-pocketed grocery partners willing to commit capital for years before ROI — a startup betting its balance sheet on that adoption curve runs out of runway first.",
     "source": "Grocery Dive, trade press coverage of CommonSense Robotics/Fabric rebrand and later struggles, 2019-2023"
+  },
+  {
+    "name": "Facebook M",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2015,
+    "closed": 2018,
+    "funding": "N/A (internal Facebook product)",
+    "summary": "Facebook's ambitious human-assisted AI personal assistant embedded in Messenger, which relied heavily on paid human operators to complete tasks behind an AI facade. Facebook shut it down in January 2018 after concluding the human-labor cost model could never scale profitably.",
+    "causes": [
+      "unit-economics",
+      "capital-intensity",
+      "technology-failure"
+    ],
+    "lesson": "A 'Wizard of Oz' AI assistant that leans on human operators to mask model limitations is a research project, not a scalable product.",
+    "source": "Wired, TechCrunch shutdown coverage January 2018"
   },
   {
     "name": "FaceFirst",
@@ -11128,6 +11272,21 @@
     "source": "news reports"
   },
   {
+    "name": "Friend (AI necklace)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$2.5M+ (self-funded by founder)",
+    "summary": "Wearable AI companion necklace marketed by founder Avi Schiffmann, positioned as an always-listening personal AI friend. A large NYC subway ad campaign generated intense public backlash and mockery, and reviews highlighted a limited, often unsettling user experience, leaving the product's commercial viability in serious doubt.",
+    "causes": [
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Marketing spend can generate awareness, but an always-on AI companion device needs genuine emotional utility, not just a viral ad campaign, to convert curiosity into retention.",
+    "source": "New York Times, Business Insider coverage 2024-2025"
+  },
+  {
     "name": "Frontback",
     "outcome": "failed",
     "industry": "music-creative-tools",
@@ -12124,6 +12283,22 @@
     "source": "Google Daydream discontinuation reporting, 2019"
   },
   {
+    "name": "Google Duplex (Assistant Duplex)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2018,
+    "closed": 2022,
+    "funding": "N/A (internal Google product)",
+    "summary": "Google's celebrated AI feature that could autonomously make phone calls on a user's behalf to book restaurant reservations and check business hours, demoed with much fanfare at Google I/O 2018. Usage remained limited and the feature was quietly deprecated for consumer restaurant bookings by the early 2020s in favor of simpler automated systems.",
+    "causes": [
+      "product-market-mismatch",
+      "technology-failure",
+      "overexpansion"
+    ],
+    "lesson": "A technically dazzling AI demo doesn't guarantee real-world product-market fit; task-completion AI agents need far broader reliability than a curated demo suggests.",
+    "source": "The Verge, Google I/O coverage and later deprecation reports"
+  },
+  {
     "name": "Google Glass (consumer and enterprise editions)",
     "outcome": "failed",
     "industry": "vr-ar-metaverse",
@@ -12138,6 +12313,22 @@
     ],
     "lesson": "Wearable camera-equipped AR devices faced social and privacy backlash that even a full B2C-to-enterprise pivot could not fully overcome.",
     "source": "Google Glass Enterprise Edition discontinuation reporting, 2023"
+  },
+  {
+    "name": "Google Inbox",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2014,
+    "closed": 2019,
+    "funding": "N/A (internal Google product)",
+    "summary": "Google's smart-email product introduced AI-driven bundling, Smart Reply, and snooze features years ahead of mainstream Gmail. Despite a loyal power-user base, Google discontinued Inbox in 2019 to consolidate innovation back into Gmail.",
+    "causes": [
+      "overexpansion",
+      "governance",
+      "product-market-mismatch"
+    ],
+    "lesson": "Even well-loved, technically innovative products get killed when they fragment a parent company's core product strategy.",
+    "source": "Google official blog, TechCrunch 2018-2019"
   },
   {
     "name": "Google Jump",
@@ -13582,6 +13773,22 @@
     "source": "news reports"
   },
   {
+    "name": "Iguazio",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2014,
+    "closed": 2023,
+    "funding": "~$72-100M (Series A-B, Verizon Ventures, Samsung, Dell, Bosch)",
+    "summary": "Tel Aviv-based MLOps platform (feature store, model serving, and monitoring) for real-time AI applications. After raising roughly $72-100M across four rounds, Iguazio was acquired by McKinsey & Company in January 2023 for a reported $50M — a sale price below its total invested capital, making it a disappointing outcome for investors despite the acquisition headline.",
+    "causes": [
+      "cash-burn",
+      "capital-intensity",
+      "market-saturation"
+    ],
+    "lesson": "An acquisition is not automatically a 'win': when the sale price falls below cumulative funding raised, it signals the venture-scale bet did not pay off even if the team and technology found a home.",
+    "source": "TechCrunch; Calcalistech 'McKinsey acquiring Iguazio for $50 million' (2023)"
+  },
+  {
     "name": "Ike",
     "outcome": "failed",
     "industry": "transportation-mobility",
@@ -13855,6 +14062,23 @@
     ],
     "lesson": "Even massive war chests can't guarantee product-market fit against Big Tech competitors who can simply hire away the team.",
     "source": "Bloomberg, CNBC"
+  },
+  {
+    "name": "Inflection AI (Pi)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$1.525B",
+    "summary": "Built Pi, a warm, emotionally intelligent personal AI chatbot, and raised one of the largest seed-to-Series-A rounds in AI history from Microsoft, Nvidia, and Reid Hoffman. In 2024, Microsoft hired away CEO Mustafa Suleyman and most of the research team in a $650M licensing deal, leaving the original consumer chatbot business hollowed out despite the enormous funding.",
+    "causes": [
+      "unit-economics",
+      "governance",
+      "founder-conflict",
+      "capital-intensity"
+    ],
+    "lesson": "Massive funding for a consumer chatbot doesn't guarantee a standalone path to revenue; if unit economics don't materialize, even top investors will route the talent into an acquihire.",
+    "source": "Bloomberg, CNBC coverage of Microsoft-Inflection deal March 2024"
   },
   {
     "name": "InnovAge",
@@ -15499,6 +15723,22 @@
     "source": "Industry reporting, FTC actions against direct-response merchants using similar platforms"
   },
   {
+    "name": "Kono AI",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": 2020,
+    "funding": "$3M",
+    "summary": "AI meeting scheduling assistant for Slack and email that aimed to automate finding mutually available meeting times for teams. The startup ceased operations around 2020 after failing to differentiate from a growing wave of well-funded scheduling-bot competitors like x.ai and Clara.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn"
+    ],
+    "lesson": "Entering the scheduling-bot category late, without a unique integration or distribution advantage, left little room to compete against better-funded incumbents.",
+    "source": "Crunchbase, Product Hunt company records"
+  },
+  {
     "name": "Koru",
     "outcome": "failed",
     "industry": "ai-hr-recruiting",
@@ -16228,6 +16468,22 @@
     ],
     "lesson": "Building manufacturing capacity ahead of firm, funded customer orders is a dangerous bet in commercial EVs.",
     "source": "news reports"
+  },
+  {
+    "name": "Literal AI",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": 2025,
+    "funding": "Seed-stage funding (amount undisclosed)",
+    "summary": "Multi-modal LLM observability and evaluation platform built alongside the popular open-source Chainlit conversational-UI framework by the same team. Despite adoption from companies using Chainlit, Literal AI's team announced in 2025 that they were discontinuing the observability product (available only until October 31, 2025) after concluding they 'weren't able to differentiate enough' in a crowded market to build sustainable revenue.",
+    "causes": [
+      "market-saturation",
+      "product-market-fit",
+      "outcompeted"
+    ],
+    "lesson": "Having a popular open-source funnel product does not guarantee the paid observability layer built on top of it can differentiate in an increasingly commoditized LLM-observability market.",
+    "source": "Chainlit/Literal AI shutdown announcement (2025)"
   },
   {
     "name": "LittleThings",
@@ -18325,18 +18581,19 @@
   {
     "name": "Mycroft AI",
     "outcome": "failed",
-    "industry": "ai-voice-speech",
+    "industry": "ai-personal-assistants",
     "founded": 2015,
     "closed": 2023,
-    "funding": "$6M+ raised via crowdfunding and equity",
-    "summary": "Open-source voice assistant project aiming to offer a privacy-respecting alternative to Alexa and Google Assistant; struggled to reach sustainable revenue and the founder announced the company was ceasing operations in 2023.",
+    "funding": "$6.5M (crowdfunded + VC)",
+    "summary": "Open-source voice AI assistant positioned as a privacy-respecting alternative to Alexa and Google Assistant, sold via Kickstarter-funded smart speaker hardware. The company filed for bankruptcy in 2023 after failing to build a sustainable business around open-source hardware and software.",
     "causes": [
-      "ran-out-of-money",
       "unit-economics",
-      "outcompeted"
+      "outcompeted",
+      "market-saturation",
+      "ran-out-of-money"
     ],
-    "lesson": "Open-source idealism around a privacy-first voice assistant could not generate enough revenue to compete with free, subsidized offerings from Amazon and Google.",
-    "source": "Mycroft AI founder statement, Hackaday coverage"
+    "lesson": "Being 'the ethical alternative' to Big Tech assistants doesn't overcome the platform and voice-recognition quality gap that giants can fund from other revenue.",
+    "source": "Mycroft AI community announcement, Ars Technica 2023"
   },
   {
     "name": "MYnd Analytics (CNS Response)",
@@ -18910,6 +19167,22 @@
     ],
     "lesson": "An innovative video-news format still needs a sustainable distribution and revenue plan independent of a parent company's shifting strategic priorities.",
     "source": "news coverage"
+  },
+  {
+    "name": "Newton Mail (CloudMagic)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2011,
+    "closed": 2020,
+    "funding": "$2.1M",
+    "summary": "Rebranded from CloudMagic to Newton Mail, an AI-enhanced email client offering read receipts, smart notifications, and email insights via a paid subscription. Shut down in 2020 after failing to build a large enough paying subscriber base against free alternatives like Gmail and Outlook.",
+    "causes": [
+      "unit-economics",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "Charging a subscription for email client features that platform-native clients eventually offer for free is a losing long-term position.",
+    "source": "Newton Mail shutdown announcement, TechCrunch 2020"
   },
   {
     "name": "Nexage",
@@ -20317,6 +20590,22 @@
     "source": "Light Reading and Fierce Network coverage of Parallel Wireless financial distress, 2023"
   },
   {
+    "name": "ParallelM",
+    "outcome": "failed",
+    "industry": "ai-llmops-observability",
+    "founded": 2015,
+    "closed": 2019,
+    "funding": "Undisclosed venture funding (Series A/B)",
+    "summary": "Santa Clara startup that pioneered the 'MLOps' category with its MCenter platform for monitoring, managing and governing machine learning models in production on Kubernetes and Spark. Acquired by DataRobot in 2019 for undisclosed terms and folded into DataRobot's monitoring stack, ending its life as an independent company.",
+    "causes": [
+      "capital-intensity",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "Coining a category name (MLOps) doesn't guarantee capturing its value; larger platforms with bigger distribution can absorb the pioneer's technology and customers.",
+    "source": "DataRobot/BusinessWire acquisition announcement (2019)"
+  },
+  {
     "name": "Parature",
     "outcome": "failed",
     "industry": "customer-support-cx",
@@ -21615,6 +21904,22 @@
     "source": "Trade press coverage of Prescient/AASI restructuring"
   },
   {
+    "name": "Presence.ai",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": 2019,
+    "funding": "$2.5M",
+    "summary": "AI assistant startup building a voice- and text-based virtual assistant aimed at automating routine personal and business tasks for consumers. Shut down around 2019 after failing to gain meaningful traction against the rapid rise of native smartphone assistants and smart speaker ecosystems.",
+    "causes": [
+      "outcompeted",
+      "market-timing",
+      "cash-burn"
+    ],
+    "lesson": "A general-purpose consumer AI assistant startup competing directly against Siri, Alexa, and Google Assistant faces an almost impossible distribution disadvantage.",
+    "source": "Crunchbase, AngelList company records"
+  },
+  {
     "name": "Prime Trust",
     "outcome": "failed",
     "industry": "web3-blockchain",
@@ -22167,6 +22472,22 @@
     "source": "The Verge, Marques Brownlee review coverage, Android Authority investigation"
   },
   {
+    "name": "Rabbit Inc. (rabbit r1)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$30M+",
+    "summary": "Launched the r1, a standalone AI hardware device meant to act as a 'Large Action Model' personal assistant that could operate apps on the user's behalf. The $199 device shipped with severely limited functionality, drew widespread review criticism, and later suffered a security breach exposing API keys, leaving the company in serious reputational and financial distress.",
+    "causes": [
+      "technology-failure",
+      "product-market-mismatch",
+      "governance"
+    ],
+    "lesson": "Shipping ambitious 'action model' AI hardware before the underlying automation actually works reliably invites both consumer backlash and security exposure.",
+    "source": "The Verge, TechCrunch reviews and security disclosure coverage 2024"
+  },
+  {
     "name": "Radial",
     "outcome": "failed",
     "industry": "supply-chain-logistics",
@@ -22663,22 +22984,6 @@
     "source": "The Information, trade press layoff coverage"
   },
   {
-    "name": "Replika",
-    "outcome": "failed",
-    "industry": "generative-ai-creative",
-    "founded": 2017,
-    "closed": null,
-    "funding": "$70M+ raised (Series B)",
-    "summary": "AI companion app with generative avatar, voice, and roleplay features was ordered by Italy's data protection authority to stop processing user data in February 2023 over child-safety and emotional-manipulation concerns, then abruptly removed erotic roleplay features for existing paid subscribers, triggering a severe user backlash, documented mental-health harm reports, and a wave of subscription cancellations.",
-    "causes": [
-      "regulatory",
-      "governance",
-      "product-market-mismatch"
-    ],
-    "lesson": "Monetizing emotionally intimate generative content creates acute regulatory and ethical exposure; abrupt product changes to address that exposure can alienate the exact paying users the business depends on.",
-    "source": "Reuters, Vice, 2023"
-  },
-  {
     "name": "Replika (Luka Inc)",
     "outcome": "failed",
     "industry": "ai-foundation-models",
@@ -23006,6 +23311,22 @@
     ],
     "lesson": "Point-solution BI tools risk being folded into and eventually retired from a larger vendor's product suite.",
     "source": "OpenText Roambi end-of-life notice 2020"
+  },
+  {
+    "name": "Robin (Robin Labs)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2013,
+    "closed": 2018,
+    "funding": "$18M",
+    "summary": "Started as a general-purpose voice AI personal assistant app for drivers, then pivoted to licensing its conversational AI engine to automakers and telecoms. The startup wound down operations around 2018 after failing to convert pilots with major automotive partners into durable revenue.",
+    "causes": [
+      "pivot-failure",
+      "enterprise-strategy",
+      "cash-burn"
+    ],
+    "lesson": "Pivoting from consumer app to B2B licensing can work, but automotive sales cycles are long enough to bankrupt a startup waiting for its first real contract.",
+    "source": "Crunchbase, GeekWire coverage 2013-2017"
   },
   {
     "name": "Robin AI",
@@ -24270,6 +24591,22 @@
     ],
     "lesson": "Legacy ad-serving businesses can collapse quickly once buyers consolidate around fewer, more integrated platforms.",
     "source": "Reuters, AdExchanger Sizmek bankruptcy coverage 2019"
+  },
+  {
+    "name": "SkedPal",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2015,
+    "closed": 2023,
+    "funding": "Bootstrapped",
+    "summary": "AI-driven time-blocking calendar tool that automatically scheduled tasks into a user's calendar based on priorities and deadlines using a rules-based 'TimeMap' system. The bootstrapped product struggled to keep pace with newer AI-native competitors like Motion and Reclaim and was effectively discontinued by the mid-2020s.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "technology-failure"
+    ],
+    "lesson": "Rules-based scheduling automation without modern generative AI capabilities eventually loses to newer entrants that offer smoother, more adaptive automation.",
+    "source": "Product changelog, user community forum reports 2022-2023"
   },
   {
     "name": "Skillz",
@@ -25717,6 +26054,21 @@
     "source": "PV Magazine, SEC 8-K filings, EnergySage"
   },
   {
+    "name": "Sunrise Calendar",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2013,
+    "closed": 2016,
+    "funding": "$2.7M",
+    "summary": "Acclaimed smart calendar app with social and contextual integrations, acquired by Microsoft for roughly $100M in 2015. Microsoft shut the standalone app down in 2016 to fold its features into Outlook, disappointing its enthusiastic user base.",
+    "causes": [
+      "governance",
+      "overexpansion"
+    ],
+    "lesson": "Acquisitions by large incumbents often mean the acquired product's identity is absorbed and discontinued rather than scaled independently.",
+    "source": "Microsoft official blog 2015-2016, TechCrunch"
+  },
+  {
     "name": "Suntech Power",
     "outcome": "failed",
     "industry": "energy-tech",
@@ -26236,6 +26588,21 @@
     ],
     "lesson": "Entering an already-crowded feature category (email tracking/engagement) without a clear wedge left Tellwise unable to out-fund or out-differentiate better-capitalized peers.",
     "source": "Crunchbase"
+  },
+  {
+    "name": "Tempo AI (formerly Tempo Smart Calendar)",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2011,
+    "closed": 2015,
+    "funding": "$8M",
+    "summary": "Intelligent calendar app that auto-attached documents, contacts, and directions to meetings using AI. Acquired by Salesforce in 2015 primarily for its engineering team; the standalone consumer app was discontinued shortly after.",
+    "causes": [
+      "governance",
+      "pivot-failure"
+    ],
+    "lesson": "Consumer productivity apps with impressive tech but thin monetization often end their life as a talent acquisition rather than a standalone business.",
+    "source": "Salesforce press release 2015, TechCrunch"
   },
   {
     "name": "Tender Support",
@@ -26804,6 +27171,21 @@
     "source": "TechCrunch"
   },
   {
+    "name": "Timeful",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2013,
+    "closed": 2016,
+    "funding": "$5.3M",
+    "summary": "AI-driven scheduling app that intelligently found time for tasks and habits, co-founded by behavioral economist Dan Ariely. Acquired by Google in 2015; its intelligent-scheduling concepts were absorbed into Google Calendar's 'Goals' feature and the standalone app was shut down in 2016.",
+    "causes": [
+      "governance",
+      "overexpansion"
+    ],
+    "lesson": "Being acquired for your algorithm rather than your product means the brand and app usually disappear within a year or two.",
+    "source": "Google Calendar blog 2015, TechCrunch"
+  },
+  {
     "name": "TinderBox",
     "outcome": "failed",
     "industry": "ai-sales-tech",
@@ -27279,22 +27661,6 @@
     ],
     "lesson": "Free, mission-driven deepfake-detection and content-authenticity tools face a structural funding problem: the infrastructure costs of running detection/watermarking at scale are ongoing, but the 'crisis' driving urgency (an election cycle) is temporary, leaving no durable revenue model.",
     "source": "GeekWire"
-  },
-  {
-    "name": "TruEra",
-    "outcome": "failed",
-    "industry": "enterprise-ai-platforms",
-    "founded": 2018,
-    "closed": 2024,
-    "funding": "$45M raised",
-    "summary": "TruEra built an AI quality and observability platform for testing, monitoring and explaining machine-learning and LLM models, but shut down independent operations in 2024, with its technology and team acquired by Snowflake.",
-    "causes": [
-      "ran-out-of-money",
-      "outcompeted",
-      "market-saturation"
-    ],
-    "lesson": "As cloud data platforms (Snowflake, Databricks) built native AI-observability features, standalone monitoring startups faced shrinking independent market space.",
-    "source": "TechCrunch; VentureBeat"
   },
   {
     "name": "Trukkin",
@@ -29630,6 +29996,23 @@
     "source": "SEC filings"
   },
   {
+    "name": "x.ai",
+    "outcome": "failed",
+    "industry": "ai-personal-assistants",
+    "founded": 2014,
+    "closed": 2021,
+    "funding": "$44M",
+    "summary": "Built 'Amy Ingram,' an AI email-based scheduling assistant that negotiated meeting times via natural-language email exchanges. Despite years of development and heavy human-in-the-loop training data, the product never reached the reliability or margins needed to scale, and founder Dennis Mortensen shut it down in mid-2021.",
+    "causes": [
+      "unit-economics",
+      "product-market-mismatch",
+      "technology-failure",
+      "cash-burn"
+    ],
+    "lesson": "Natural-language scheduling looks simple to users but required so much hidden human labor to stay accurate that the unit economics never worked at scale.",
+    "source": "TechCrunch, Dennis Mortensen shutdown blog post (2021)"
+  },
+  {
     "name": "x.ai (Amy Ingram)",
     "outcome": "failed",
     "industry": "ai-agents-automation",
@@ -31490,6 +31873,21 @@
     "source": "Fierce Biotech coverage of Aitia's rebrand and funding (2021)"
   },
   {
+    "name": "Akiflow",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$1.5M",
+    "summary": "AI-assisted universal task manager that pulls tasks and events from email, Slack, and other tools into a single daily planning timeline. Grew a paying subscriber base as a lean, remote-first team without chasing large funding rounds.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "Modest funding paired with disciplined focus on a single 'unify your day' use case can sustain steady growth in the crowded task-management category.",
+    "source": "Company site, founder interviews 2021-2022"
+  },
+  {
     "name": "Akur8",
     "outcome": "success",
     "industry": "ai-insurance",
@@ -32133,6 +32531,21 @@
     "source": "Google Cloud blog, TechCrunch"
   },
   {
+    "name": "API.ai (Speaktoit)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$8M",
+    "summary": "Originally built the 'Assistant' personal AI app before pivoting its underlying NLU engine into API.ai, a developer platform for building conversational bots and assistants. Acquired by Google in 2016, rebranded as Dialogflow, and became a core building block of the Google Assistant ecosystem and enterprise chatbot market.",
+    "causes": [
+      "network-effects",
+      "product-market-fit"
+    ],
+    "lesson": "Pivoting from a consumer assistant app to licensing the underlying NLU platform to developers can unlock far larger distribution than the original product.",
+    "source": "Google Cloud blog, TechCrunch September 2016"
+  },
+  {
     "name": "Apollo.io",
     "outcome": "success",
     "industry": "ai-sales-tech",
@@ -32146,6 +32559,22 @@
     ],
     "lesson": "Bundling previously-separate point solutions (data + engagement + AI writing) at aggressive pricing let Apollo grow explosively against higher-priced incumbents.",
     "source": "TechCrunch, Forbes"
+  },
+  {
+    "name": "Aporia",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$30M total; acquired by Coralogix (~$50M, 2024)",
+    "summary": "Tel Aviv-based ML and LLM observability platform for monitoring, explaining and securing models in production, including guardrails for generative AI. Aporia was acquired by Israeli observability company Coralogix in December 2024 for approximately $50M, forming a new 'Coralogix AI' R&D center in Tel Aviv.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "timing"
+    ],
+    "lesson": "Consolidation between adjacent observability categories (infrastructure/log observability and AI/model observability) is a natural exit path as buyers seek to offer a single unified monitoring platform.",
+    "source": "Calcalistech Aporia acquisition coverage (2024)"
   },
   {
     "name": "Appian",
@@ -33227,6 +33656,21 @@
     "source": "Apple press release, Beats acquisition 2014"
   },
   {
+    "name": "Bee (Bee AI wearable)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$8M",
+    "summary": "Startup building an always-listening AI wearable bracelet that passively captures conversations to generate personal-assistant-style summaries, reminders, and to-dos. Acquired by Amazon in 2025 to bolster Amazon's own AI assistant and wearable ambitions, a successful early exit.",
+    "causes": [
+      "product-market-fit",
+      "network-effects"
+    ],
+    "lesson": "A small, focused team executing well on an always-on AI wearable can attract a major-platform acquisition even at an early stage, unlike less-differentiated hardware competitors.",
+    "source": "TechCrunch, Amazon acquisition announcement 2025"
+  },
+  {
     "name": "Beep Inc",
     "outcome": "success",
     "industry": "ai-autonomous-vehicles",
@@ -34041,6 +34485,21 @@
     "source": "PR Newswire, Digital Commerce 360, \"Lowe's Acquires Retail Analytics Platform From Boomerang Commerce\", 2019"
   },
   {
+    "name": "Boomerang for Gmail (Baydin)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$4.65M",
+    "summary": "Email productivity extension that added scheduled send, follow-up reminders, and later an AI writing assistant ('Respondable') that scored email tone and length. Continued operating for over a decade as a widely used Gmail and Outlook add-on with millions of users.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "Layering AI writing feedback onto an already-adopted email productivity tool extends the product's life without needing to build a whole new assistant category.",
+    "source": "Company blog, Crunchbase funding history"
+  },
+  {
     "name": "Boomtrain",
     "outcome": "success",
     "industry": "ai-marketing-content",
@@ -34115,6 +34574,21 @@
     "source": "CBRE press release on Bractlet acquisition 2022"
   },
   {
+    "name": "Braina (Brainasoft)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2011,
+    "closed": null,
+    "funding": "Bootstrapped",
+    "summary": "Windows-based AI personal assistant software offering voice control, dictation, and automation for desktop tasks, sold as a one-time or subscription license. Sustained a small but stable paying customer base for over a decade as an independent, self-funded software company.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "A narrowly-focused desktop AI assistant can survive for over a decade on a small, loyal paying customer base without ever raising outside capital.",
+    "source": "Company site, long-running product update history"
+  },
+  {
     "name": "Brainly",
     "outcome": "success",
     "industry": "ai-education",
@@ -34139,6 +34613,22 @@
       "enterprise-strategy"
     ],
     "lesson": "Long-running technical R&D in investigative analytics translated into durable enterprise and government demand well before generative AI made the category fashionable."
+  },
+  {
+    "name": "Braintrust",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$116M+ total, $800M valuation (2026 Series B)",
+    "summary": "Eval-first AI observability platform built by former Vercel/Segment/Zapier operators, letting engineering teams log LLM traces, run scored evaluation experiments, and monitor production AI quality. Braintrust raised a $36M Series A in October 2024 at roughly a $150M valuation, then an $80M Series B in February 2026 at approximately $800M, backed by a16z and prominent AI-company angels.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency",
+      "timing"
+    ],
+    "lesson": "Entering the market with a strong operator pedigree and an opinionated 'evals as the unit of work' philosophy helped Braintrust stand out quickly in an increasingly crowded observability field.",
+    "source": "Braintrust Series A/B announcements"
   },
   {
     "name": "Brave Health",
@@ -34689,6 +35179,22 @@
     ],
     "lesson": "Being first to define and brand a wellness category (mindfulness app) builds lasting consumer trust and pricing power.",
     "source": "press coverage"
+  },
+  {
+    "name": "CalypsoAI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$60M+ total (Series A-B)",
+    "summary": "AI security and validation platform (CalypsoAI Inference and Moderator) providing testing, red-teaming and runtime monitoring of LLMs for government and enterprise customers with strict compliance requirements. CalypsoAI has raised multiple rounds to expand from its original defense-sector roots into commercial AI governance.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "timing"
+    ],
+    "lesson": "Starting with high-trust, high-compliance government and defense customers built credibility that later transferred well into commercial enterprise AI security and evaluation sales.",
+    "source": "CalypsoAI funding/company profiles"
   },
   {
     "name": "Camouflaj",
@@ -35686,17 +36192,18 @@
   {
     "name": "Chili Piper",
     "outcome": "success",
-    "industry": "ai-sales-tech",
+    "industry": "ai-personal-assistants",
     "founded": 2016,
     "closed": null,
-    "funding": "$54.6M",
-    "summary": "Chili Piper built AI-assisted meeting scheduling and lead-routing software that instantly books qualified leads onto rep calendars, reducing speed-to-lead. The company has grown into a widely-adopted, profitable revenue-operations tool used by thousands of B2B sales teams.",
+    "funding": "$65.5M",
+    "summary": "AI-powered meeting and scheduling automation platform for revenue teams, instantly routing and booking inbound leads to the right sales rep's calendar. Grew into a profitable, well-funded scale-up serving thousands of enterprise customers, remaining independent and expanding its product suite.",
     "causes": [
       "product-market-fit",
+      "enterprise-strategy",
       "capital-efficiency"
     ],
-    "lesson": "Solving one precise, high-friction moment in the sales funnel (instant meeting booking) extremely well proved more durable than building a broad AI sales-assistant platform.",
-    "source": "TechCrunch, Crunchbase"
+    "lesson": "Anchoring an AI scheduling assistant to a clear revenue-generating workflow (inbound lead routing) makes ROI easy to prove to enterprise buyers.",
+    "source": "TechCrunch funding coverage, company press releases 2021-2022"
   },
   {
     "name": "Chime",
@@ -36095,6 +36602,21 @@
     ],
     "lesson": "Focusing relentlessly on the operational needs of an underserved segment built durable category leadership.",
     "source": "Crunchbase"
+  },
+  {
+    "name": "Clockwise",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$62.9M",
+    "summary": "AI calendar assistant for teams that automatically resolves scheduling conflicts and protects focus time across an organization's calendars. Raised a Series C and expanded into an AI-powered scheduling layer used by companies like Uber, Twitter, and Lyft, remaining an independent, growing company.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Targeting team-wide calendar optimization (not just individual scheduling) unlocks enterprise sales motion and larger contract values than consumer scheduling tools.",
+    "source": "TechCrunch Series C coverage 2021-2022"
   },
   {
     "name": "Cloud9 (esports org)",
@@ -37012,6 +37534,22 @@
     "source": "Company funding rounds; consumer tech press"
   },
   {
+    "name": "Credo AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$25M+ total (Series A-B)",
+    "summary": "AI governance platform helping enterprises evaluate, monitor and document AI systems for regulatory compliance (including the EU AI Act) alongside technical performance. Credo AI has raised multiple funding rounds to build out policy-to-technical-control mapping for regulated industries adopting generative AI.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "regulatory"
+    ],
+    "lesson": "Framing AI evaluation explicitly around emerging regulation (rather than just engineering quality) created a budget line item with compliance teams, not just ML engineering teams.",
+    "source": "Credo AI funding/company profiles"
+  },
+  {
     "name": "Cresta",
     "outcome": "success",
     "industry": "ai-agents-automation",
@@ -37150,6 +37688,21 @@
     ],
     "lesson": "Deep focus on an underserved but passionate fan community can build a defensible market position major studios eventually pay a premium to own.",
     "source": "news coverage"
+  },
+  {
+    "name": "Crystal Knows",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2015,
+    "closed": null,
+    "funding": "$9.3M",
+    "summary": "AI personality-insights assistant that analyzes public data and writing samples to help users communicate and write emails tailored to a recipient's DISC personality profile. Continued operating as an independent SaaS company serving sales and recruiting teams.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "A narrowly-scoped AI communication assistant (personality-aware writing) can find durable enterprise demand in sales and recruiting workflows.",
+    "source": "Company site, Crunchbase funding records"
   },
   {
     "name": "CS Disco (DISCO)",
@@ -37666,6 +38219,22 @@
     "causes": [],
     "lesson": "Committing to a genuinely novel technical architecture (deep learning applied to raw binaries, rather than sandboxing or heuristics) can sustain differentiation and continued funding even a decade after founding.",
     "source": "SecurityWeek, Deep Instinct funding coverage; company product announcements (2024)"
+  },
+  {
+    "name": "Deepchecks",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$14M seed; acquired by Check Point Software (2026)",
+    "summary": "Israeli startup providing an end-to-end platform (and popular open-source library) for testing, validating and monitoring ML and LLM applications from development through production. Deepchecks was acquired by Check Point Software Technologies in 2026, giving the cybersecurity giant AI validation and testing capabilities.",
+    "causes": [
+      "product-market-fit",
+      "network-effects",
+      "enterprise-strategy"
+    ],
+    "lesson": "An open-source validation library with strong developer adoption became the foundation for a defensible enterprise product that a larger security vendor wanted to own outright.",
+    "source": "Check Point-Deepchecks acquisition coverage (2026)"
   },
   {
     "name": "Deepfield",
@@ -38906,6 +39475,20 @@
     "source": "press coverage"
   },
   {
+    "name": "Edison Software (EasilyDo)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$18M",
+    "summary": "Began as EasilyDo, an AI personal assistant app that automated small tasks like flight check-in and package tracking, then pivoted into Edison Mail, an AI-powered email client with smart categorization and assistant features. Edison Mail remains a widely used consumer email app with millions of installs.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "A struggling general assistant app can find a sustainable second life by refocusing its AI capabilities on a single well-defined surface, like email.",
+    "source": "Company blog, TechCrunch coverage on Edison Mail growth"
+  },
+  {
     "name": "Effective Space Solutions",
     "outcome": "success",
     "industry": "space-tech",
@@ -39507,6 +40090,22 @@
     "source": "EVgo investor relations and annual reports"
   },
   {
+    "name": "Evidently AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2020,
+    "closed": null,
+    "funding": "Seed funding (undisclosed amount)",
+    "summary": "Open-source ML and LLM evaluation and monitoring library (and companion cloud platform) used to test data and model quality, detect drift, and evaluate LLM outputs. Evidently AI built one of the most widely adopted open-source evaluation libraries in the space, driving adoption of its hosted product.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A lean, capital-efficient open-source-first strategy let a small team compete for developer mindshare against far better-funded observability platforms.",
+    "source": "Evidently AI company/GitHub profile"
+  },
+  {
     "name": "Evolution Championship Series (EVO)",
     "outcome": "success",
     "industry": "esports-gaming-platforms",
@@ -39883,6 +40482,21 @@
     "source": "FBR Ltd ASX filings and investor announcements"
   },
   {
+    "name": "Fathom (Fathom Video)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$19M",
+    "summary": "Free AI meeting notetaker that records, transcribes, and auto-generates highlight summaries and CRM notes from video calls, growing rapidly through word of mouth and a generous free tier. Reached widespread adoption among sales and startup teams and raised a Series A on strong organic growth metrics.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A best-in-class free tier for a well-defined AI assistant task (meeting notes) can drive viral enterprise adoption that converts into a strong paid upgrade funnel.",
+    "source": "TechCrunch Series A coverage 2023"
+  },
+  {
     "name": "Featurespace",
     "outcome": "success",
     "industry": "ai-finance",
@@ -40190,6 +40804,21 @@
     ],
     "lesson": "Institutional-grade security infrastructure is a durable need independent of token price volatility.",
     "source": "Fireblocks Series E funding announcement, 2022"
+  },
+  {
+    "name": "Fireflies.ai",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$19M",
+    "summary": "AI meeting assistant that automatically records, transcribes, and summarizes video calls, integrating with Zoom, Google Meet, and CRM tools. Grew to serve millions of users across enterprise customers and remains an independent, profitable-trending company in the crowded AI notetaker space.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Deep CRM and calendar integrations differentiated Fireflies from generic transcription tools, turning a commodity capability into a sticky workflow product.",
+    "source": "Company funding announcements, TechCrunch coverage 2021-2023"
   },
   {
     "name": "First Solar",
@@ -40885,6 +41514,21 @@
     "source": "Kickstarter campaign records; company press coverage"
   },
   {
+    "name": "Fyle",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$25.4M",
+    "summary": "AI-powered expense management and receipt-tracking assistant that automatically extracts data from receipts and reconciles corporate card transactions in real time. Grew to serve mid-market businesses across the US and India, raising a Series B and remaining an independent, growing SaaS company.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Applying AI to eliminate a specific tedious personal-productivity task (expense reporting) for finance teams creates clear, provable ROI that sustains enterprise sales.",
+    "source": "Business Standard, Economic Times funding coverage 2021-2022"
+  },
+  {
     "name": "G2 Esports",
     "outcome": "success",
     "industry": "esports-gaming-platforms",
@@ -41276,6 +41920,22 @@
     ],
     "lesson": "High-quality original content production can command a premium acquisition price from platforms seeking exclusive catalog.",
     "source": "Spotify press release, Gimlet Media acquisition 2019"
+  },
+  {
+    "name": "Giskard",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2021,
+    "closed": null,
+    "funding": "€4.5M+ (seed plus Bpifrance/EIC grants)",
+    "summary": "Paris-based open-source AI testing and red-teaming framework used to evaluate ML and LLM models for quality, security and vulnerabilities before production, trusted by enterprises including AXA, BNP Paribas and Google DeepMind. Giskard combined a €1.5M seed round with €3M in Bpifrance and EU EIC Accelerator grants to grow its open-source library past 5,000 GitHub stars.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Blending venture funding with non-dilutive European public grants let Giskard extend its runway while building open-source credibility ahead of monetizing an enterprise compliance product.",
+    "source": "Giskard funding/knowledge base posts; TechCrunch coverage (2023)"
   },
   {
     "name": "GitHub",
@@ -42012,6 +42672,22 @@
     "source": "TechCrunch, company funding announcements"
   },
   {
+    "name": "Guardrails AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$7.5M seed (Zetta Venture Partners)",
+    "summary": "Open-source framework and platform for adding structural, type and quality guardrails to LLM outputs, backed by prominent AI angels including Ian Goodfellow. Guardrails AI raised a $7.5M seed round in early 2024 led by Zetta Venture Partners to grow its open-source guardrails ecosystem into an enterprise product.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "timing"
+    ],
+    "lesson": "Positioning at the intersection of evaluation and runtime safety (guardrails, not just after-the-fact monitoring) tapped into growing enterprise demand for preventing bad LLM outputs, not just detecting them.",
+    "source": "Guardrails AI seed round coverage (2024)"
+  },
+  {
     "name": "Guavus",
     "outcome": "success",
     "industry": "ai-telecom-networking",
@@ -42475,6 +43151,22 @@
     "source": "news reports"
   },
   {
+    "name": "Helicone",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "Seed funding (Y Combinator W23)",
+    "summary": "Open-source LLM observability and AI gateway platform requiring just one line of code to monitor cost, usage and performance across 100+ model providers. Since its YC W23 batch, Helicone has processed billions of requests and trillions of tokens for customers ranging from startups to Fortune 500 companies while staying true to an open-source, Apache-licensed model.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Radical simplicity of integration ('one line of code') removed the single biggest adoption barrier for observability tools and drove organic, developer-led growth.",
+    "source": "Helicone GitHub/YC company page"
+  },
+  {
     "name": "HelloFresh",
     "outcome": "success",
     "industry": "ecommerce",
@@ -42579,6 +43271,22 @@
     ],
     "lesson": "Structuring revenue-share deals with authors and publishers up front addressed the IP-rights objection that has stalled many generative fan-fiction products before they could launch.",
     "source": "Variety, 2025 (variety.com/2025/gaming/news/hidden-door-ai-role-playing-fan-fiction-game-platform-1236488265)"
+  },
+  {
+    "name": "HiddenLayer",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$50M+ total (Series A, M12, Booz Allen Ventures)",
+    "summary": "AI/ML security platform (MLDetect and AISec Platform) providing detection, monitoring and evaluation of adversarial attacks against machine learning and LLM systems, backed by Microsoft's M12 venture fund. HiddenLayer scaled quickly to serve large enterprise and government customers securing production AI systems.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "timing"
+    ],
+    "lesson": "Backing from strategic investors like Microsoft's M12 provided both capital and enterprise credibility that accelerated adoption in security-conscious industries.",
+    "source": "HiddenLayer Series A funding coverage"
   },
   {
     "name": "HighQ",
@@ -42730,6 +43438,22 @@
     "source": "TechCrunch/Bloomberg, 2021 and 2023-2024"
   },
   {
+    "name": "Holistic AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$21.5M+ Series A",
+    "summary": "London-based AI governance, risk and compliance platform for auditing, monitoring and evaluating AI and LLM systems against bias, safety and regulatory requirements. Holistic AI raised a Series A round in 2024 to expand internationally as AI regulation (EU AI Act, US state laws) accelerated enterprise demand for governance tooling.",
+    "causes": [
+      "product-market-fit",
+      "regulatory",
+      "enterprise-strategy"
+    ],
+    "lesson": "Timing a governance-focused evaluation product to arrive just as binding AI regulation took effect in major markets turned compliance risk into a reliable enterprise sales driver.",
+    "source": "Holistic AI Series A coverage (2024)"
+  },
+  {
     "name": "Holvi",
     "outcome": "success",
     "industry": "neobank-banking-tech",
@@ -42864,6 +43588,22 @@
     ],
     "lesson": "Software serving real estate owners' capital project oversight needs can be a strategic fit for large real-estate services firms.",
     "source": "JLL press release on Honest Buildings acquisition 2019"
+  },
+  {
+    "name": "HoneyHive",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$7.4M total (Seed, Insight Partners)",
+    "summary": "New York-based AI agent observability and evaluation platform helping teams deploy reliable agents to production, with requests logged through the platform growing over 50x in 2024. HoneyHive raised $7.4M across pre-seed and seed rounds led by Insight Partners and Zero Prime Ventures.",
+    "causes": [
+      "product-market-fit",
+      "timing",
+      "capital-efficiency"
+    ],
+    "lesson": "Focusing early on the harder, emerging problem of agent (not just single-call LLM) observability positioned HoneyHive ahead of the market's shift toward agentic AI.",
+    "source": "PRNewswire HoneyHive funding announcement (2025)"
   },
   {
     "name": "Honor",
@@ -43400,21 +44140,6 @@
     ],
     "lesson": "Early, sustained investment in Mandarin-specific speech data and government/education partnerships built a moat that Western competitors could not easily replicate in China.",
     "source": "SZSE filings, company reporting"
-  },
-  {
-    "name": "Iguazio",
-    "outcome": "success",
-    "industry": "enterprise-ai-platforms",
-    "founded": 2014,
-    "closed": null,
-    "funding": "$127M raised pre-acquisition; acquired by McKinsey & Company (2023)",
-    "summary": "Israeli startup Iguazio built an enterprise MLOps platform for automating the deployment and management of machine-learning pipelines at scale, and was acquired by consulting giant McKinsey in 2023 to bolster its QuantumBlack AI practice.",
-    "causes": [
-      "enterprise-strategy",
-      "timing"
-    ],
-    "lesson": "MLOps platforms with strong pipeline-automation technology can be valuable acquisitions for consulting firms building out AI delivery capabilities.",
-    "source": "TechCrunch; McKinsey press releases"
   },
   {
     "name": "Iktos",
@@ -45102,17 +45827,32 @@
   {
     "name": "Krisp",
     "outcome": "success",
-    "industry": "ai-voice-speech",
+    "industry": "ai-personal-assistants",
     "founded": 2017,
     "closed": null,
-    "funding": "$12M+ raised",
-    "summary": "AI-powered noise cancellation and voice-clarity software for calls and meetings, later expanding into accent conversion and voice analytics for contact centers.",
+    "funding": "$14.8M",
+    "summary": "AI-powered background noise and voice isolation assistant for calls and meetings, later expanding into AI meeting notes and accent conversion features to become a broader personal meeting assistant. Reached profitability and tens of millions of users, remaining an independent, capital-efficient company.",
     "causes": [
       "product-market-fit",
-      "timing"
+      "capital-efficiency"
     ],
-    "lesson": "A single, sharply defined pain point (background noise on calls) amplified by pandemic-era remote work created a durable SaaS business.",
-    "source": "Crunchbase, TechCrunch"
+    "lesson": "Solving one universally painful problem extremely well (noise cancellation) built enough trust and distribution to expand into an adjacent AI meeting assistant product line profitably.",
+    "source": "Company site, TechCrunch funding coverage 2021"
+  },
+  {
+    "name": "Kronologic",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$25.8M",
+    "summary": "AI scheduling assistant for B2B sales teams that automatically books and manages meetings from CRM signals to maximize pipeline conversion. Raised a Series A and continues to operate as a revenue-operations-focused scheduling AI vendor.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Tying an AI assistant's value directly to a measurable revenue metric (meetings booked, pipeline conversion) makes enterprise budget approval far easier.",
+    "source": "Business Wire funding announcement, Crunchbase 2021"
   },
   {
     "name": "Krux",
@@ -45203,6 +45943,22 @@
     "source": "news reports"
   },
   {
+    "name": "Lakera",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$20M+ total (Series A)",
+    "summary": "Zurich-based AI security platform (Lakera Guard) specializing in real-time detection of prompt injection, data leakage and other LLM-specific vulnerabilities, alongside the widely played open-source 'Gandalf' prompt-injection game used to crowdsource attack data. Lakera raised a Series A round in 2024 to expand its enterprise LLM security and evaluation product.",
+    "causes": [
+      "product-market-fit",
+      "network-effects",
+      "timing"
+    ],
+    "lesson": "A viral, gamified open project (Gandalf) turned into both a marketing engine and a genuine data-collection mechanism for improving the core detection product — a rare case of community engagement directly strengthening the paid offering.",
+    "source": "Lakera Series A funding coverage (2024)"
+  },
+  {
     "name": "Lambda Labs",
     "outcome": "success",
     "industry": "ai-data-infra",
@@ -45274,6 +46030,38 @@
     ],
     "lesson": "Owning the developer-tooling layer of a new technology wave (agent orchestration) can convert open-source ubiquity into a monetizable platform business.",
     "source": "press coverage, TechCrunch"
+  },
+  {
+    "name": "LangChain (LangSmith)",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$135M+ total, ~$1.25B valuation (2025 Series B)",
+    "summary": "Creator of the widely used LangChain framework and its companion LangSmith platform for tracing, evaluating and monitoring LLM applications and agents in production. LangChain converted its enormous open-source developer base into a paid observability/evaluation product, raising a Series B in 2025 at roughly a $1.25B valuation.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "An open-source framework with massive developer adoption can be a powerful, low-cost distribution channel for a paid observability layer, converting community goodwill directly into enterprise revenue.",
+    "source": "LangChain Series B coverage (2025)"
+  },
+  {
+    "name": "Langfuse",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$4M seed (Lightspeed, YC)",
+    "summary": "Open-source LLM engineering platform providing observability, evaluation, prompt management and datasets, built by a Y Combinator W23 team. After pivoting during its YC batch, Langfuse raised a $4M seed round from Lightspeed Venture Partners in late 2023 and became one of the most widely deployed open-source LLM observability tools.",
+    "causes": [
+      "network-effects",
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A willingness to pivot quickly during YC based on user feedback, combined with a genuinely open-source-first product, built rapid developer trust and adoption in a crowded field.",
+    "source": "Langfuse seed round announcement; PostHog spotlight interview"
   },
   {
     "name": "LangSmith (LangChain)",
@@ -45643,6 +46431,21 @@
       "enterprise-strategy"
     ],
     "lesson": "Specializing contract-extraction AI for a single vertical (commercial real estate leases) created a clear strategic fit with a dominant real estate software platform looking to add AI."
+  },
+  {
+    "name": "Levity",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$8.4M",
+    "summary": "No-code AI automation assistant platform that lets small businesses build custom AI workflows for classifying emails, documents, and tickets without writing code. Continued operating and growing its customer base as a Berlin-based automation SaaS company targeting SMBs.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A no-code AI assistant builder aimed squarely at SMBs (rather than trying to serve enterprise or consumer markets) found a defensible, underserved niche.",
+    "source": "Company site, EU-Startups funding coverage 2021-2022"
   },
   {
     "name": "Lex Machina",
@@ -46716,6 +47519,20 @@
     "source": "Crunchbase"
   },
   {
+    "name": "Mem (Mem Labs)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$27.5M",
+    "summary": "AI-powered note-taking and personal knowledge management app that automatically organizes and surfaces relevant notes without manual folders, backed by OpenAI's startup fund. Rebuilt around 'Mem 2.0,' an AI assistant chat interface over the user's notes, and continues to operate with an active subscriber base.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "Applying generative AI to make existing note-taking behavior smarter (auto-organization, chat-based recall) can carve out a defensible niche against Notion and Evernote.",
+    "source": "TechCrunch funding coverage, company blog 2021-2023"
+  },
+  {
     "name": "Mendix",
     "outcome": "success",
     "industry": "nocode-data-infra",
@@ -47499,6 +48316,20 @@
     "source": "TechCrunch, Inside HPC & AI News, Mostly AI press releases"
   },
   {
+    "name": "Motion (Ultradox / Motion App)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$46M",
+    "summary": "AI-powered calendar and task manager that automatically plans a user's day by prioritizing and rescheduling tasks around meetings, targeting professionals and small teams. Grew to a meaningful subscription business and closed a Series B, expanding into project and team management features.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "Automating the tedious daily task of re-prioritizing a calendar around shifting meetings is a narrow but valuable enough job to sustain a growing subscription business.",
+    "source": "TechCrunch funding coverage, company site 2022-2023"
+  },
+  {
     "name": "Motivate",
     "outcome": "success",
     "industry": "transportation-mobility",
@@ -47948,6 +48779,22 @@
     "lesson": "Repositioning an older rules-based automation platform as the governance and compliance layer for newer generative AI tools let a decade-plus-old company stay relevant rather than being displaced by LLM-native entrants."
   },
   {
+    "name": "Neptune.ai",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$25M+ total (seed/Series A)",
+    "summary": "Poland-founded ML experiment tracking and model monitoring platform used by ML research and engineering teams, later adding LLM fine-tuning and evaluation tracking. Neptune.ai has grown steadily as a lean, capital-efficient competitor in the crowded ML/LLM observability space.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit",
+      "timing"
+    ],
+    "lesson": "A capital-efficient, product-led growth strategy allowed a European team to compete with better-funded US rivals by staying tightly focused on research and ML-engineering workflows.",
+    "source": "Neptune.ai company/funding profiles"
+  },
+  {
     "name": "Nest",
     "outcome": "success",
     "industry": "hardware-cleantech",
@@ -48325,6 +49172,21 @@
     ],
     "lesson": "Combining flexible no-code data structures with strong design and virality can drive rapid bottoms-up enterprise adoption.",
     "source": "Notion funding round coverage 2021"
+  },
+  {
+    "name": "Notion AI",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$343M (Notion total)",
+    "summary": "Notion, the all-in-one workspace app, launched Notion AI in 2023 as a writing, summarization, and Q&A assistant embedded directly into user workspaces. The AI add-on became a significant revenue driver on top of Notion's broader productivity platform, which reached a $10B valuation.",
+    "causes": [
+      "product-market-fit",
+      "network-effects"
+    ],
+    "lesson": "Bundling an AI assistant into an already-sticky productivity platform with an existing user base is far less risky than launching a standalone AI assistant product.",
+    "source": "Notion official blog, Forbes valuation coverage 2023-2024"
   },
   {
     "name": "NowThis",
@@ -48882,6 +49744,22 @@
     ],
     "lesson": "Insurtechs don't have to bypass agents to win; building better technology for the agent channel can be just as effective.",
     "source": "news reports"
+  },
+  {
+    "name": "OpenPipe",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "~$7M seed (Y Combinator)",
+    "summary": "Y Combinator-backed platform for capturing production LLM data, fine-tuning smaller specialized models, and evaluating them against larger general-purpose models to cut cost and latency. OpenPipe combined observability (capturing real production traffic) with evaluation and fine-tuning into a single workflow for engineering teams optimizing LLM costs.",
+    "causes": [
+      "product-market-fit",
+      "timing",
+      "capital-efficiency"
+    ],
+    "lesson": "Tying evaluation directly to a clear cost-saving outcome (replacing expensive frontier models with cheaper fine-tuned ones, proven via evals) gave OpenPipe an easy, quantifiable ROI pitch to engineering buyers.",
+    "source": "OpenPipe YC company profile"
   },
   {
     "name": "OpenSea",
@@ -49597,6 +50475,22 @@
     "source": "news coverage"
   },
   {
+    "name": "Patronus AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$70M total (Series A-B)",
+    "summary": "Automated LLM evaluation and security platform founded by former Meta ML researchers, detecting hallucinations, generating adversarial test cases and benchmarking model performance for enterprise teams. Patronus AI raised a $17M Series A in May 2024 and a $50M Series B in June 2026, expanding from evaluation into AI agent simulation infrastructure.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "timing"
+    ],
+    "lesson": "Strong founder pedigree from leading AI labs, combined with a laser focus on the concrete, expensive problem of catching LLM mistakes before production, drove fast follow-on fundraising.",
+    "source": "Patronus AI Series A/B press releases"
+  },
+  {
     "name": "PatternEx",
     "outcome": "success",
     "industry": "ai-cybersecurity",
@@ -49902,6 +50796,20 @@
     ],
     "lesson": "Personalized-nutrition startups that build genuine subscription retention become attractive acquisition targets for legacy nutrition companies.",
     "source": "Nestlé press release, Food Navigator"
+  },
+  {
+    "name": "Personal AI",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$8.3M",
+    "summary": "Platform letting individuals train a private AI model on their own messages, notes, and communications to create a personalized digital memory and writing assistant. Continued operating with a niche but loyal user base focused on personal knowledge continuity and communication augmentation.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "A highly personalized, privacy-forward AI memory assistant can sustain a smaller but dedicated market even without chasing mass-market scale.",
+    "source": "Company site, Forbes feature coverage 2021-2022"
   },
   {
     "name": "Personetics",
@@ -50617,6 +51525,22 @@
     "source": "CNBC, PepsiCo press release"
   },
   {
+    "name": "Portkey",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$18M+ total (Seed + Series A, Lightspeed, Elevation Capital)",
+    "summary": "AI gateway and control-plane platform providing observability, guardrails, reliability and cost governance across 250+ LLM providers, managing over $180M in annualized LLM spend for tens of thousands of organizations. Portkey raised a $3M seed in 2023 and a $15M Series A in 2026 to expand its enterprise AI control plane.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "network-effects"
+    ],
+    "lesson": "Sitting in the request path as a gateway (not just a passive logging layer) let Portkey capture governance, cost-control and reliability value that pure observability dashboards could not.",
+    "source": "Portkey Series A press release (2026)"
+  },
+  {
     "name": "Poshmark",
     "outcome": "success",
     "industry": "beauty-fashion-tech",
@@ -50887,6 +51811,22 @@
     ],
     "lesson": "Aggregating carrier and shipment data across every transportation mode creates network effects that make a visibility platform more valuable (and defensible) as it scales, supporting a premium valuation through a SaaS downturn.",
     "source": "project44 press releases, FreightWaves (2021-2023)"
+  },
+  {
+    "name": "PromptLayer",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2021,
+    "closed": null,
+    "funding": "~$10M total (seed rounds)",
+    "summary": "New York-based prompt management, evaluation and observability platform (one of the earliest dedicated 'prompt engineering' tools) letting technical and non-technical teams log, version and collaborate on LLM prompts. PromptLayer raised a $4.8M seed round and an additional $5M seed round in early 2025 as it expanded into agent observability.",
+    "causes": [
+      "product-market-fit",
+      "timing",
+      "capital-efficiency"
+    ],
+    "lesson": "Being an early mover in prompt versioning and logging (before 'LLM observability' was a defined category) built lasting brand recognition even as larger, better-funded competitors entered later.",
+    "source": "PromptLayer blog fundraising announcements"
   },
   {
     "name": "Proofpoint",
@@ -51451,6 +52391,21 @@
     "lesson": "Being an early cognitive-computing vendor to Big Law made RAVN a natural acquisition for a document management incumbent (iManage) that needed AI capability fast rather than building it internally."
   },
   {
+    "name": "Read AI",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$81M",
+    "summary": "AI meeting, email, and messaging assistant that analyzes tone, engagement, and generates automated summaries across Zoom, Slack, and email. Raised a large Series B in 2024 at a reported $1B+ valuation, extending beyond meetings into broader workplace communication analysis.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Expanding an AI meeting assistant's scope into adjacent communication channels (email, Slack) can command outsized valuations if enterprise engagement metrics are strong.",
+    "source": "TechCrunch Series B coverage 2024"
+  },
+  {
     "name": "Ready At Dawn",
     "outcome": "success",
     "industry": "vr-ar-metaverse",
@@ -51566,6 +52521,21 @@
     ],
     "lesson": "Building a social platform across VR and non-VR devices simultaneously widens the addressable audience beyond headset owners alone.",
     "source": "Rec Room funding round coverage, 2022"
+  },
+  {
+    "name": "Reclaim.ai",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$13.5M",
+    "summary": "AI scheduling assistant that automatically finds time for tasks, habits, and breaks within a user's existing calendar, integrating deeply with Google Calendar. Acquired by Dropbox in 2024 to be integrated into Dropbox's Dash AI-powered workspace product, a successful venture-backed exit.",
+    "causes": [
+      "product-market-fit",
+      "network-effects"
+    ],
+    "lesson": "A well-scoped calendar-optimization AI assistant with strong integration depth can become an attractive acquisition target for a larger productivity platform.",
+    "source": "TechCrunch, Dropbox official acquisition announcement April 2024"
   },
   {
     "name": "Recode/Re/code",
@@ -52037,6 +53007,21 @@
     "source": "Replicate Series B announcement, 2023"
   },
   {
+    "name": "Replika",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$70M+",
+    "summary": "AI companion chatbot app letting users build a personalized, emotionally responsive virtual friend/partner, reaching tens of millions of downloads. Despite controversy (including an Italian regulatory ban in 2023 over child-safety concerns and a 2023 product change that upset long-time users), the company has continued operating and monetizing via subscriptions.",
+    "causes": [
+      "product-market-fit",
+      "regulatory"
+    ],
+    "lesson": "AI companion products can sustain a large paying user base even through public controversy, provided the core emotional-connection value proposition remains intact.",
+    "source": "Reuters, TechCrunch coverage of Italy ban and Replika operations 2023"
+  },
+  {
     "name": "Replit",
     "outcome": "success",
     "industry": "ai-coding-tools",
@@ -52286,6 +53271,21 @@
     ],
     "lesson": "Bundling many financial services into one app increases engagement and monetization per user beyond a single-product neobank.",
     "source": "Company statements"
+  },
+  {
+    "name": "Rewind AI (Limitless)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$33M+",
+    "summary": "Originally a Mac app that recorded and made searchable everything a user saw, said, and heard, giving an AI assistant perfect personal memory. Rebranded to Limitless in 2024, expanding into a wearable pendant device, and continues operating with venture backing and an active product roadmap.",
+    "causes": [
+      "product-market-fit",
+      "pivot-failure"
+    ],
+    "lesson": "A 'personal memory' AI assistant concept can extend from software into hardware if the core value proposition (perfect recall, searchable context) resonates strongly enough with users.",
+    "source": "TechCrunch, company rebrand announcement 2024"
   },
   {
     "name": "Rewire (formerly Naaru AI)",
@@ -53104,6 +54104,21 @@
     "source": "Sana Labs Series B/C funding announcements, TechCrunch coverage"
   },
   {
+    "name": "SaneBox",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$1.1M (largely bootstrapped)",
+    "summary": "AI-driven email filtering assistant that automatically sorts unimportant email out of the inbox and offers smart reminders (SaneLater, SaneBlackHole). Remained a profitable, bootstrapped subscription business for over a decade, proving durability without large venture funding.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "A narrow, well-executed AI email feature can sustain a long-lived, profitable subscription business without chasing venture-scale growth.",
+    "source": "Company website, Indie Hackers profile"
+  },
+  {
     "name": "Sanvello Health",
     "outcome": "success",
     "industry": "mental-health-tech",
@@ -53516,16 +54531,16 @@
   {
     "name": "Semantic Machines",
     "outcome": "success",
-    "industry": "ai-voice-speech",
+    "industry": "ai-personal-assistants",
     "founded": 2014,
     "closed": null,
-    "funding": "$20.9M raised before acquisition; acquired by Microsoft (2018)",
-    "summary": "Conversational AI startup building more natural, adaptive dialogue systems for voice assistants; acquired by Microsoft in 2018 to improve Cortana and enterprise voice products.",
+    "funding": "$20.9M",
+    "summary": "Conversational AI startup founded by speech-recognition veterans (including a Nuance co-founder) building a next-generation dialogue engine for personal assistants. Acquired by Microsoft in 2018 for an undisclosed sum (reported well above its raised capital) and integrated into Cortana and Microsoft's broader conversational AI stack.",
     "causes": [
-      "product-market-fit"
+      "network-effects"
     ],
-    "lesson": "Novel dialogue-management research aimed squarely at making voice assistants feel more conversational attracted strategic buyers racing to improve assistant quality.",
-    "source": "Microsoft blog, TechCrunch"
+    "lesson": "Deep technical differentiation in a hard subfield (multi-turn dialogue understanding) can produce a strong acquisition exit even in a crowded assistant market.",
+    "source": "Microsoft official blog, TechCrunch May 2018"
   },
   {
     "name": "Semios",
@@ -53832,6 +54847,20 @@
     ],
     "lesson": "Location-based loyalty apps can achieve an international strategic exit if they demonstrate durable engagement metrics.",
     "source": "SK Planet acquisition announcement, 2015"
+  },
+  {
+    "name": "Shortwave",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$16.3M",
+    "summary": "AI-powered email client built by former Google Inbox engineers, offering AI search, auto-summarization, and an AI assistant for triaging and drafting email. Continued operating and iterating with generative AI features after Google's discontinuation of Inbox left a gap in the smart-email market.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "When a beloved product (Google Inbox) is discontinued by its parent, its former team can rebuild a superior AI-native version as an independent company.",
+    "source": "TechCrunch launch and funding coverage 2021-2023"
   },
   {
     "name": "Sierra",
@@ -54845,6 +55874,21 @@
     "source": "NASA/SpaceNews"
   },
   {
+    "name": "Speaktoit (Assistant.ai)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$8M",
+    "summary": "Built one of the earliest cross-platform AI personal assistant apps ('Assistant'), then developed the underlying NLU engine that became API.ai. The company's technology was acquired by Google in 2016 and became Dialogflow, a widely used conversational AI development platform.",
+    "causes": [
+      "network-effects",
+      "product-market-fit"
+    ],
+    "lesson": "An early consumer assistant app that struggles for mainstream traction can still generate enormous value if the underlying NLU engine is strong enough to become platform infrastructure.",
+    "source": "TechCrunch, Google Cloud Dialogflow announcement 2016"
+  },
+  {
     "name": "Spectrum Labs",
     "outcome": "success",
     "industry": "ai-content-moderation",
@@ -55423,6 +56467,21 @@
     "source": "news reports"
   },
   {
+    "name": "Sunsama",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2017,
+    "closed": null,
+    "funding": "Bootstrapped",
+    "summary": "Daily planning assistant that unifies tasks, calendar events, and to-dos from multiple tools into a single guided daily planning ritual, later adding AI-assisted planning suggestions. Grew a profitable subscriber base entirely without venture funding, remaining an independent small team.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "A disciplined, subscription-funded AI productivity tool can thrive at a smaller scale without ever raising venture capital, avoiding growth-at-all-costs pressure.",
+    "source": "Founder public blog posts, Indie Hackers interviews"
+  },
+  {
     "name": "Supabase",
     "outcome": "success",
     "industry": "devtools-infra",
@@ -55453,6 +56512,21 @@
     ],
     "lesson": "Small, empowered teams with kill-fast discipline can outperform large studios on hit rate per dollar.",
     "source": "public record"
+  },
+  {
+    "name": "Superhuman",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$108M+",
+    "summary": "Premium, speed-focused email client that added AI features (AI-written replies, AI triage, instant summarization) atop Gmail and Outlook, monetized through a high-priced subscription. Sustained strong growth and expanded its AI capabilities significantly starting in 2023, remaining a well-known success story in productivity software.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A premium-priced productivity tool can add AI features as a growth lever on top of an already-differentiated core experience (speed and UX) rather than relying on AI alone.",
+    "source": "TechCrunch, company funding rounds 2015-2023"
   },
   {
     "name": "Supermaven",
@@ -55823,6 +56897,21 @@
     ],
     "lesson": "Combining aerial imagery with AI-based agronomic scouting can create durable enterprise contracts with large grower operations.",
     "source": "Crunchbase/AgFunder News, Taranis funding history"
+  },
+  {
+    "name": "Taskade",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$1M (largely bootstrapped)",
+    "summary": "AI-powered task, project, and team management app that added AI agents for generating task lists, workflows, and mind maps. Grew a large global user base with a freemium model and remained a capital-efficient, profitable-trending independent company through the generative AI wave.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit"
+    ],
+    "lesson": "Staying lean on funding forced a focus on genuine product-led growth, which proved resilient as AI features became table stakes across productivity apps.",
+    "source": "Company blog, Product Hunt growth history"
   },
   {
     "name": "TaskRabbit",
@@ -56585,6 +57674,21 @@
     "source": "Bloomberg"
   },
   {
+    "name": "Timely (Memory AI)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$16M",
+    "summary": "Automatic AI time-tracking assistant that passively records app and document usage to auto-generate accurate timesheets without manual entry, targeting agencies and consultancies. Grew to a profitable, internationally distributed SaaS business based in Norway, remaining independent.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Automating a universally disliked task (manual time tracking) with passive AI observation created a clear, durable value proposition worth paying for.",
+    "source": "Company site, Nordic tech press coverage"
+  },
+  {
     "name": "Tinder",
     "outcome": "success",
     "industry": "consumer-social",
@@ -56824,6 +57928,22 @@
     ],
     "lesson": "Soil-data companies can achieve successful exits by pairing diagnostic data with a partner that sells the actionable inputs those diagnostics recommend.",
     "source": "AgFunder News, Sound Agriculture acquires Trace Genomics 2023"
+  },
+  {
+    "name": "Traceloop",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$6.1M seed (Sorenson Capital, YC)",
+    "summary": "LLM reliability and observability platform built on the open-source OpenLLMetry SDK, which extends OpenTelemetry to LLM applications for vendor-neutral tracing and monitoring. Traceloop raised a $6.1M seed round after going through Y Combinator's Winter 2023 batch.",
+    "causes": [
+      "product-market-fit",
+      "network-effects",
+      "capital-efficiency"
+    ],
+    "lesson": "Building on an open, widely trusted standard (OpenTelemetry) rather than a proprietary tracing format lowered adoption friction and avoided vendor lock-in objections from engineering teams.",
+    "source": "Traceloop funding coverage; YC Launch page"
   },
   {
     "name": "Tractable",
@@ -57128,6 +58248,20 @@
     "source": "general defense-tech industry reporting on True Anomaly Space Force contracts"
   },
   {
+    "name": "True Knowledge / Evi",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2007,
+    "closed": null,
+    "funding": "$21M",
+    "summary": "UK-based answer-engine and voice assistant (rebranded Evi) that competed directly with Siri using a structured knowledge-graph approach. Acquired by Amazon in 2012 for a reported $26M, with its technology becoming foundational to the Alexa voice assistant.",
+    "causes": [
+      "network-effects"
+    ],
+    "lesson": "A knowledge-graph based question-answering engine, even with modest funding, can become the seed technology for a category-defining product under the right acquirer.",
+    "source": "TechCrunch, BBC acquisition coverage 2012"
+  },
+  {
     "name": "True Link Financial",
     "outcome": "success",
     "industry": "senior-care-tech",
@@ -57186,6 +58320,22 @@
     ],
     "lesson": "Focusing on authenticating content at the point of capture (rather than only detecting fakes after the fact) positioned Truepic as infrastructure for the broader content-provenance ecosystem as deepfakes proliferated.",
     "source": "MIT Technology Review, 2018; company press materials"
+  },
+  {
+    "name": "TruEra",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2018,
+    "closed": null,
+    "funding": "~$45M total; acquired by Snowflake (2024)",
+    "summary": "AI quality, monitoring and explainability platform (including the open-source TruLens library) that pivoted from traditional ML explainability into LLM evaluation and observability. Snowflake acquired TruEra in May 2024 to bring LLM/ML observability natively into its Data Cloud, with all three co-founders and 37 employees joining Snowflake and TruLens continuing as open source.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "timing"
+    ],
+    "lesson": "Successfully riding the pivot from classic ML explainability to generative AI evaluation, while keeping a strong open-source community (TruLens), made TruEra a natural, well-integrated acquisition for a major data-cloud platform.",
+    "source": "Snowflake acquisition blog post; VentureBeat coverage (May 2024)"
   },
   {
     "name": "Trulia AI valuation (pre-Zillow)",
@@ -58050,6 +59200,22 @@
     "source": "SDxCentral / company funding announcements, Vectra AI Series G (Oct 2025)"
   },
   {
+    "name": "Vellum AI",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$20M+ total (Series A, Leaders Fund, YC)",
+    "summary": "Y Combinator-backed enterprise development platform for building, evaluating and deploying production LLM applications, combining workflow orchestration, evaluation/testing, deployment and monitoring in one product. Vellum raised a $20M Series A in July 2025 to expand into new verticals and global markets.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "capital-efficiency"
+    ],
+    "lesson": "Bundling the full LLM application lifecycle — build, evaluate, deploy, monitor — into one platform appealed to cross-functional enterprise teams that didn't want to stitch together point tools.",
+    "source": "Vellum AI Series A announcement (2025)"
+  },
+  {
     "name": "Velocify",
     "outcome": "success",
     "industry": "ai-sales-tech",
@@ -58213,6 +59379,22 @@
     "causes": [],
     "lesson": "Formal verification approaches to network reliability found a home inside broader network virtualization platforms seeking to reduce customer outage risk.",
     "source": "VMware press release 2019"
+  },
+  {
+    "name": "Verta",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2018,
+    "closed": null,
+    "funding": "~$16M total; acquired by Cloudera (2024)",
+    "summary": "MIT-spinout MLOps platform for model management, deployment and monitoring across traditional ML and generative AI. Cloudera acquired Verta in June 2024 to accelerate its 'Operational AI' capabilities, giving Verta's team and technology a strategic home inside a larger data platform.",
+    "causes": [
+      "enterprise-strategy",
+      "product-market-fit",
+      "timing"
+    ],
+    "lesson": "A tightly scoped, technically strong model-management product can be an attractive acquisition target for larger data platforms racing to add operational AI capabilities rather than build them from scratch.",
+    "source": "TechCrunch 'Cloudera acquires Verta' (2024)"
   },
   {
     "name": "Vertex Pharmaceuticals",
@@ -58588,16 +59770,16 @@
   {
     "name": "VocalIQ",
     "outcome": "success",
-    "industry": "ai-voice-speech",
+    "industry": "ai-personal-assistants",
     "founded": 2011,
     "closed": null,
-    "funding": "Seed/Series A before acquisition; acquired by Apple (2015)",
-    "summary": "Cambridge-based startup developing self-learning dialogue systems for voice assistants that improve through use; acquired by Apple in 2015 to strengthen Siri's underlying technology.",
+    "funding": "$3.4M",
+    "summary": "Cambridge, UK-based startup building self-learning dialogue systems for voice assistants that improved through use rather than hand-coded rules. Acquired by Apple in 2015 to strengthen Siri's natural-language and dialogue-management capabilities.",
     "causes": [
-      "product-market-fit"
+      "network-effects"
     ],
-    "lesson": "Self-improving dialogue technology aimed at reducing scripted, brittle voice-assistant interactions was exactly the gap Apple needed filled in Siri.",
-    "source": "TechCrunch, Financial Times"
+    "lesson": "Deep academic research (Cambridge dialogue systems lab) in a narrow but critical AI assistant capability can be acquired for strategic value well above the capital raised.",
+    "source": "Financial Times, TechCrunch acquisition report 2015"
   },
   {
     "name": "Voi Technology",
@@ -59169,6 +60351,22 @@
     "source": "press coverage"
   },
   {
+    "name": "WhyLabs",
+    "outcome": "success",
+    "industry": "ai-llmops-observability",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$24M+ total (Series A, Madrona, AI Fund)",
+    "summary": "Seattle-based AI observability platform built around the open-source whylogs data-logging library, offering data and model health monitoring plus security features for production AI systems. WhyLabs raised a $10M Series A in 2021 co-led by Andrew Ng's AI Fund and has continued to serve both self-service and Fortune 500 customers.",
+    "causes": [
+      "product-market-fit",
+      "network-effects",
+      "capital-efficiency"
+    ],
+    "lesson": "An open-source-first go-to-market (whylogs) built genuine developer trust and a lower-cost funnel into the paid observability platform.",
+    "source": "TechCrunch 'WhyLabs raises $10M Series A' (2021)"
+  },
+  {
     "name": "Wildfire Interactive",
     "outcome": "success",
     "industry": "adtech-martech",
@@ -59342,17 +60540,16 @@
   {
     "name": "Wit.ai",
     "outcome": "success",
-    "industry": "ai-voice-speech",
+    "industry": "ai-personal-assistants",
     "founded": 2013,
     "closed": null,
-    "funding": "Seed-stage before acquisition; acquired by Facebook (2015)",
-    "summary": "Open natural-language and voice-recognition API for developers building bots and voice apps; acquired by Facebook in 2015 and folded into Messenger's conversational AI tooling.",
+    "funding": "$3M",
+    "summary": "Open natural-language processing API for developers to build voice- and text-based personal assistant interfaces. Acquired by Facebook in January 2015 for an estimated $10-15M and became the NLU backbone for Facebook Messenger bots and M.",
     "causes": [
-      "product-market-fit",
       "network-effects"
     ],
-    "lesson": "An open, developer-friendly NLP/voice API built genuine community traction that made it valuable to a platform giant seeking conversational AI talent and tech.",
-    "source": "Facebook newsroom, TechCrunch"
+    "lesson": "A small, focused open developer API for a hard NLP problem can be acquired quickly by a platform company looking to bootstrap its own assistant ecosystem.",
+    "source": "TechCrunch acquisition report January 2015"
   },
   {
     "name": "Within (Supernatural)",
@@ -59667,17 +60864,17 @@
   {
     "name": "Wysa",
     "outcome": "success",
-    "industry": "mental-health-tech",
+    "industry": "ai-personal-assistants",
     "founded": 2016,
     "closed": null,
-    "funding": "$20M+",
-    "summary": "Wysa built an AI chatbot-based emotional support app that expanded into clinically validated, NHS-approved digital mental health support and enterprise employer wellness contracts.",
+    "funding": "$21.6M",
+    "summary": "AI-powered mental health chatbot offering CBT and DBT-based emotional support, positioned as a personal wellness assistant used by millions globally and licensed to health systems and employers. Continues to operate and expand, with FDA breakthrough device designation and enterprise partnerships underpinning its business model.",
     "causes": [
       "product-market-fit",
       "enterprise-strategy"
     ],
-    "lesson": "Pursuing formal clinical validation and health-system approvals let an AI chatbot startup survive where less rigorous competitors like Woebot's consumer app did not.",
-    "source": "Company funding announcements"
+    "lesson": "Pairing a consumer AI companion with B2B2C distribution through employers and health systems creates a more durable revenue base than consumer subscriptions alone.",
+    "source": "TechCrunch, company funding announcements 2016-2023"
   },
   {
     "name": "Wyze Labs",
@@ -59889,17 +61086,16 @@
   {
     "name": "Youper",
     "outcome": "success",
-    "industry": "mental-health-tech",
+    "industry": "ai-personal-assistants",
     "founded": 2016,
     "closed": null,
-    "funding": "$8M+",
-    "summary": "Youper built an AI-powered emotional health assistant app that reached millions of users and maintained profitability through a lean, subscription-based consumer model.",
+    "funding": "$8M",
+    "summary": "AI-powered emotional health assistant that uses conversational check-ins and CBT techniques to help users track and improve their mood. Reported millions of users and continued clinical validation studies, sustaining operations through subscription revenue.",
     "causes": [
-      "product-market-fit",
-      "capital-efficiency"
+      "product-market-fit"
     ],
-    "lesson": "Staying capital-efficient and reaching profitability early insulated Youper from the funding contraction that killed several better-funded rivals.",
-    "source": "Company statements"
+    "lesson": "Combining light clinical validation with a genuinely engaging daily-check-in AI chat loop helped an emotional-health assistant sustain retention where many wellness apps fail.",
+    "source": "Company site, published clinical study coverage"
   },
   {
     "name": "Yseop",
@@ -60319,6 +61515,21 @@
     ],
     "lesson": "Superior reliability in a mundane, unglamorous feature can beat entrenched incumbents.",
     "source": "Company S-1 filing"
+  },
+  {
+    "name": "Zoom.ai (formerly Meekan)",
+    "outcome": "success",
+    "industry": "ai-personal-assistants",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$9M",
+    "summary": "Started as Meekan, a scheduling bot for Slack, then rebranded to Zoom.ai and expanded into a broader AI workplace assistant handling scheduling, expense reports, and document generation for enterprises. Acquired by workplace platform Envoy in 2020 in a successful exit.",
+    "causes": [
+      "network-effects",
+      "product-market-fit"
+    ],
+    "lesson": "Starting narrow (calendar bot) and expanding into adjacent workplace-assistant tasks can build enough enterprise value to attract a strategic acquirer.",
+    "source": "TechCrunch, Envoy acquisition announcement 2020"
   },
   {
     "name": "ZoomInfo",
