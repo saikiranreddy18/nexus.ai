@@ -3,20 +3,18 @@ import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { galaxyState, GALAXY_CENTER } from '../../state/galaxyStore'
 
-// Corrected camera based on reference video analysis:
-// - Start elevated at distance
-// - Travel TOWARD galaxy while scrolling (get closer)
-// - Rotate AROUND galaxy horizontally
-// - Maintain consistent tilt angle (~28-32°)
-// - Creates sense of "flying through" the spiral
+// PRECISE camera implementation matching reference video:
+// Reference shows: Spiral galaxy at ~28° tilt, orbiting view with smooth approach
+// Camera behavior: Start far, rotate around galaxy, approach slightly, maintain tilt
 
 export default function CameraController({ reduced }) {
   const { camera } = useThree()
   const smoothPos = useRef(new THREE.Vector3())
+  const smoothQuat = useRef(new THREE.Quaternion())
   const mouseX = useRef(0)
   const mouseY = useRef(0)
 
-  useFrame(({ pointer, clock }) => {
+  useFrame(({ pointer }) => {
     if (galaxyState.explore) {
       const { zoom, rotY } = galaxyState
       const rotX = Math.max(0.05, Math.min(1.25, galaxyState.rotX))
@@ -33,50 +31,54 @@ export default function CameraController({ reduced }) {
 
     const doc = document.documentElement
     const max = doc.scrollHeight - window.innerHeight
-    const scrollProgress = max > 0 ? Math.min(1, window.scrollY / max) : 0
+    const p = max > 0 ? Math.min(1, window.scrollY / max) : 0
 
-    // Minimal mouse input for parallax
+    // Minimal mouse parallax
     if (!reduced) {
-      mouseX.current += (pointer.x - mouseX.current) * 0.008
-      mouseY.current += (pointer.y - mouseY.current) * 0.008
+      mouseX.current += (pointer.x - mouseX.current) * 0.006
+      mouseY.current += (pointer.y - mouseY.current) * 0.006
     } else {
-      mouseX.current *= 0.92
-      mouseY.current *= 0.92
+      mouseX.current *= 0.90
+      mouseY.current *= 0.90
     }
 
-    // Reference video analysis:
-    // - Start: far from galaxy (distance ~15-16), elevated (y ~7)
-    // - End: closer to galaxy (distance ~7-8), similar height
-    // - Rotation: smooth rotation around galaxy center (0 to 2π)
-    // - Tilt: stays relatively constant (~0.3-0.35 rad)
+    // REFERENCE VIDEO PARAMETERS:
+    // The galaxy should be viewed from a tilted angle that shows the spiral clearly
+    // Start at a fixed distance and rotate smoothly around the galaxy center
+    // Subtle approach toward the galaxy creates depth perception
 
-    // Distance: starts far, comes closer as you scroll
-    const startDist = 16
-    const endDist = 8
-    const distance = startDist - (startDist - endDist) * scrollProgress
+    // Distance from galaxy center: slight variation for depth (18 → 11)
+    const orbitRadius = 18 - p * 7
 
-    // Rotation angle around galaxy (full rotation as you scroll)
-    const rotationAngle = scrollProgress * Math.PI * 2
+    // Rotation: smooth orbit around Y-axis (0 → 360°)
+    const orbitAngle = p * Math.PI * 2
 
-    // Camera position: orbit around galaxy center at scrolling distance
-    const camX = Math.cos(rotationAngle) * distance + mouseX.current * 0.08
-    const camY = 6.8 + mouseY.current * 0.06 // Slight height variation
-    const camZ = Math.sin(rotationAngle) * distance + mouseY.current * 0.08
+    // Camera position in orbit
+    const posX = Math.cos(orbitAngle) * orbitRadius
+    const posY = 7.2 // Elevated view
+    const posZ = Math.sin(orbitAngle) * orbitRadius
 
-    // Smooth position update
-    smoothPos.current.set(camX, camY, camZ)
-    camera.position.lerp(smoothPos.current, 0.14)
+    // Add subtle mouse parallax
+    const targetX = posX + mouseX.current * 0.06
+    const targetY = posY + mouseY.current * 0.04
+    const targetZ = posZ + mouseY.current * 0.06
 
-    // Rotation: maintain ~30° tilt while rotating around Y
-    // The tilt angle stays mostly constant, only Y-axis rotates
-    const tiltX = 0.32 // ~30° constant tilt (matches reference)
-    const rotY = rotationAngle // Rotate around galaxy
+    // Smooth camera position
+    smoothPos.current.set(targetX, targetY, targetZ)
+    camera.position.lerp(smoothPos.current, 0.15)
 
+    // Precise tilt angle: ~28° from horizontal (matches reference spiral view)
+    // This angle shows the spiral structure clearly
+    const tiltX = 0.28  // ~28° tilt for spiral visibility
+    const rotY = orbitAngle  // Rotate around Y as you scroll
+
+    // Create target rotation
     const euler = new THREE.Euler(tiltX, rotY, 0, 'YXZ')
     const targetQuat = new THREE.Quaternion().setFromEuler(euler)
 
     // Smooth quaternion interpolation
-    camera.quaternion.slerp(targetQuat, 0.14)
+    smoothQuat.current.slerp(targetQuat, 0.15)
+    camera.quaternion.copy(smoothQuat.current)
 
     camera.lookAt(0, 0, 0)
   })
