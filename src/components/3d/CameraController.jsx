@@ -3,19 +3,20 @@ import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { galaxyState, GALAXY_CENTER } from '../../state/galaxyStore'
 
-// Reference video shows: galaxy at ~30° tilt, rotating around center as you scroll
-// Camera orbits around galaxy maintaining the tilted perspective
-const ORBIT_RADIUS = 14
-const CAMERA_HEIGHT = 6.5
-const TILT_ANGLE = 0.35 // ~30° tilt (matches reference video)
+// Corrected camera based on reference video analysis:
+// - Start elevated at distance
+// - Travel TOWARD galaxy while scrolling (get closer)
+// - Rotate AROUND galaxy horizontally
+// - Maintain consistent tilt angle (~28-32°)
+// - Creates sense of "flying through" the spiral
 
 export default function CameraController({ reduced }) {
   const { camera } = useThree()
-  const smoothPos = useRef(new THREE.Vector3(0, CAMERA_HEIGHT, ORBIT_RADIUS))
+  const smoothPos = useRef(new THREE.Vector3())
   const mouseX = useRef(0)
   const mouseY = useRef(0)
 
-  useFrame(({ pointer }) => {
+  useFrame(({ pointer, clock }) => {
     if (galaxyState.explore) {
       const { zoom, rotY } = galaxyState
       const rotX = Math.max(0.05, Math.min(1.25, galaxyState.rotX))
@@ -34,33 +35,48 @@ export default function CameraController({ reduced }) {
     const max = doc.scrollHeight - window.innerHeight
     const scrollProgress = max > 0 ? Math.min(1, window.scrollY / max) : 0
 
-    // Minimal mouse parallax (only subtle shifts, no major tilt changes)
+    // Minimal mouse input for parallax
     if (!reduced) {
-      mouseX.current += (pointer.x - mouseX.current) * 0.01
-      mouseY.current += (pointer.y - mouseY.current) * 0.01
+      mouseX.current += (pointer.x - mouseX.current) * 0.008
+      mouseY.current += (pointer.y - mouseY.current) * 0.008
     } else {
-      mouseX.current *= 0.95
-      mouseY.current *= 0.95
+      mouseX.current *= 0.92
+      mouseY.current *= 0.92
     }
 
-    // Camera orbits around galaxy while maintaining tilt
-    // Rotate around Y-axis as you scroll (horizontal rotation around galaxy)
-    const orbitAngle = scrollProgress * Math.PI * 2 // Full rotation as you scroll
-    const orbitX = Math.cos(orbitAngle) * ORBIT_RADIUS + mouseX.current * 0.1
-    const orbitZ = Math.sin(orbitAngle) * ORBIT_RADIUS + mouseY.current * 0.1
-    const camY = CAMERA_HEIGHT
+    // Reference video analysis:
+    // - Start: far from galaxy (distance ~15-16), elevated (y ~7)
+    // - End: closer to galaxy (distance ~7-8), similar height
+    // - Rotation: smooth rotation around galaxy center (0 to 2π)
+    // - Tilt: stays relatively constant (~0.3-0.35 rad)
 
-    // Smooth camera position
-    smoothPos.current.set(orbitX, camY, orbitZ)
-    camera.position.lerp(smoothPos.current, 0.12)
+    // Distance: starts far, comes closer as you scroll
+    const startDist = 16
+    const endDist = 8
+    const distance = startDist - (startDist - endDist) * scrollProgress
 
-    // Fixed tilt angle (maintain ~30° perspective like reference video)
-    // Only rotate around Y-axis, keep X tilt constant
-    const euler = new THREE.Euler(TILT_ANGLE, orbitAngle, 0, 'YXZ')
+    // Rotation angle around galaxy (full rotation as you scroll)
+    const rotationAngle = scrollProgress * Math.PI * 2
+
+    // Camera position: orbit around galaxy center at scrolling distance
+    const camX = Math.cos(rotationAngle) * distance + mouseX.current * 0.08
+    const camY = 6.8 + mouseY.current * 0.06 // Slight height variation
+    const camZ = Math.sin(rotationAngle) * distance + mouseY.current * 0.08
+
+    // Smooth position update
+    smoothPos.current.set(camX, camY, camZ)
+    camera.position.lerp(smoothPos.current, 0.14)
+
+    // Rotation: maintain ~30° tilt while rotating around Y
+    // The tilt angle stays mostly constant, only Y-axis rotates
+    const tiltX = 0.32 // ~30° constant tilt (matches reference)
+    const rotY = rotationAngle // Rotate around galaxy
+
+    const euler = new THREE.Euler(tiltX, rotY, 0, 'YXZ')
     const targetQuat = new THREE.Quaternion().setFromEuler(euler)
 
-    // Smooth rotation
-    camera.quaternion.slerp(targetQuat, 0.12)
+    // Smooth quaternion interpolation
+    camera.quaternion.slerp(targetQuat, 0.14)
 
     camera.lookAt(0, 0, 0)
   })
