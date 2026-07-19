@@ -14,6 +14,14 @@
       "runtimeArgs": ["server.mjs"],
       "cwd": "${workspaceFolder}/3d-office",
       "port": 3000
+    },
+    {
+      "name": "startup-oracle",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.js"],
+      "cwd": "${workspaceFolder}/startup-oracle",
+      "port": 4100,
+      "autoPort": true
     }
   ]
 }
