@@ -1,0 +1,1041 @@
+[
+  {
+    "name": "Appen",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 1996,
+    "closed": null,
+    "funding": "Publicly listed (ASX: APX)",
+    "summary": "Australian data labeling and crowdsourcing pioneer that supplied training data to Google, Microsoft, and other tech giants. Revenue collapsed as Big Tech customers built in-house labeling operations and shifted budgets to newer AI-specific vendors like Scale AI; stock fell over 90% from its 2020 peak with repeated layoffs and restructuring through 2023-2024.",
+    "causes": [
+      "outcompeted",
+      "market-timing",
+      "cash-burn",
+      "product-market-mismatch"
+    ],
+    "lesson": "Being an early leader in a category is not durable if switching costs are low and hyperscaler customers can vertically integrate the service in-house.",
+    "source": "ASX filings, TechCrunch and Reuters coverage of Appen's 2022-2024 revenue decline"
+  },
+  {
+    "name": "Figure Eight (CrowdFlower)",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2007,
+    "closed": null,
+    "funding": "$58M raised before acquisition",
+    "summary": "Crowdsourced data labeling and human-in-the-loop platform, rebranded from CrowdFlower to Figure Eight in 2018. Acquired by Appen in 2019 for approximately $300 million, giving Appen an enterprise labeling platform and expanding its US customer base.",
+    "causes": [],
+    "lesson": "A well-timed acquisition can be a strong outcome for a data-labeling vendor even in a commoditizing market, if it consolidates share before competition intensifies.",
+    "source": "Appen 2019 acquisition announcement, TechCrunch"
+  },
+  {
+    "name": "Scale AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$1.6B+ raised; Meta took a ~49% stake in 2024 at a ~$29B valuation",
+    "summary": "Data labeling and RLHF infrastructure company that became the dominant training-data supplier to OpenAI, Meta, government/defense customers, and autonomous vehicle firms. Meta's 2024 investment and licensing deal valued the company near $29 billion, cementing it as the category leader.",
+    "causes": [],
+    "lesson": "Moving early into RLHF and frontier-model data pipelines, and diversifying into government/defense contracts, let Scale AI outrun commoditization that hurt legacy labeling vendors.",
+    "source": "Meta-Scale AI investment coverage, June 2024 (Bloomberg, WSJ)"
+  },
+  {
+    "name": "Labelbox",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$189M+ raised, Series D 2021",
+    "summary": "Training-data platform combining labeling tools, model-assisted annotation, and data curation workflows for enterprise ML teams. Pivoted its positioning toward LLM fine-tuning and RLHF data services as the market shifted from computer-vision labeling to generative AI data needs.",
+    "causes": [],
+    "lesson": "Platforms that can re-position their tooling from CV/NLP labeling to LLM fine-tuning data survive the market's shift toward foundation models.",
+    "source": "Labelbox funding announcements, Crunchbase"
+  },
+  {
+    "name": "Snorkel AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$135M+ raised, Series C 2021",
+    "summary": "Spun out of the Stanford Snorkel research project, Snorkel AI commercialized programmatic/weak-supervision data labeling that lets enterprises label training data with code and heuristics instead of manual annotation, later expanding into LLM evaluation and fine-tuning data.",
+    "causes": [],
+    "lesson": "Programmatic labeling reduced dependence on human annotation labor costs, giving Snorkel a defensible technical moat versus pure crowdsourcing vendors.",
+    "source": "Snorkel AI funding announcements, Stanford DAWN project background"
+  },
+  {
+    "name": "Weights & Biases",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$250M+ raised; acquired by CoreWeave in 2025 for ~$1.7B",
+    "summary": "MLOps experiment-tracking and model-monitoring platform widely adopted by ML research teams and labs including OpenAI and major AI labs. Acquired by GPU cloud provider CoreWeave in 2025 to bundle developer tooling with compute infrastructure.",
+    "causes": [],
+    "lesson": "Becoming the default developer tool for a research community (via free tiers and deep workflow integration) built durable enterprise pull that made it a natural acquisition target for infrastructure consolidation.",
+    "source": "CoreWeave acquisition announcement, March 2025"
+  },
+  {
+    "name": "Determined AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$20M+ raised; acquired by HPE in 2021",
+    "summary": "Open-source deep learning training platform providing distributed training, hyperparameter tuning, and cluster scheduling. Acquired by Hewlett Packard Enterprise in 2021 to anchor HPE's AI/ML software stack (later HPE Machine Learning Development Environment).",
+    "causes": [],
+    "lesson": "Deep technical infrastructure for distributed training was valuable enough to established hardware vendors to justify acquisition even at moderate scale.",
+    "source": "HPE press release, June 2021"
+  },
+  {
+    "name": "Pinecone",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$138M+ raised, Series B 2022 at ~$750M valuation",
+    "summary": "Fully managed vector database purpose-built for embeddings-based retrieval, becoming a default component of RAG (retrieval-augmented generation) stacks after the 2023 LLM boom drove massive demand for vector search infrastructure.",
+    "causes": [],
+    "lesson": "Being the managed, easy-to-adopt option in a new infrastructure category (vector search) let Pinecone capture developer mindshare quickly once RAG became a standard LLM application pattern.",
+    "source": "Pinecone Series B announcement, TechCrunch 2022"
+  },
+  {
+    "name": "Weaviate",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$67M+ raised, Series B 2023",
+    "summary": "Open-source vector database (originating in the Netherlands) offering hybrid search and native integration with embedding models, competing with Pinecone, Qdrant, and Milvus for the RAG infrastructure market.",
+    "causes": [],
+    "lesson": "An open-source-first go-to-market strategy built a large developer community that converted into enterprise cloud revenue as vector databases became mainstream.",
+    "source": "Weaviate Series B announcement, 2023"
+  },
+  {
+    "name": "Chroma",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$18M seed (2023) plus $75M Series A (2024)",
+    "summary": "Open-source embedding database designed for simplicity and developer experience, rapidly adopted by LLM app developers building retrieval-augmented generation prototypes and production systems.",
+    "causes": [],
+    "lesson": "Launching with a dead-simple open-source developer experience during the RAG boom let a very young company achieve outsized adoption before monetizing.",
+    "source": "Chroma Series A announcement, April 2024"
+  },
+  {
+    "name": "MosaicML",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$64M raised; acquired by Databricks in 2023 for ~$1.3B",
+    "summary": "Efficient LLM training infrastructure and optimization platform that let enterprises train custom foundation models more cheaply. Acquired by Databricks in 2023 to add generative-AI model-building capability to its data platform.",
+    "causes": [],
+    "lesson": "Solving the cost/efficiency problem of large-scale model training made MosaicML strategically valuable to a data platform seeking to own the full ML lifecycle.",
+    "source": "Databricks acquisition announcement, June 2023"
+  },
+  {
+    "name": "Together AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$305M+ raised, Series B 2024 at ~$3.3B valuation",
+    "summary": "Cloud platform for training, fine-tuning, and running open-source and custom LLMs at scale, offering optimized inference and a large GPU cluster network as an alternative to closed-model API providers.",
+    "causes": [],
+    "lesson": "Betting on open-source model ecosystems (Llama, Mistral, etc.) as a growth vector let Together AI scale rapidly alongside the open-weight LLM movement.",
+    "source": "Together AI Series B announcement, March 2024"
+  },
+  {
+    "name": "Anyscale",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$259M+ raised, Series C 2021 at ~$1B valuation",
+    "summary": "Company behind the open-source Ray distributed computing framework, offering a managed platform for scaling ML training and serving. Underwent significant layoffs in 2024 amid slower-than-expected enterprise platform adoption, even as the underlying Ray framework remained widely used.",
+    "causes": [
+      "cash-burn",
+      "product-market-fit",
+      "market-timing"
+    ],
+    "lesson": "Owning a hugely popular open-source project does not guarantee that the commercial managed-platform layer captures enough paying demand to match the burn rate.",
+    "source": "Reports of Anyscale layoffs, The Information/TechCrunch 2024"
+  },
+  {
+    "name": "Hugging Face",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$395M+ raised, Series D 2023 at $4.5B valuation",
+    "summary": "Open-source hub and infrastructure for sharing ML models, datasets, and tools (Transformers, Datasets, Hub), which became the de facto community platform for open-source AI models, later adding paid enterprise hosting and inference products.",
+    "causes": [],
+    "lesson": "Becoming the default community distribution layer for open models created a durable network effect that competitors could not easily replicate.",
+    "source": "Hugging Face Series D announcement, August 2023"
+  },
+  {
+    "name": "Modal",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$167M+ raised, Series B 2024",
+    "summary": "Serverless cloud compute platform optimized for running AI/ML workloads (training, batch inference, data pipelines) with fast cold-starts and simple Python-native deployment, popular with AI startups needing on-demand GPU access.",
+    "causes": [],
+    "lesson": "Reducing the operational friction of provisioning GPU infrastructure for AI teams created strong product-led growth in a market flooded with raw GPU cloud offerings.",
+    "source": "Modal Series B announcement, December 2024"
+  },
+  {
+    "name": "Baseten",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$135M+ raised, Series C 2024 at ~$825M valuation",
+    "summary": "Model deployment and inference infrastructure platform enabling ML teams to serve custom models in production with autoscaling GPU infrastructure, gaining traction as demand for production LLM inference surged.",
+    "causes": [],
+    "lesson": "Focusing narrowly on production inference reliability and performance (rather than the whole ML lifecycle) let Baseten differentiate as inference became the dominant AI infra cost center.",
+    "source": "Baseten Series C announcement, September 2024"
+  },
+  {
+    "name": "DataRobot",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$1B+ raised; valued at $6.3B in 2021 peak round",
+    "summary": "Automated machine learning (AutoML) platform that raised at a $6.3B valuation in 2021 but faced a sharp valuation reset, multiple rounds of layoffs (2022-2024), and executive turnover as enterprise AutoML demand shifted toward generative AI and cloud-native ML platforms.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "overexpansion",
+      "product-market-mismatch"
+    ],
+    "lesson": "A large late-stage valuation built on the pre-LLM AutoML paradigm became a liability once the market's attention and budgets pivoted rapidly to generative AI infrastructure.",
+    "source": "Reports on DataRobot layoffs and valuation decline, Forbes/TechCrunch 2022-2024"
+  },
+  {
+    "name": "Algorithmia",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2014,
+    "closed": 2021,
+    "funding": "$37M raised",
+    "summary": "Model deployment and MLOps marketplace platform, acquired by DataRobot in 2021. The standalone Algorithmia product was largely wound down and its technology folded into DataRobot's own struggling MLOps stack rather than continuing as an independent success.",
+    "causes": [
+      "outcompeted",
+      "capital-intensity",
+      "pivot-failure"
+    ],
+    "lesson": "An acquisition that looks like a success exit can still represent underlying product failure if the acquirer discontinues the standalone product shortly after.",
+    "source": "DataRobot acquisition announcement 2021, subsequent product deprecation notices"
+  },
+  {
+    "name": "Seldon",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$27M+ raised, Series A/B",
+    "summary": "UK-based open-source model deployment and monitoring platform (Seldon Core) for Kubernetes-based ML serving. Growth stalled as larger cloud-native MLOps platforms and hyperscaler-native tooling (SageMaker, Vertex AI) captured enterprise budgets, and the company scaled back commercial ambitions.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "capital-efficiency"
+    ],
+    "lesson": "Open-source infrastructure companies competing against hyperscalers' native tooling need a clear enterprise monetization wedge beyond the open-source project itself.",
+    "source": "Industry reporting on MLOps market consolidation, 2023-2024"
+  },
+  {
+    "name": "Comet ML",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$76M+ raised, Series C 2024",
+    "summary": "ML experiment tracking, model production monitoring, and LLM evaluation platform (Comet, Opik) that expanded from experiment tracking into full-lifecycle observability including generative AI evaluation.",
+    "causes": [],
+    "lesson": "Extending an experiment-tracking product into LLM observability let Comet ride the growth wave of generative AI evaluation demand rather than being confined to a shrinking niche.",
+    "source": "Comet Series C announcement, 2024"
+  },
+  {
+    "name": "Arize AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$131M+ raised, Series C 2024",
+    "summary": "AI observability and evaluation platform (Arize AX, Phoenix open source) for monitoring model drift, performance, and LLM output quality in production, expanding aggressively into LLM/agent evaluation as generative AI adoption grew.",
+    "causes": [],
+    "lesson": "Positioning early as an 'observability for AI' category leader let Arize capture budget as enterprises moved from experimentation to production LLM deployments.",
+    "source": "Arize AI Series C announcement, 2024"
+  },
+  {
+    "name": "Fiddler AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$73M+ raised, Series C 2021",
+    "summary": "AI observability and explainability platform helping enterprises monitor model performance, bias, and fairness, later extending into LLM monitoring and guardrails for regulated industries such as finance and healthcare.",
+    "causes": [],
+    "lesson": "Targeting regulated enterprise verticals early with explainability tooling built defensible relationships that carried over into LLM-era compliance monitoring needs.",
+    "source": "Fiddler AI Series C announcement, 2021"
+  },
+  {
+    "name": "Galileo",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$68M+ raised, Series B 2024",
+    "summary": "AI evaluation and observability platform focused on identifying hallucinations, data errors, and quality issues in LLM applications, positioned squarely at the generative AI evaluation wave following ChatGPT's launch.",
+    "causes": [],
+    "lesson": "Launching just before the generative AI evaluation category exploded let Galileo scale quickly by riding, rather than creating, market timing.",
+    "source": "Galileo Series B announcement, 2024"
+  },
+  {
+    "name": "Humanloop",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$21M+ raised, Series A 2024",
+    "summary": "LLM evaluation, prompt management, and fine-tuning-data platform helping enterprises manage the lifecycle of production LLM applications, part of the wave of 'LLMOps' tooling that emerged after 2022.",
+    "causes": [],
+    "lesson": "Focusing on the prompt/eval workflow gap left by general MLOps tools created a defensible niche as LLM-specific tooling needs diverged from traditional ML tooling.",
+    "source": "Humanloop Series A announcement, 2024"
+  },
+  {
+    "name": "LangSmith (LangChain)",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$35M+ raised (LangChain), Series A 2024 at $200M+ valuation",
+    "summary": "Observability and evaluation platform (LangSmith) built by the team behind the widely-used LangChain framework, giving it built-in distribution to a massive developer community building LLM applications.",
+    "causes": [],
+    "lesson": "Owning the dominant open-source LLM application framework created a direct funnel into a paid observability product with minimal additional customer acquisition cost.",
+    "source": "LangChain Series A announcement, 2024"
+  },
+  {
+    "name": "Zilliz (Milvus)",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$113M+ raised, Series C 2022",
+    "summary": "Creator and commercial steward of the popular open-source Milvus vector database, offering a managed cloud version (Zilliz Cloud) that became one of the most widely deployed vector search backends for RAG applications.",
+    "causes": [],
+    "lesson": "Being first to open-source a scalable vector database ahead of the RAG boom gave Zilliz an entrenched infrastructure position when demand surged.",
+    "source": "Zilliz Series C announcement, 2022"
+  },
+  {
+    "name": "Qdrant",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$37.5M+ raised, Series A 2023",
+    "summary": "Open-source vector database written in Rust, prioritizing performance and self-hosting flexibility, gaining strong adoption among developers building RAG and semantic search applications.",
+    "causes": [],
+    "lesson": "A performance-focused technical differentiator (Rust-based engine) helped a later entrant carve out share in an already-crowded vector database market.",
+    "source": "Qdrant Series A announcement, 2023"
+  },
+  {
+    "name": "Pachyderm",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2014,
+    "closed": 2023,
+    "funding": "$68M+ raised, Series C",
+    "summary": "Data versioning and pipeline orchestration platform for ML (data lineage/'Git for data'), which laid off the majority of its staff and effectively wound down its commercial operations in mid-2023 after failing to convert its technology into sufficient enterprise revenue.",
+    "causes": [
+      "cash-burn",
+      "product-market-fit",
+      "capital-intensity",
+      "outcompeted"
+    ],
+    "lesson": "Data versioning infrastructure proved to be a feature enterprises wanted bundled into broader platforms rather than a standalone product they would pay a premium for.",
+    "source": "Reports of Pachyderm layoffs and wind-down, 2023 (VentureBeat, industry newsletters)"
+  },
+  {
+    "name": "Domino Data Lab",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$233M+ raised; valued at $2.7B in 2021 peak round",
+    "summary": "Enterprise data science and MLOps platform that reached a $2.7B valuation in 2021 but faced significant growth deceleration, valuation markdowns, and workforce reductions in 2023 as enterprise ML platform spend consolidated around hyperscaler-native and generative AI tooling.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "overexpansion"
+    ],
+    "lesson": "Enterprise data science platforms that priced growth at 2021-era multiples struggled once budget scrutiny and the generative AI pivot compressed the addressable market for legacy MLOps tooling.",
+    "source": "Reports on Domino Data Lab valuation and layoffs, 2023 (The Information)"
+  },
+  {
+    "name": "Dataiku",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$600M+ raised; valued at $4.6B in 2023",
+    "summary": "French enterprise AI/data science platform (unicorn) providing end-to-end data preparation, ML model building, and now generative AI application workflows, maintaining strong enterprise revenue growth through the generative AI transition.",
+    "causes": [],
+    "lesson": "Broad enterprise platform breadth and strong European enterprise sales relationships let Dataiku absorb the shift from classic ML to generative AI workflows without losing its customer base.",
+    "source": "Dataiku funding round announcement, 2023"
+  },
+  {
+    "name": "Databricks",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$19B+ raised; valued at over $100B in 2025",
+    "summary": "Unified data and AI platform (originating from the creators of Apache Spark) that expanded from big-data processing into the dominant enterprise platform for data engineering, ML training, and generative AI application development, becoming one of the most highly valued private tech companies.",
+    "causes": [],
+    "lesson": "Owning the data layer gave Databricks the platform gravity to expand into ML training and generative AI tooling (via acquisitions like MosaicML) faster than pure-play AI infra startups could catch up.",
+    "source": "Databricks Series K funding announcement, 2025"
+  },
+  {
+    "name": "Cerebras",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2015,
+    "closed": null,
+    "funding": "$1.1B+ raised; filed for IPO in 2024",
+    "summary": "AI chip and training infrastructure company known for wafer-scale processors purpose-built for large-scale model training, later expanding into a cloud inference service, and filing for a public offering.",
+    "causes": [],
+    "lesson": "A genuinely differentiated hardware architecture for training at scale gave Cerebras a defensible niche versus Nvidia despite the massive capital intensity of chip development.",
+    "source": "Cerebras IPO filing (S-1), 2024"
+  },
+  {
+    "name": "SambaNova",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$1.1B+ raised; valued at $5.1B in 2021",
+    "summary": "AI chip and full-stack training/inference platform company that raised at a $5.1B valuation in 2021 but underwent significant layoffs (around 15% of staff in 2024) and struggled to translate its hardware differentiation into enterprise revenue at scale amid intense competition from Nvidia.",
+    "causes": [
+      "capital-intensity",
+      "cash-burn",
+      "outcompeted",
+      "market-timing"
+    ],
+    "lesson": "Custom AI silicon requires enormous, sustained capital and ecosystem investment to compete with Nvidia's software moat, and a strong valuation does not guarantee commercial traction.",
+    "source": "Reports on SambaNova layoffs, 2024 (Reuters, The Information)"
+  },
+  {
+    "name": "Graphcore",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$740M+ raised; valued at $2.8B in 2020",
+    "summary": "UK AI chip maker (IPU processors) that struggled to gain design wins against Nvidia, saw revenue far below projections and repeated layoffs, and was ultimately acquired by SoftBank in 2024 after failing to secure new funding or a public listing at its earlier valuation.",
+    "causes": [
+      "outcompeted",
+      "capital-intensity",
+      "cash-burn",
+      "market-timing"
+    ],
+    "lesson": "Technically impressive AI accelerator architecture is not sufficient without a software ecosystem and hyperscaler design wins to challenge Nvidia's dominance.",
+    "source": "SoftBank acquisition of Graphcore announcement, July 2024"
+  },
+  {
+    "name": "Replicate",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$100M+ raised, Series B 2023",
+    "summary": "Model deployment platform that lets developers run and fine-tune open-source ML models via a simple API, becoming a popular way for developers to deploy diffusion and generative models without managing infrastructure.",
+    "causes": [],
+    "lesson": "Making open-source model deployment as simple as an API call captured a large base of individual developers before enterprise infra vendors addressed the same need.",
+    "source": "Replicate Series B announcement, 2023"
+  },
+  {
+    "name": "RunPod",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$20M+ raised, seed/Series A",
+    "summary": "GPU cloud platform offering on-demand and serverless GPU compute for AI training and inference at lower cost than hyperscalers, growing quickly among indie developers and startups during the GPU shortage era of 2023-2024.",
+    "causes": [],
+    "lesson": "Undercutting hyperscaler GPU pricing while maintaining simple developer UX let a lean team capture significant share of the long tail of AI compute demand.",
+    "source": "RunPod funding coverage, Crunchbase 2024"
+  },
+  {
+    "name": "Lambda Labs",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$1.7B+ raised (including 2024 debt/equity rounds); valued at ~$2.5B",
+    "summary": "GPU cloud provider (originally a deep-learning hardware/workstation company) that pivoted fully into cloud GPU infrastructure for AI training, becoming one of the major alternative GPU clouds to AWS/Azure/GCP amid the 2023-2024 AI compute shortage.",
+    "causes": [],
+    "lesson": "A decade of deep-learning hardware expertise allowed Lambda to pivot into GPU cloud infrastructure just as demand for alternative compute capacity exploded.",
+    "source": "Lambda Labs funding round coverage, 2024"
+  },
+  {
+    "name": "CoreWeave",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$14B+ raised (equity and debt); IPO'd on Nasdaq in March 2025",
+    "summary": "Originally an Ethereum mining operation, CoreWeave pivoted to become a specialized GPU cloud provider for AI workloads, signing massive contracts with Microsoft and OpenAI, and completed a high-profile IPO in 2025.",
+    "causes": [],
+    "lesson": "A willingness to pivot an entire business model (crypto mining to AI GPU cloud) and aggressively lock in hyperscale GPU supply ahead of demand created a rare infrastructure moat.",
+    "source": "CoreWeave IPO coverage, March 2025 (Nasdaq, Reuters)"
+  },
+  {
+    "name": "Paperspace",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$46M raised; acquired by DigitalOcean in 2023 for ~$111M",
+    "summary": "Cloud GPU platform and notebook environment for ML developers, acquired by DigitalOcean in 2023 to add AI/ML infrastructure capability to DigitalOcean's cloud offering.",
+    "causes": [],
+    "lesson": "A developer-friendly GPU cloud with an established user base was an efficient bolt-on acquisition for a larger cloud provider entering the AI infrastructure market.",
+    "source": "DigitalOcean acquisition announcement, August 2023"
+  },
+  {
+    "name": "FloydHub",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": 2021,
+    "funding": "Seed funding (YC-backed, undisclosed small amount)",
+    "summary": "Early 'Heroku for deep learning' cloud training platform that let ML engineers train models without managing infrastructure. Shut down its cloud service in 2021, citing inability to reach sustainable scale against larger, better-capitalized cloud and MLOps competitors.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "capital-intensity"
+    ],
+    "lesson": "Being early to a good idea (simplified cloud ML training) is not enough if larger clouds and well-funded competitors can replicate the value proposition with far more capital.",
+    "source": "FloydHub shutdown announcement, 2021"
+  },
+  {
+    "name": "OctoML",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": 2024,
+    "funding": "$132M+ raised, Series C 2022",
+    "summary": "Model optimization and deployment platform built around the open-source Apache TVM compiler, which ceased independent operations in September 2024, with much of its technology and team moving to Nvidia.",
+    "causes": [
+      "pivot-failure",
+      "market-timing",
+      "cash-burn",
+      "outcompeted"
+    ],
+    "lesson": "Model-compiler optimization infrastructure got squeezed as chip vendors (Nvidia) and cloud providers increasingly built equivalent optimization directly into their own stacks.",
+    "source": "Reports of OctoML shutdown and Nvidia talent move, September 2024"
+  },
+  {
+    "name": "Banana.dev",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2021,
+    "closed": 2024,
+    "funding": "$8M+ raised, seed round backed by YC and others",
+    "summary": "Serverless GPU inference platform for deploying ML models with autoscaling, which shut down in mid-2024 as the serverless inference market became intensely crowded (Modal, Replicate, Baseten, RunPod) and margins compressed.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn",
+      "unit-economics"
+    ],
+    "lesson": "Serverless GPU inference became commoditized quickly once well-funded competitors entered, leaving thin margins for smaller players without a clear differentiator.",
+    "source": "Banana.dev shutdown announcement, 2024"
+  },
+  {
+    "name": "Kaskada",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": 2024,
+    "funding": "$16.5M raised, Series A",
+    "summary": "Real-time feature engineering and feature-store platform for ML, which ceased independent operations in early 2024 when its team and technology were acquired by DataStax in a small talent acquisition rather than continuing as a standalone company.",
+    "causes": [
+      "cash-burn",
+      "market-saturation",
+      "product-market-fit"
+    ],
+    "lesson": "The feature-store category became crowded and partially commoditized by cloud-native and open-source (Feast) alternatives, squeezing standalone vendors' independent growth prospects.",
+    "source": "DataStax acquisition of Kaskada team, February 2024"
+  },
+  {
+    "name": "Tecton",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$100M+ raised, Series C 2021",
+    "summary": "Enterprise feature-store platform founded by creators of Uber's Michelangelo ML platform, providing feature engineering and serving infrastructure for real-time ML, maintaining enterprise customers through the shift toward generative AI-adjacent data infrastructure.",
+    "causes": [],
+    "lesson": "Founder pedigree from building Uber's internal ML platform, combined with an early enterprise sales motion, allowed Tecton to survive feature-store market consolidation that killed smaller competitors like Kaskada.",
+    "source": "Tecton Series C announcement, 2021"
+  },
+  {
+    "name": "Rasgo",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2020,
+    "closed": 2023,
+    "funding": "$19M+ raised, Series A",
+    "summary": "Feature engineering and self-service analytics platform for data teams, which shut down operations in 2023, with founders publicly discussing the difficulty of building a durable business in the crowded, fast-shifting modern data stack tooling category.",
+    "causes": [
+      "product-market-fit",
+      "market-saturation",
+      "cash-burn",
+      "pivot-failure"
+    ],
+    "lesson": "Rapidly shifting developer tooling trends (SQL-based transformation tools, the rise of LLM-driven analytics) can erode a young infra product's relevance before it establishes a durable customer base.",
+    "source": "Rasgo founder shutdown post-mortem, 2023"
+  },
+  {
+    "name": "Wave Computing",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2010,
+    "closed": 2020,
+    "funding": "$317M+ raised",
+    "summary": "AI training chip maker (dataflow processing architecture) that filed for Chapter 11 bankruptcy in April 2020 after failing to bring its hardware to sufficient commercial scale and running out of runway despite substantial venture funding.",
+    "causes": [
+      "capital-intensity",
+      "cash-burn",
+      "technology-failure",
+      "market-timing"
+    ],
+    "lesson": "AI hardware startups face extremely long, capital-intensive development cycles, and running out of money before reaching production-scale customer deployments is a common failure mode.",
+    "source": "Wave Computing Chapter 11 bankruptcy filing, April 2020"
+  },
+  {
+    "name": "Skymind",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2014,
+    "closed": 2020,
+    "funding": "$45M+ raised",
+    "summary": "Commercial company behind the open-source Deeplearning4j (DL4J) Java deep learning framework, which became embroiled in financial and legal disputes with backers around 2019-2020 and effectively dissolved as an independent commercial entity.",
+    "causes": [
+      "governance",
+      "founder-conflict",
+      "cash-burn"
+    ],
+    "lesson": "Governance and investor disputes can unwind a company even when its open-source technology has genuine adoption and technical merit.",
+    "source": "TechCrunch and industry reporting on Skymind's 2019-2020 legal disputes"
+  },
+  {
+    "name": "Alegion",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2011,
+    "closed": null,
+    "funding": "$47M+ raised, Series B",
+    "summary": "Enterprise data labeling and annotation platform for computer vision and NLP training data, which significantly scaled back operations and staff around 2023 as the labeling market commoditized and larger players like Scale AI and Labelbox captured enterprise budgets.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "cash-burn"
+    ],
+    "lesson": "Mid-market data labeling vendors without a clear specialization got squeezed between low-cost crowdsourcing platforms and well-funded enterprise leaders.",
+    "source": "Industry reporting on Alegion's reduced operations, 2023"
+  },
+  {
+    "name": "Petuum",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$108M raised, Series B 2018 (Softbank-led) at ~$1B rumored valuation",
+    "summary": "Carnegie Mellon-spinout building an AI/ML training and deployment platform ('AI OS'), which underwent major layoffs and organizational collapse in 2020 as reported by industry press, after struggling to convert big early funding into a durable commercial product.",
+    "causes": [
+      "overexpansion",
+      "cash-burn",
+      "product-market-fit",
+      "founder-quality"
+    ],
+    "lesson": "Raising a very large round on strong academic pedigree without a validated enterprise product can lead to overexpansion that outpaces real market traction.",
+    "source": "The Information/Axios reporting on Petuum's 2020 layoffs and restructuring"
+  },
+  {
+    "name": "Continual",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": 2023,
+    "funding": "$28M+ raised, Series A",
+    "summary": "Declarative feature-store and operational ML platform built on top of the modern data stack (Snowflake/dbt-centric), which shut down in 2023 as the company concluded the category could not support a large independent venture-scale business.",
+    "causes": [
+      "product-market-fit",
+      "market-saturation",
+      "cash-burn"
+    ],
+    "lesson": "Building 'on top of' the modern data stack can leave a startup exposed if the underlying platforms (warehouses, orchestration tools) absorb the same functionality natively.",
+    "source": "Continual founder shutdown announcement, 2023"
+  },
+  {
+    "name": "Sisu Data",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": 2023,
+    "funding": "$102M+ raised, Series C",
+    "summary": "AI-powered data analysis platform for automated root-cause and driver analysis, which ceased operations in 2023 despite substantial funding, as enterprise buyers consolidated analytics spend around fewer, broader platforms.",
+    "causes": [
+      "cash-burn",
+      "market-saturation",
+      "product-market-fit"
+    ],
+    "lesson": "A large war chest does not overcome a narrow product wedge if enterprise budgets consolidate toward broader analytics platforms rather than point solutions.",
+    "source": "Industry reporting on Sisu Data's 2023 shutdown"
+  },
+  {
+    "name": "Grid.ai",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$18.6M raised, Series A",
+    "summary": "Cloud training platform built by the creators of PyTorch Lightning, offering managed large-scale model training. The standalone Grid.ai commercial product was discontinued around 2023 as the company pivoted its business fully toward the Lightning AI platform.",
+    "causes": [
+      "pivot-failure",
+      "product-market-fit"
+    ],
+    "lesson": "Popular open-source framework ownership (PyTorch Lightning) does not automatically translate into a successful adjacent commercial cloud product; the company had to pivot its go-to-market entirely.",
+    "source": "Lightning AI rebrand and Grid.ai product sunset, 2023"
+  },
+  {
+    "name": "Spell.ml",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2016,
+    "closed": 2022,
+    "funding": "$15M+ raised, Series A",
+    "summary": "Cloud-based ML training and workflow management platform aimed at simplifying distributed training and experiment tracking, which wound down its independent operations around 2022 amid intensifying competition from better-funded MLOps and cloud GPU platforms.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "capital-intensity"
+    ],
+    "lesson": "Early ML training-workflow platforms without a durable technical moat were repeatedly outpaced by larger, better-capitalized entrants in the same space.",
+    "source": "Industry and Crunchbase status reporting on Spell.ml, 2022"
+  },
+  {
+    "name": "HEAVY.AI (formerly MapD/OmniSci)",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$100M+ raised across multiple rounds",
+    "summary": "GPU-accelerated analytics database (originally MapD, rebranded OmniSci, then HEAVY.AI) targeting large-scale data analytics and geospatial visualization for AI-driven workloads, which underwent repeated rebranding, leadership changes, and staff reductions as it failed to reach durable scale against cloud-native analytics competitors.",
+    "causes": [
+      "pivot-failure",
+      "outcompeted",
+      "cash-burn",
+      "market-timing"
+    ],
+    "lesson": "Repeated rebranding and strategic pivots can signal — and accelerate — a struggle to find a defensible enterprise niche against faster-moving cloud-native competitors.",
+    "source": "Industry reporting on OmniSci/HEAVY.AI rebrands and staff changes, 2020-2023"
+  },
+  {
+    "name": "Context Relevant",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": 2017,
+    "funding": "$44M+ raised, Series C",
+    "summary": "Big-data machine learning platform (founded by a former DARPA researcher) that aimed to automate large-scale predictive analytics, but shut down abruptly in 2017 after burning through significant funding without reaching product-market fit.",
+    "causes": [
+      "cash-burn",
+      "product-market-fit",
+      "overexpansion"
+    ],
+    "lesson": "Large early funding rounds based on founder pedigree and ambitious vision can mask the absence of a validated enterprise product, leading to an abrupt shutdown once capital runs out.",
+    "source": "GeekWire coverage of Context Relevant's 2017 shutdown"
+  },
+  {
+    "name": "Skytree",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2011,
+    "closed": 2017,
+    "funding": "$27M+ raised, Series B",
+    "summary": "Big-data machine learning platform (spun out of academic research at CMU/Georgia Tech) offering scalable ML infrastructure, which wound down operations around 2017 after failing to gain traction against cloud provider ML services and open-source alternatives.",
+    "causes": [
+      "outcompeted",
+      "market-timing",
+      "cash-burn"
+    ],
+    "lesson": "Early enterprise ML infrastructure vendors were commonly outflanked once cloud providers (AWS, Google) began offering comparable managed ML services natively.",
+    "source": "Industry and Crunchbase reporting on Skytree's 2017 wind-down"
+  },
+  {
+    "name": "Nutonian",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2011,
+    "closed": null,
+    "funding": "$11.6M raised; acquired by DataRobot in 2017",
+    "summary": "Creator of the Eureqa automated model-discovery platform, acquired by DataRobot in 2017. The standalone Eureqa product line was subsequently discontinued and folded into DataRobot's broader AutoML platform rather than continuing independently.",
+    "causes": [
+      "outcompeted",
+      "pivot-failure",
+      "capital-intensity"
+    ],
+    "lesson": "An acquisition can still represent a functional product failure when the acquiring company discontinues the acquired technology as a standalone offering.",
+    "source": "DataRobot acquisition of Nutonian announcement, 2017"
+  },
+  {
+    "name": "Ayasdi",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2008,
+    "closed": null,
+    "funding": "$106M+ raised, Series D",
+    "summary": "Topological data analysis and AI platform for enterprise machine learning, which faced significant financial distress by 2019 and sold its assets/business units piecemeal (including to SymphonyAI) at a fraction of its earlier valuation.",
+    "causes": [
+      "cash-burn",
+      "product-market-fit",
+      "capital-intensity",
+      "founder-conflict"
+    ],
+    "lesson": "Sophisticated mathematical differentiation (topological data analysis) does not guarantee commercial adoption if the enterprise sales cycle and integration burden remain too high.",
+    "source": "Industry reporting on Ayasdi's 2019 distressed asset sales"
+  },
+  {
+    "name": "Alpine Data Labs",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2009,
+    "closed": null,
+    "funding": "$47M+ raised, Series C",
+    "summary": "Collaborative predictive analytics and machine learning platform for big data, acquired by TIBCO Software in 2017 in what was widely viewed as a distressed sale after the company failed to scale independently.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "product-market-fit"
+    ],
+    "lesson": "Predictive analytics platforms from the pre-cloud-ML era struggled to compete once cloud-native and open-source tooling made similar capability free or far cheaper.",
+    "source": "TIBCO acquisition of Alpine Data announcement, 2017"
+  },
+  {
+    "name": "Xplenty",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": 2023,
+    "funding": "$4.9M raised",
+    "summary": "Cloud data integration and ETL platform feeding data pipelines for analytics and ML, acquired by Talend and subsequently shut down as a standalone product by Qlik (Talend's acquirer) in 2023 as part of portfolio consolidation.",
+    "causes": [
+      "outcompeted",
+      "governance",
+      "market-saturation"
+    ],
+    "lesson": "Being acquired does not guarantee product continuity; portfolio consolidation by a larger acquirer's subsequent owner can still result in shutdown of the original product.",
+    "source": "Qlik product sunset notice for Xplenty, 2023"
+  },
+  {
+    "name": "Zoomdata",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$47M+ raised, Series D",
+    "summary": "Real-time big-data visualization and analytics platform designed for streaming and ML-driven data sources, acquired by Logi Analytics in 2019; the Zoomdata product was subsequently discontinued as Logi consolidated its embedded analytics portfolio.",
+    "causes": [
+      "outcompeted",
+      "pivot-failure",
+      "capital-intensity"
+    ],
+    "lesson": "Point-solution visualization tools for big-data/ML pipelines were frequently absorbed and then discontinued once acquirers prioritized their own core platforms.",
+    "source": "Logi Analytics acquisition of Zoomdata, 2019, and subsequent product discontinuation"
+  },
+  {
+    "name": "Clarifai",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$100M+ raised; 2023 Series D at a valuation reported below prior rounds",
+    "summary": "Computer vision and AI data/model platform that was an early leader in visual recognition APIs. The company underwent a down round in 2023 and reported workforce reductions as it faced intensifying competition from foundation-model providers and struggled to maintain its earlier growth trajectory.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "outcompeted"
+    ],
+    "lesson": "Being an early leader in a narrow AI capability (computer vision APIs) became less defensible once general-purpose foundation models began subsuming many specialized use cases.",
+    "source": "Reports on Clarifai's 2023 down round and restructuring (The Information, Business Insider)"
+  },
+  {
+    "name": "Explorium",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$127M+ raised, Series C 2021 at ~$400M valuation",
+    "summary": "External data enrichment and feature discovery platform for ML models, which underwent significant layoffs and a strategic pivot toward generative AI-focused offerings in 2024 after its original automated feature-engineering product failed to sustain its earlier growth trajectory.",
+    "causes": [
+      "pivot-failure",
+      "market-timing",
+      "cash-burn"
+    ],
+    "lesson": "A strong niche in automated feature discovery for classical ML models lost relevance as the market's attention and budget shifted rapidly toward generative AI tooling.",
+    "source": "Industry reporting on Explorium's 2024 layoffs and repositioning"
+  },
+  {
+    "name": "Yhat",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": 2017,
+    "funding": "$1.6M raised, seed",
+    "summary": "Early model deployment API startup (YC-backed) that let data scientists deploy predictive models as production REST APIs, one of the first entrants in what later became the MLOps model-serving category. Shut down operations in 2017 after failing to scale revenue.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "product-market-fit"
+    ],
+    "lesson": "Being years ahead of a category (model-serving infrastructure) can be as fatal as being late, if the broader market and buyer sophistication for the product hasn't matured yet.",
+    "source": "Yhat company shutdown notice and Crunchbase status, 2017"
+  },
+  {
+    "name": "Prior Knowledge",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2010,
+    "closed": null,
+    "funding": "Seed/angel funding, undisclosed",
+    "summary": "Predictive modeling API startup (creator of the Veritable platform for probabilistic machine learning as a service), acqui-hired by Salesforce in 2012, with its standalone product discontinued shortly after the talent acquisition.",
+    "causes": [
+      "cash-burn",
+      "product-market-fit",
+      "capital-intensity"
+    ],
+    "lesson": "Very early 'ML-as-a-service' products often ended in talent acquisitions rather than product continuity because enterprise demand for self-serve predictive APIs hadn't yet matured.",
+    "source": "Salesforce acquisition of Prior Knowledge coverage, 2012 (TechCrunch)"
+  },
+  {
+    "name": "Declara",
+    "outcome": "failed",
+    "industry": "ai-data-infra",
+    "founded": 2012,
+    "closed": 2018,
+    "funding": "$18.7M+ raised, Series B",
+    "summary": "AI-driven learning and knowledge-data platform that used machine learning to curate personalized content and data pipelines for corporate/educational clients; shut down operations in 2018 following funding difficulties and internal disputes reported in the press.",
+    "causes": [
+      "cash-burn",
+      "founder-conflict",
+      "product-market-fit"
+    ],
+    "lesson": "AI data platforms serving a narrow vertical (corporate learning) can run out of runway quickly if the core data/ML value proposition doesn't produce clear, measurable customer ROI.",
+    "source": "Press coverage of Declara's 2018 shutdown (EdSurge, TechCrunch)"
+  },
+  {
+    "name": "Gretel AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$67M+ raised; acquired by Nvidia in 2024",
+    "summary": "Synthetic data generation platform for privacy-preserving ML training data, acquired by Nvidia in 2024 to bolster Nvidia's data pipeline and synthetic data capabilities for enterprise AI model training.",
+    "causes": [],
+    "lesson": "Synthetic data generation became strategically valuable to chip/platform vendors seeking to help customers overcome real-world training data scarcity and privacy constraints.",
+    "source": "Nvidia acquisition of Gretel AI announcement, 2024"
+  },
+  {
+    "name": "Robust Intelligence",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$56M+ raised; acquired by Cisco in 2024",
+    "summary": "AI model testing, validation, and security (red-teaming) platform for detecting vulnerabilities and failure modes in production ML/AI systems, acquired by Cisco in 2024 to build out its AI security product line.",
+    "causes": [],
+    "lesson": "AI security and red-teaming for models became a priority enterprise category as generative AI adoption grew, making specialized vendors attractive acquisition targets for networking/security incumbents.",
+    "source": "Cisco acquisition of Robust Intelligence announcement, 2024"
+  },
+  {
+    "name": "Protect AI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$35M+ raised; acquired by Palo Alto Networks in 2025",
+    "summary": "AI/ML security platform focused on securing the ML supply chain (model scanning, MLSecOps), acquired by Palo Alto Networks in 2025 to extend its cybersecurity platform into AI-specific threat protection.",
+    "causes": [],
+    "lesson": "Positioning as the 'security layer' for the AI data/model supply chain made Protect AI a natural, fast-moving acquisition target for major cybersecurity platforms racing to add AI security capability.",
+    "source": "Palo Alto Networks acquisition of Protect AI announcement, 2025"
+  },
+  {
+    "name": "Deepgram",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2015,
+    "closed": null,
+    "funding": "$85M+ raised, Series C 2022",
+    "summary": "Speech recognition and voice AI infrastructure platform providing training data pipelines and APIs for automatic speech recognition, becoming a key voice-AI infrastructure provider as conversational AI applications proliferated.",
+    "causes": [],
+    "lesson": "Specializing deeply in one data modality (speech) rather than competing as a general-purpose AI data vendor let Deepgram build superior domain-specific infrastructure and defend against generalist competitors.",
+    "source": "Deepgram Series C announcement, 2022"
+  },
+  {
+    "name": "AssemblyAI",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$115M+ raised, Series D 2024",
+    "summary": "Speech-to-text and audio intelligence API platform providing training and inference infrastructure for speech AI, growing rapidly as developers embedded voice transcription and understanding into AI applications.",
+    "causes": [],
+    "lesson": "A simple, well-documented API for a well-defined data modality (speech-to-text) drove strong product-led growth among AI application developers.",
+    "source": "AssemblyAI Series D announcement, 2024"
+  },
+  {
+    "name": "Hive",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$120M+ raised, Series D 2022 at ~$2B valuation",
+    "summary": "AI data labeling and content understanding platform combining crowdsourced annotation with proprietary trained models for content moderation, media recognition, and generative AI detection, achieving unicorn status.",
+    "causes": [],
+    "lesson": "Combining a labeling workforce with proprietary applied-AI products (like content moderation models) let Hive capture more value per data pipeline than a pure labeling vendor.",
+    "source": "Hive Series D announcement, 2022"
+  },
+  {
+    "name": "V7 Labs",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$46M+ raised, Series A 2022",
+    "summary": "AI data labeling and training-data platform (Darwin) combining automated annotation with dataset management for computer vision and multimodal AI teams, gaining traction in healthcare, retail, and manufacturing verticals.",
+    "causes": [],
+    "lesson": "Automating a large share of the labeling workflow itself (rather than relying purely on human crowdsourcing) gave V7 a cost and speed advantage as enterprise demand for labeled data scaled.",
+    "source": "V7 Labs Series A announcement, 2022"
+  },
+  {
+    "name": "Encord",
+    "outcome": "success",
+    "industry": "ai-data-infra",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$50M+ raised, Series B 2024",
+    "summary": "Data development platform for computer vision and multimodal AI teams, providing annotation, data curation, and quality management tools, with strong adoption in healthcare and autonomous systems companies.",
+    "causes": [],
+    "lesson": "Focusing on data quality and curation (not just labeling volume) addressed a growing enterprise realization that model performance was bottlenecked by training-data quality, not just quantity.",
+    "source": "Encord Series B announcement, 2024"
+  }
+]

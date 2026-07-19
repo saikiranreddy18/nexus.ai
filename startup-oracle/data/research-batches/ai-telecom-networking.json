@@ -1,0 +1,796 @@
+[
+  {
+    "name": "Intucell",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2009,
+    "closed": null,
+    "funding": "$12M",
+    "summary": "Israeli startup that pioneered Self-Organizing Network (SON) software using algorithms to automatically optimize cellular network performance in real time. Acquired by Cisco in 2013 for approximately $475M, one of the largest exits in telecom network optimization software.",
+    "causes": [],
+    "lesson": "A narrow but painful operator problem (manual RAN tuning) solved with real-time optimization algorithms can command a huge strategic premium from network vendors racing to add intelligence.",
+    "source": "Cisco press release 2013; TechCrunch coverage of Cisco-Intucell acquisition"
+  },
+  {
+    "name": "Actix",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 1993,
+    "closed": null,
+    "funding": "Undisclosed (VC-backed)",
+    "summary": "UK-based network optimization software company providing analytics and automation for radio access network planning and performance. Acquired by Amdocs in 2014 to strengthen its network management and analytics portfolio.",
+    "causes": [],
+    "lesson": "Long-running network optimization vendors can still find strong strategic buyers decades after founding if their tooling stays relevant to operators' RAN performance needs.",
+    "source": "Amdocs press release 2014"
+  },
+  {
+    "name": "AIRCOM International",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 1990,
+    "closed": null,
+    "funding": "Undisclosed",
+    "summary": "Network planning and optimization software provider for mobile operators, offering RF planning, performance management and analytics tools used across hundreds of global networks. Acquired by TEOCO Corporation in 2014, consolidating network analytics offerings.",
+    "causes": [],
+    "lesson": "Consolidation in telecom analytics tooling rewards vendors with deep operator relationships and global deployment footprints, even absent explosive growth.",
+    "source": "TEOCO press release 2014"
+  },
+  {
+    "name": "Movik Networks",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2009,
+    "closed": null,
+    "funding": "$26M",
+    "summary": "Mobile broadband intelligence and traffic optimization company using analytics to help operators manage and monetize mobile data traffic. Acquired by Oracle in 2015 to bolster its Communications Global Business Unit.",
+    "causes": [],
+    "lesson": "Traffic-management and network-intelligence startups became attractive tuck-in acquisitions for large telecom software vendors building out full-stack OSS/BSS suites.",
+    "source": "Oracle press release 2015"
+  },
+  {
+    "name": "Deepfield",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2011,
+    "closed": null,
+    "funding": "Undisclosed (VC-backed)",
+    "summary": "Network analytics company that used big-data and machine-learning techniques to give service providers real-time visibility into internet and video traffic flowing across their networks. Acquired by Nokia in 2016 to strengthen its IP/optical networks analytics capabilities.",
+    "causes": [],
+    "lesson": "Deep, real-time visibility into traffic composition became a must-have for operators managing video-heavy networks, making analytics specialists valuable acquisition targets for network equipment vendors.",
+    "source": "Nokia press release 2016"
+  },
+  {
+    "name": "Aria Networks",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2004,
+    "closed": null,
+    "funding": "Undisclosed",
+    "summary": "UK-based company applying AI and multi-layer optimization algorithms to network planning, capacity management and orchestration for telecom operators. Acquired by VMware in 2017 to enhance its NFV and network orchestration technology.",
+    "causes": [],
+    "lesson": "AI-driven optimization engines for multi-layer network planning became core building blocks that virtualization/orchestration platforms needed to acquire rather than build from scratch.",
+    "source": "VMware press release 2017"
+  },
+  {
+    "name": "Guavus",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2006,
+    "closed": null,
+    "funding": "$95M+",
+    "summary": "Big-data analytics company applying machine learning to telecom network and customer data for real-time operational intelligence, fraud detection and traffic insight. Acquired by Thales in 2017/2018 to expand its cybersecurity and big-data analytics business.",
+    "causes": [],
+    "lesson": "Telecom-scale streaming analytics platforms that could process carrier-grade data volumes in real time found strategic buyers outside pure telecom, in defense and cybersecurity conglomerates.",
+    "source": "Thales press release on Guavus acquisition, 2017"
+  },
+  {
+    "name": "Sedona Systems",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$25M",
+    "summary": "Israeli network path computation and optimization software company enabling operators to dynamically optimize traffic routing across multi-vendor, multi-domain networks. Acquired by Airspan Networks in 2019.",
+    "causes": [],
+    "lesson": "Multi-domain path optimization engines that plug into SDN control layers offered a differentiated value proposition attractive to network equipment vendors expanding software portfolios.",
+    "source": "Airspan Networks press release 2019"
+  },
+  {
+    "name": "Vasona Networks",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$85M+",
+    "summary": "Mobile network intelligence company using real-time analytics and AI to help operators optimize subscriber quality of experience and manage mobile data congestion. Acquired by NETSCOUT in 2020.",
+    "causes": [],
+    "lesson": "Subscriber-experience-focused network intelligence could be repositioned as an assurance product line inside larger network performance monitoring vendors.",
+    "source": "NETSCOUT press release 2020"
+  },
+  {
+    "name": "SpaceTime Insight",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$45M+",
+    "summary": "AI and IoT analytics company providing predictive asset management and network intelligence software for utilities and telecom operators. Acquired by Nokia in 2018 to strengthen its IoT and analytics software business.",
+    "causes": [],
+    "lesson": "Predictive-analytics platforms built for critical infrastructure operators (utilities, telecom) generalize well across regulated industries, widening the pool of strategic acquirers.",
+    "source": "Nokia press release 2018"
+  },
+  {
+    "name": "Centina Systems",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2003,
+    "closed": null,
+    "funding": "Undisclosed",
+    "summary": "Service assurance and network performance management software vendor offering analytics for SDN/NFV and multi-vendor telecom networks. Acquired by Ribbon Communications (then part of the GENBAND/Sonus lineage) in 2017.",
+    "causes": [],
+    "lesson": "Service-assurance vendors that kept pace with the shift to SDN/NFV architectures remained relevant acquisition targets even after over a decade in market.",
+    "source": "Ribbon Communications acquisition announcement 2017"
+  },
+  {
+    "name": "Athonet",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2005,
+    "closed": null,
+    "funding": "Undisclosed",
+    "summary": "Italian private mobile network (LTE/5G core) software provider enabling operators and enterprises to deploy software-defined private cellular networks with automated, AI-assisted management. Acquired by HPE in 2023 to bolster its Aruba private 5G portfolio.",
+    "causes": [],
+    "lesson": "Private-network software specialists became strategic assets as enterprise Wi-Fi/networking vendors raced to add private cellular capabilities.",
+    "source": "HPE press release 2023"
+  },
+  {
+    "name": "CENX",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2009,
+    "closed": null,
+    "funding": "$70M+",
+    "summary": "Service orchestration and assurance software company using analytics and automation to manage hybrid physical/virtual telecom networks for Tier-1 carriers such as AT&T. Acquired by Netcracker (a NEC subsidiary) in 2019.",
+    "causes": [],
+    "lesson": "Deep integration with a marquee Tier-1 carrier's NFV transformation program built the credibility and reference deployments needed to attract a large OSS/BSS acquirer.",
+    "source": "Netcracker press release 2019"
+  },
+  {
+    "name": "Niara",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$32.5M",
+    "summary": "AI/machine-learning-based network security analytics company detecting insider threats and compromised devices through behavioral analysis of network traffic. Acquired by HPE (Aruba) in 2017.",
+    "causes": [],
+    "lesson": "User and entity behavior analytics built on network traffic data became a foundational layer that networking vendors needed for differentiated security offerings.",
+    "source": "HPE/Aruba press release 2017"
+  },
+  {
+    "name": "LightCyber",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$29M",
+    "summary": "Israeli company providing behavioral attack detection using machine learning to analyze network traffic and identify compromised endpoints. Acquired by Palo Alto Networks in 2017 to add network-based threat detection to its platform.",
+    "causes": [],
+    "lesson": "Machine-learning-based network behavioral detection was a capability gap large security platforms were willing to pay a premium to close quickly via acquisition.",
+    "source": "Palo Alto Networks press release 2017"
+  },
+  {
+    "name": "Seculert",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$28.4M",
+    "summary": "Cloud-based, machine-learning-driven network security platform detecting malware and advanced threats by analyzing network traffic patterns. Acquired by Radware in 2017.",
+    "causes": [],
+    "lesson": "Cloud-native threat-detection engines complemented traditional network security vendors' on-premise offerings, making them attractive bolt-on acquisitions.",
+    "source": "Radware press release 2017"
+  },
+  {
+    "name": "Cellwize",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2011,
+    "closed": null,
+    "funding": "$62M+",
+    "summary": "Israeli RAN automation and orchestration company providing AI-driven, closed-loop network optimization software used by Tier-1 operators globally. Acquired by Samsung Electronics in 2023 to strengthen its network automation and Open RAN software.",
+    "causes": [],
+    "lesson": "AI-driven closed-loop RAN automation became core intellectual property that network equipment makers needed in-house as Open RAN and 5G complexity grew.",
+    "source": "Samsung Electronics press release 2023"
+  },
+  {
+    "name": "DeepSig",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$20M+",
+    "summary": "Applied deep learning to wireless signal processing and RF communications, developing AI models that replace traditional physical-layer signal processing algorithms for wireless systems. Acquired by Qualcomm in 2024 to advance AI-native wireless technology for future connectivity standards.",
+    "causes": [],
+    "lesson": "Betting early on deep learning replacing hand-engineered signal-processing algorithms paid off once chipmakers began treating AI-native physical layers as a competitive differentiator for 6G.",
+    "source": "Qualcomm press release 2024"
+  },
+  {
+    "name": "Mist Systems",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$71M",
+    "summary": "Developed AI-driven wireless networking, using its 'Marvis' virtual network assistant to proactively detect and resolve Wi-Fi and wired network issues via machine learning. Acquired by Juniper Networks in 2019 for roughly $405M.",
+    "causes": [],
+    "lesson": "Building a genuinely differentiated AI assistant on top of commodity access-point hardware created enough enterprise pull to command a strong acquisition multiple.",
+    "source": "Juniper Networks press release 2019"
+  },
+  {
+    "name": "Apstra",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$95M",
+    "summary": "Pioneer of intent-based data center networking, using automation and analytics to continuously validate that network state matches operator intent. Acquired by Juniper Networks in 2021.",
+    "causes": [],
+    "lesson": "Vendor-agnostic intent-based networking software proved durable and valuable because it worked across multi-vendor data center fabrics rather than locking customers to one hardware line.",
+    "source": "Juniper Networks press release 2021"
+  },
+  {
+    "name": "Veriflow",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$18M",
+    "summary": "Spun out of academic research, Veriflow used mathematical network verification and predictive analytics to catch network configuration errors before they caused outages. Acquired by VMware in 2019.",
+    "causes": [],
+    "lesson": "Formal verification approaches to network reliability found a home inside broader network virtualization platforms seeking to reduce customer outage risk.",
+    "source": "VMware press release 2019"
+  },
+  {
+    "name": "Nyansa",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$40M+",
+    "summary": "AI-powered network analytics company providing 'Voyance', a machine-learning platform giving IT teams full-stack visibility into wired, wireless and cloud application performance. Acquired by HPE (Aruba) in 2020.",
+    "causes": [],
+    "lesson": "Full-stack AIOps visibility spanning access network to cloud applications addressed a broader pain point than point-product monitoring tools, driving strategic interest.",
+    "source": "HPE/Aruba press release 2020"
+  },
+  {
+    "name": "Anuta Networks",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2007,
+    "closed": null,
+    "funding": "$30M+",
+    "summary": "Network automation and orchestration software provider offering multi-vendor network configuration, compliance and analytics automation for service providers and enterprises. Acquired by Cisco in 2022.",
+    "causes": [],
+    "lesson": "Multi-vendor automation platforms remained relevant for over a decade by continuously extending support for new device types and cloud-native architectures.",
+    "source": "Cisco press release 2022"
+  },
+  {
+    "name": "Vectra AI",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": null,
+    "funding": "$350M+",
+    "summary": "AI-driven network detection and response (NDR) platform that analyzes network traffic metadata to detect cyberattacks in real time, reaching unicorn status while remaining independent.",
+    "causes": [],
+    "lesson": "Applying machine learning to network traffic metadata (rather than payload inspection) scaled well across encrypted traffic and hybrid cloud environments, sustaining a long independent growth trajectory.",
+    "source": "Vectra AI company funding announcements; Crunchbase"
+  },
+  {
+    "name": "Darktrace",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$230M+ before IPO",
+    "summary": "UK-based cybersecurity company using self-learning AI to detect anomalies in network traffic in real time, modeled loosely on the human immune system. IPO'd on the London Stock Exchange in 2021; agreed to be acquired by Thoma Bravo in 2024 for roughly $5.3B.",
+    "causes": [],
+    "lesson": "A distinctive 'self-learning AI' narrative combined with strong enterprise sales execution carried the company from startup to public listing to a large private-equity buyout.",
+    "source": "Thoma Bravo/Darktrace acquisition announcement 2024"
+  },
+  {
+    "name": "Cato Networks",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2015,
+    "closed": null,
+    "funding": "$770M+",
+    "summary": "Pioneer of SASE (Secure Access Service Edge), combining SD-WAN with AI-driven traffic optimization and cloud-delivered network security in a single global cloud network, reaching multi-billion-dollar valuation as a private company.",
+    "causes": [],
+    "lesson": "Converging network optimization and security into a single AI-managed cloud-native service created a category (SASE) large enough to sustain a long, well-funded independent run.",
+    "source": "Cato Networks funding round press releases"
+  },
+  {
+    "name": "Kentik",
+    "outcome": "success",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$120M+",
+    "summary": "Network observability company applying big-data analytics and machine learning to give service providers and enterprises real-time visibility into network traffic, performance and cost, serving customers like major ISPs and cloud providers.",
+    "causes": [],
+    "lesson": "Positioning as the 'network observability' layer for both traditional carriers and hyperscale/cloud customers diversified the addressable market beyond legacy telecom alone.",
+    "source": "Kentik funding announcements; company website"
+  },
+  {
+    "name": "Argyle Data",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": 2017,
+    "funding": "$16M",
+    "summary": "Machine-learning platform aimed at detecting telecom fraud (such as SIM box and roaming fraud) using big-data analytics on carrier signaling data. Struggled to convert pilots into large recurring contracts and ceased independent operations.",
+    "causes": [
+      "product-market-mismatch",
+      "cash-burn",
+      "ran-out-of-money"
+    ],
+    "lesson": "Telecom fraud-detection budgets moved slowly and were dominated by incumbent OSS vendors; a standalone point-solution struggled to reach scale before running out of runway.",
+    "source": "Industry trade press coverage of Argyle Data wind-down"
+  },
+  {
+    "name": "Lumina Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2018,
+    "closed": 2020,
+    "funding": "$12M+",
+    "summary": "Spun out of Brocade to commercialize open-source ONOS/CORD-based SDN orchestration software for telecom operators. Abruptly ceased operations in mid-2020, laying off its entire staff without prior notice after failing to secure follow-on funding.",
+    "causes": [
+      "ran-out-of-money",
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Betting a company on open-source telecom SDN standards moving faster than carrier procurement cycles actually move is a timing trap that can exhaust funding before revenue materializes.",
+    "source": "SDxCentral and Light Reading coverage of Lumina Networks shutdown, 2020"
+  },
+  {
+    "name": "SnapRoute",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2015,
+    "closed": 2019,
+    "funding": "$27M",
+    "summary": "Built a cloud-native, disaggregated network operating system (Boulder OS) aimed at hyperscale and telecom data centers. Failed to gain sufficient commercial traction and pivoted away from networking into cybersecurity, effectively ending its original business.",
+    "causes": [
+      "pivot-failure",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "Disaggregated network OS software faced brutal competition from both hyperscalers building in-house and established vendors, leaving little room for an independent NOS startup.",
+    "source": "SDxCentral coverage of SnapRoute pivot, 2019"
+  },
+  {
+    "name": "Big Switch Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": 2020,
+    "funding": "$127M",
+    "summary": "Early SDN pioneer building white-box switching and network automation software for data centers, once considered a leading SDN unicorn candidate. After years of missed growth expectations, sold its assets and technology to Arista Networks (with some IP going to Broadcom) in 2020 in a distressed transaction.",
+    "causes": [
+      "market-timing",
+      "outcompeted",
+      "cash-burn"
+      ],
+    "lesson": "Being early to the SDN wave was not enough; incumbents like Cisco and Arista absorbed the market's appetite for automation faster than a standalone challenger could scale.",
+    "source": "SDxCentral and Data Center Knowledge coverage of Big Switch Networks asset sale, 2020"
+  },
+  {
+    "name": "Volta Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": 2021,
+    "funding": "$15M+",
+    "summary": "Developed disaggregated routing and network operating system software for service provider networks. Failed to scale independently and its technology and team were absorbed into DriveNets around 2021.",
+    "causes": [
+      "product-market-mismatch",
+      "cash-burn",
+      "outcompeted"
+    ],
+    "lesson": "In disaggregated networking, being a smaller, less-capitalized player made it hard to compete against better-funded rivals building similar disaggregated router software.",
+    "source": "Light Reading and trade press coverage of Volta Networks/DriveNets consolidation"
+  },
+  {
+    "name": "Kaloom",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2016,
+    "closed": 2023,
+    "funding": "$35M+",
+    "summary": "Canadian company building an AI-managed, disaggregated 'network cloud' fabric intended to replace traditional data center and telecom edge networking hardware/software stacks. Ceased operations in 2023 after failing to reach commercial scale.",
+    "causes": [
+      "cash-burn",
+      "market-timing",
+      "product-market-mismatch"
+    ],
+    "lesson": "A radical rearchitecture of the network stack requires operators to rip out proven infrastructure; without a killer early-adopter use case, sales cycles outlasted the startup's funding.",
+    "source": "Trade press coverage of Kaloom shutdown, 2023"
+  },
+  {
+    "name": "Blue Danube Systems",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2009,
+    "closed": 2019,
+    "funding": "$47M",
+    "summary": "Developed AI-optimized massive MIMO beamforming antenna technology aimed at boosting capacity in dense mobile networks ahead of 5G rollouts. Ceased operations in 2019 after struggling to convert trials with carriers into large-scale deployments.",
+    "causes": [
+      "capital-intensity",
+      "cash-burn",
+      "market-timing"
+    ],
+    "lesson": "Hardware-plus-AI network capacity startups face brutally long carrier qualification cycles; running out of capital before 5G densification demand fully materialized proved fatal.",
+    "source": "Light Reading and FierceWireless coverage of Blue Danube Systems shutdown"
+  },
+  {
+    "name": "Movandi",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2016,
+    "closed": 2023,
+    "funding": "$100M+",
+    "summary": "Developed 5G mmWave repeater and AI-driven beamforming technology to extend mmWave coverage for mobile operators and fixed wireless access. Shut down operations in 2023 after mmWave 5G deployments failed to scale as broadly as anticipated.",
+    "causes": [
+      "market-timing",
+      "capital-intensity",
+      "cash-burn"
+    ],
+    "lesson": "Betting heavily on mmWave 5G becoming a mainstream deployment mode was a market-timing risk; when carriers deprioritized mmWave in favor of mid-band spectrum, the addressable market shrank under the company.",
+    "source": "Light Reading coverage of Movandi shutdown, 2023"
+  },
+  {
+    "name": "Phazr",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2015,
+    "closed": 2020,
+    "funding": "$25M+",
+    "summary": "5G fixed wireless access and smart antenna startup aiming to deliver low-cost, software-driven 5G network infrastructure to operators. Quietly ceased operations after failing to secure sustained commercial deployments.",
+    "causes": [
+      "cash-burn",
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Hardware-heavy 5G infrastructure startups needed either a major carrier anchor customer or deep capital reserves; Phazr had neither in sufficient measure to outlast the pre-commercial 5G period.",
+    "source": "Industry trade press coverage of Phazr's wind-down"
+  },
+  {
+    "name": "Pivotal Commware",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": 2023,
+    "funding": "$155M+",
+    "summary": "Developed holographic beamforming smart antenna technology (backed in part by Bill Gates) intended to extend 5G mmWave and CBRS coverage more cheaply than traditional infrastructure. Shut down in 2023 despite substantial funding, citing inability to reach sustainable commercial scale.",
+    "causes": [
+      "capital-intensity",
+      "cash-burn",
+      "market-timing"
+    ],
+    "lesson": "Even well-capitalized, technically innovative network hardware startups can fail if the underlying deployment model (mmWave/CBRS densification) takes years longer to materialize at scale than projected.",
+    "source": "Light Reading and GeekWire coverage of Pivotal Commware shutdown, 2023"
+  },
+  {
+    "name": "Airspan Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 1994,
+    "closed": 2024,
+    "funding": "Public company (NASDAQ: MIMO)",
+    "summary": "Open RAN and 5G radio access network equipment vendor incorporating AI-based network optimization software. Filed for Chapter 11 bankruptcy protection in 2024 after mounting losses, delayed carrier deployments and inability to refinance debt.",
+    "causes": [
+      "cash-burn",
+      "capital-intensity",
+      "market-timing",
+      "overexpansion"
+    ],
+    "lesson": "Open RAN's promised acceleration of carrier adoption took much longer than public-market investors and lenders expected, and capital-intensive hardware vendors couldn't survive the extended runway needed.",
+    "source": "Reuters and Light Reading coverage of Airspan Networks Chapter 11 filing, 2024"
+  },
+  {
+    "name": "Starry",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": 2023,
+    "funding": "$400M+",
+    "summary": "Fixed wireless broadband provider using proprietary AI-optimized point-to-multipoint radio network technology to deliver last-mile internet access, aiming to disrupt cable/fiber incumbents. Filed for Chapter 11 bankruptcy in 2023 after years of heavy cash burn and slower-than-expected subscriber growth.",
+    "causes": [
+      "cash-burn",
+      "capital-intensity",
+      "unit-economics",
+      "overexpansion"
+    ],
+    "lesson": "Building and operating last-mile wireless network infrastructure is extremely capital-intensive; even with novel spectrum-efficient AI-managed radio technology, subscriber acquisition costs and buildout costs outpaced revenue growth.",
+    "source": "Reuters coverage of Starry Chapter 11 bankruptcy filing, February 2023"
+  },
+  {
+    "name": "Parallel Wireless",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": null,
+    "funding": "$450M+",
+    "summary": "Open RAN software and virtualized radio access network vendor using AI-driven network orchestration to let operators mix multi-vendor radio equipment. Underwent severe financial distress, layoffs and leadership departures starting in 2023 after major operator contracts (including in emerging markets) failed to generate expected returns.",
+    "causes": [
+      "cash-burn",
+      "unit-economics",
+      "overexpansion",
+      "capital-intensity"
+    ],
+    "lesson": "Chasing large emerging-market Open RAN contracts to drive growth can backfire when those deployments carry thin margins and payment risk, straining cash reserves even for a heavily funded company.",
+    "source": "Light Reading and Fierce Network coverage of Parallel Wireless financial distress, 2023"
+  },
+  {
+    "name": "Cohere Technologies",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2004,
+    "closed": 2023,
+    "funding": "$225M+",
+    "summary": "Wireless technology company (unrelated to the Cohere AI language-model company) developing OTFS modulation and AI-assisted spectrum multiplexing technology it claimed could dramatically boost cellular network capacity. Wound down most operations after failing to achieve commercial carrier adoption of its modulation technology at scale.",
+    "causes": [
+      "product-market-mismatch",
+      "cash-burn",
+      "technology-failure"
+    ],
+    "lesson": "Physical-layer modulation innovations require standards-body buy-in and chipset ecosystem support; without that, even patented and well-funded 'better than 5G' claims struggle to reach commercial deployment.",
+    "source": "Trade press coverage of Cohere Technologies wind-down, 2022-2023"
+  },
+  {
+    "name": "Fortscale",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2012,
+    "closed": 2020,
+    "funding": "$20M+",
+    "summary": "User and entity behavior analytics (UEBA) company applying machine learning to network and user activity logs to detect insider threats. After struggling to scale independently, was acquired at a modest valuation by Fortinet in 2020, effectively ending it as a standalone company.",
+    "causes": [
+      "cash-burn",
+      "market-saturation",
+      "outcompeted"
+    ],
+    "lesson": "The UEBA/network-security-analytics space became crowded quickly, and undifferentiated players ended up in distressed, low-multiple acquisitions rather than independent growth.",
+    "source": "Fortinet acquisition announcement 2020; security trade press"
+  },
+  {
+    "name": "E8 Security",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2013,
+    "closed": 2018,
+    "funding": "$21.7M",
+    "summary": "Machine-learning-based network and endpoint behavioral analytics platform for detecting advanced threats. Failed to raise further growth capital and was acquired by fellow struggling UEBA vendor Fortscale in 2018 in a distressed consolidation.",
+    "causes": [
+      "cash-burn",
+      "market-saturation",
+      "ran-out-of-money"
+    ],
+    "lesson": "When too many venture-backed startups chase the same behavioral-analytics thesis simultaneously, most end up merging or shutting down rather than reaching independent scale.",
+    "source": "Security trade press coverage of Fortscale-E8 Security merger, 2018"
+  },
+  {
+    "name": "StackPath",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2015,
+    "closed": 2023,
+    "funding": "$180M+",
+    "summary": "Edge computing and CDN platform incorporating AI-based traffic routing and network security, aiming to be an edge infrastructure layer for telecom and enterprise customers. Laid off the large majority of its staff and wound down most core operations in 2023 amid the broader edge-computing capital pullback.",
+    "causes": [
+      "cash-burn",
+      "capital-intensity",
+      "market-timing",
+      "unit-economics"
+    ],
+    "lesson": "Building global edge infrastructure to compete with hyperscalers and CDN incumbents required far more sustained capital than the edge-computing hype cycle ultimately supported.",
+    "source": "Trade press coverage of StackPath layoffs and wind-down, 2023"
+  },
+  {
+    "name": "Vapor IO",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "married": null,
+    "founded": 2015,
+    "closed": null,
+    "funding": "$135M+",
+    "summary": "Edge data center and network infrastructure company (Kinetic Grid) targeting telecom operators and carriers for distributed edge computing tied to 5G networks. Underwent significant layoffs and strategic retrenchment starting in 2023 as anticipated 5G edge-computing demand from carriers failed to materialize on schedule.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "capital-intensity"
+    ],
+    "lesson": "Betting a capital-intensive infrastructure build-out on 5G edge-compute demand curves that carriers themselves were still forecasting optimistically led to a painful mismatch between capex and realized revenue.",
+    "source": "Data Center Dynamics and trade press coverage of Vapor IO layoffs, 2023"
+  },
+  {
+    "name": "Federated Wireless",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$168M+",
+    "summary": "Spectrum-sharing and private wireless network platform using AI-based Spectrum Access System technology to manage CBRS shared spectrum for enterprises and carriers. Underwent significant layoffs and business retrenchment in 2023 as CBRS private-network adoption grew more slowly than projected.",
+    "causes": [
+      "market-timing",
+      "cash-burn",
+      "product-market-mismatch"
+    ],
+    "lesson": "Even a first-mover position in a novel regulatory spectrum-sharing framework (CBRS) couldn't offset slower-than-expected enterprise private-network adoption curves.",
+    "source": "Fierce Network and trade press coverage of Federated Wireless layoffs, 2023"
+  },
+  {
+    "name": "Meru Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2002,
+    "closed": 2015,
+    "funding": "$115M+ (public, NASDAQ: MERU)",
+    "summary": "Enterprise Wi-Fi networking company with virtualized, software-intelligent wireless architecture. After going public in 2010 and struggling to compete with Cisco, Aruba and Meraki, was acquired by Fortinet in 2015 for roughly $44M — a fire-sale price far below its cumulative funding and peak market value.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "cash-burn"
+    ],
+    "lesson": "Going public did not solve Meru's fundamental competitive-differentiation problem in enterprise Wi-Fi; the eventual acquisition price reflected years of losing share to better-capitalized incumbents.",
+    "source": "Fortinet acquisition announcement 2015; trade press on Meru's decline"
+  },
+  {
+    "name": "Talari Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2008,
+    "closed": 2018,
+    "funding": "$85M+",
+    "summary": "Early SD-WAN vendor using adaptive, analytics-driven algorithms to dynamically route traffic across multiple WAN links for reliability. As the SD-WAN market consolidated rapidly, was acquired by Oracle in 2018 in a deal viewed as a distressed exit relative to its funding raised.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn"
+    ],
+    "lesson": "Being an early pioneer in a hot networking category (SD-WAN) offered no protection once dozens of well-funded competitors and incumbents piled in, compressing exit outcomes for smaller players.",
+    "source": "Oracle acquisition announcement 2018; SDxCentral coverage of SD-WAN consolidation"
+  },
+  {
+    "name": "Glue Networks",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": 2017,
+    "funding": "$30M+",
+    "summary": "Network automation and orchestration software company (Gluware precursor entity) focused on automating configuration and provisioning of SD-WAN and branch networks. Ceased independent operations in 2017 after failing to reach sustainable scale, with remaining technology and talent dispersing to other automation vendors including Cisco.",
+    "causes": [
+      "cash-burn",
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Network automation orchestration layers needed either a strong channel partnership or direct incumbent backing to reach enterprise scale before running out of capital.",
+    "source": "Trade press coverage of Glue Networks wind-down, 2017"
+  },
+  {
+    "name": "Empow",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": 2022,
+    "funding": "$40M+",
+    "summary": "Israeli AI-driven security orchestration platform (i-SIEM) that used natural-language-processing and machine-learning correlation of network security data to automate threat detection and response. Ceased operations around 2022 after failing to differentiate sufficiently in the increasingly crowded security orchestration (SOAR/XDR) market.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn"
+    ],
+    "lesson": "The AI-driven SOAR/XDR security orchestration space became saturated with well-funded entrants and incumbent platform expansion, squeezing out smaller independent players lacking a defensible niche.",
+    "source": "Israeli tech trade press coverage of Empow closure"
+  },
+  {
+    "name": "vArmour",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2011,
+    "closed": null,
+    "funding": "$217M",
+    "summary": "Network microsegmentation and application-relationship analytics company aimed at securing east-west network traffic in data centers and clouds. Despite raising substantial venture funding, underwent repeated layoffs and strategic pivots starting around 2019-2020 as it struggled to convert its large raise into commensurate revenue growth.",
+    "causes": [
+      "cash-burn",
+      "unit-economics",
+      "product-market-mismatch"
+    ],
+    "lesson": "Raising very large funding rounds early can mask a slower-than-expected path to product-market fit, leading to painful headcount and strategy resets once investors demand a path to profitability.",
+    "source": "Trade press coverage of vArmour layoffs and pivots, 2019-2020"
+  },
+  {
+    "name": "Bricata",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2014,
+    "closed": 2021,
+    "funding": "$12M+",
+    "summary": "Network detection and response platform combining machine learning with deep packet inspection to identify network intrusions. Ceased independent operations around 2021 after failing to scale against larger, better-funded NDR competitors like Vectra AI and Darktrace.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn"
+    ],
+    "lesson": "Entering the network detection and response category without a substantial funding war chest left Bricata unable to compete on go-to-market spend against category leaders.",
+    "source": "Security trade press coverage of Bricata's decline"
+  },
+  {
+    "name": "Netsocket",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2011,
+    "closed": 2016,
+    "funding": "$25M+",
+    "summary": "Software-defined network virtualization company offering a 'Virtual Network Operating System' aimed at service providers building NFV/SDN infrastructure. Ceased operations in 2016 after failing to convert early operator trials into large, recurring commercial contracts.",
+    "causes": [
+      "cash-burn",
+      "product-market-mismatch",
+      "market-timing"
+    ],
+    "lesson": "Early NFV/SDN virtualization startups often outran actual carrier operational readiness; the sales cycle for transformational network software proved much longer than typical venture timelines allow.",
+    "source": "SDxCentral coverage of Netsocket shutdown, 2016"
+  },
+  {
+    "name": "Plexxi",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2010,
+    "closed": 2017,
+    "funding": "$114M",
+    "summary": "Software-defined data center networking company combining optical interconnects with software-controlled network fabric optimization. After burning through substantial venture funding without reaching profitability, sold its assets to HPE in 2017 in a distressed transaction.",
+    "causes": [
+      "cash-burn",
+      "capital-intensity",
+      "outcompeted"
+    ],
+    "lesson": "Combining novel optical hardware with software-defined networking created a compelling technical story but also very high capital requirements that outpaced the company's ability to reach scale before funding ran dry.",
+    "source": "Trade press coverage of Plexxi's asset sale to HPE, 2017"
+  },
+  {
+    "name": "Cyan Inc",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2006,
+    "closed": 2015,
+    "funding": "Public company (NASDAQ: CYNI), raised $140M+ pre-IPO",
+    "summary": "Packet-optical networking and SDN software company that went public in 2013 with a valuation over $1B, offering software-driven network management (Blue Planet) alongside optical hardware. Share price collapsed after IPO amid slowing sales, and the company was acquired by Ciena in 2015 for a fraction of its earlier peak valuation.",
+    "causes": [
+      "market-timing",
+      "unit-economics",
+      "overexpansion",
+      "cash-burn"
+    ],
+    "lesson": "An enthusiastic IPO valuation built on anticipated SDN transformation demand can unwind quickly once actual carrier capex spending disappoints, leaving public shareholders and the company exposed.",
+    "source": "Ciena acquisition announcement 2015; financial press coverage of Cyan's IPO and decline"
+  },
+  {
+    "name": "Openwave Mobility",
+    "outcome": "failed",
+    "industry": "ai-telecom-networking",
+    "founded": 2012,
+    "closed": 2018,
+    "funding": "Spin-off from Openwave/Unwired Planet",
+    "summary": "Mobile network traffic optimization and video/data compression software provider spun out to help operators manage mobile data traffic growth through analytics-driven optimization. Its business was wound down and sold off in pieces around 2018 as the underlying traffic-management market matured and consolidated around larger network vendors.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "product-market-mismatch"
+    ],
+    "lesson": "Traffic-optimization middleware businesses were vulnerable to being absorbed into network equipment vendors' broader software suites once the point-solution market matured.",
+    "source": "Telecom trade press coverage of Openwave Mobility's wind-down, 2018"
+  }
+]

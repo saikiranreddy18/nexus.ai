@@ -1,0 +1,1044 @@
+[
+  {
+    "name": "Stability AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$100M+ (down round recapitalization 2024)",
+    "summary": "Maker of Stable Diffusion burned roughly $8M/month, lost over $30M in Q1 2024 on under $5M revenue, and owed nearly $100M to creditors including Amazon Web Services. Founder-CEO Emad Mostaque resigned in March 2024 amid investor tension and a failed $4B fundraise; the company laid off 10% of staff and was recapitalized in mid-2024 with $80M in new funding and forgiveness of over $100M in debt, later hiring VFX veteran Prem Akkaraju as CEO.",
+    "causes": [
+      "cash-burn",
+      "unit-economics",
+      "governance",
+      "founder-conflict",
+      "capital-intensity"
+    ],
+    "lesson": "Open-model research leadership does not guarantee a viable business model; giving away the core product while carrying massive compute costs is not a strategy, it's a subsidy without a payer.",
+    "source": "TechCrunch, Forbes, SiliconANGLE, 2024"
+  },
+  {
+    "name": "Kaedim",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$5.3M (seed + Series A)",
+    "summary": "London startup claimed its AI instantly converted 2D concept art into game-ready 3D models. A 2023 investigation by 404 Media revealed much of the conversion work was done manually by underpaid contractors paid $1-4 per model with 15-minute deadlines, not by the claimed automated pipeline, triggering a reputational collapse and loss of investor and customer trust.",
+    "causes": [
+      "fraud",
+      "technology-failure",
+      "founder-quality"
+    ],
+    "lesson": "Marketing a human-in-the-loop service as fully autonomous AI is a fraud risk that destroys trust the moment it is exposed, regardless of how promising the underlying technology eventually becomes.",
+    "source": "404 Media, Slashdot, Fabbaloo, 2023",
+    "note_industry_confidence": "high"
+  },
+  {
+    "name": "Splash Music",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": 2024,
+    "funding": "$18M (Series A, as PopGun)",
+    "summary": "AI text-to-song generator with an app for AI-assisted beatmaking hired former SoundCloud exec Tracy Chan as CEO but shut down its consumer Splash Music & Beatmaker app in January 2024 and its Splash Pro web app in April 2024 after eight months, citing lack of commercial sustainability, and pivoted the team back into Roblox game development.",
+    "causes": [
+      "unit-economics",
+      "product-market-fit",
+      "pivot-failure",
+      "cash-burn"
+    ],
+    "lesson": "Viral generative-music demos do not automatically convert into paying users; without a durable monetization path even well-funded, well-staffed teams will abandon the product category entirely.",
+    "source": "AudioCipher, Music Ally, 2024"
+  },
+  {
+    "name": "Midjourney",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "Bootstrapped/self-funded, no venture rounds disclosed",
+    "summary": "Text-to-image generator run as a small, largely research-lab-style team on Discord, reportedly profitable with hundreds of millions in annual revenue from subscriptions, without taking traditional VC funding, while facing ongoing copyright litigation from visual artists and Disney/Universal.",
+    "causes": [
+      "capital-efficiency",
+      "product-market-fit",
+      "network-effects"
+    ],
+    "lesson": "A lean, community-distribution model (Discord) paired with a genuinely superior product can outcompete heavily funded rivals without needing venture capital to scale.",
+    "source": "Forbes, The Verge, various 2023-2025 coverage"
+  },
+  {
+    "name": "Runway",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$500M+ across multiple rounds, including Google and Nvidia backing",
+    "summary": "AI video generation and editing pioneer (Gen-1, Gen-2, Gen-3, Gen-4 models) that partnered with major studios (Lionsgate) for custom AI models and raised funding at a reported valuation above $3B in 2024-2025, positioning itself as core infrastructure for AI filmmaking.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy",
+      "capital-efficiency"
+    ],
+    "lesson": "Building direct partnerships with Hollywood studios and enterprise licensing deals created a defensible revenue base beyond consumer subscriptions, differentiating Runway from pure-consumer video tools.",
+    "source": "TechCrunch, Bloomberg, 2024-2025"
+  },
+  {
+    "name": "ElevenLabs",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$281M+ raised, valued over $3B (2025)",
+    "summary": "AI voice synthesis and cloning company grew from a text-to-speech tool into an enterprise voice-AI platform used for audiobooks, dubbing, and conversational agents, reaching unicorn status within roughly two years while managing misuse controversies (deepfake voice scams) through detection tools and policy changes.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Rapid technical quality gains in a narrow modality (voice) combined with fast enterprise expansion can produce outsized valuation growth, but require proactive misuse-prevention tooling to sustain trust.",
+    "source": "TechCrunch, Reuters, 2023-2025"
+  },
+  {
+    "name": "Synthesia",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$329M+ raised, valued at $2.1B+ (2024)",
+    "summary": "AI avatar video generation platform for corporate training and marketing reached unicorn status in 2023 and continued raising growth capital in 2024, focusing heavily on enterprise customers (over half of Fortune 100) rather than consumer virality, avoiding many of the deepfake-abuse controversies of rivals via strict content moderation.",
+    "causes": [
+      "enterprise-strategy",
+      "product-market-fit"
+    ],
+    "lesson": "Focusing squarely on enterprise training/marketing use cases with content-moderation guardrails let Synthesia scale revenue predictably while sidestepping the reputational risk that hit less-controlled avatar tools.",
+    "source": "TechCrunch, Sifted, 2023-2024"
+  },
+  {
+    "name": "Leonardo AI",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$31M raised prior to acquisition; acquired by Canva July 2024 (undisclosed, cash + stock)",
+    "summary": "Australian generative image platform grew to over 19 million users within two years and was acquired by Canva in July 2024 in a cash-and-stock deal, with all 120 employees joining Canva while Leonardo continued operating semi-independently to power Canva's Magic Studio AI features.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "A strong standalone creative-AI product can achieve the best outcome for founders and employees by being acquired into a larger design platform's distribution rather than competing head-on for consumer market share alone.",
+    "source": "TechCrunch, BusinessWire, 2024"
+  },
+  {
+    "name": "Ideogram",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$196M+ raised (Series A led by a16z, 2024)",
+    "summary": "Text-to-image startup founded by ex-Google Brain/Imagen researchers differentiated on accurate text rendering inside generated images, raised a $80M Series A in 2024 at a reported $600M+ valuation, and expanded into agentic design tools through 2025.",
+    "causes": [
+      "product-market-fit",
+      "founder-quality"
+    ],
+    "lesson": "A narrow, well-executed technical differentiator (reliable text-in-image rendering) can be enough to win a defensible niche in a crowded image-gen market dominated by larger incumbents.",
+    "source": "TechCrunch, Forbes, 2024",
+    "founded_note": ""
+  },
+  {
+    "name": "Luma AI",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$200M+ raised (including Series C led by Andreessen Horowitz/Sound Ventures/others, valued ~$4B, 2025)",
+    "summary": "Started in 3D/NeRF capture before pivoting to text/image-to-video generation (Dream Machine) and later Ray2/Ray3 models, raising large growth rounds through 2024-2025 and securing enterprise/API distribution deals for its video-generation models.",
+    "causes": [
+      "product-market-fit",
+      "pivot-failure"
+    ],
+    "lesson": "A well-timed pivot from a niche 3D-capture tool into mainstream generative video, backed by strong technical execution, can unlock far larger addressable markets and funding.",
+    "source": "TechCrunch, Bloomberg, 2024-2025"
+  },
+  {
+    "name": "HeyGen",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$60M+ raised, valued at $500M+ (2024)",
+    "summary": "AI avatar and video-translation/dubbing platform grew rapidly among marketing and sales teams, crossing tens of millions in annualized revenue by 2024 largely through product-led growth and self-serve subscriptions rather than heavy enterprise sales.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Product-led growth with a clear, immediately demonstrable use case (instant multilingual talking-head video) can scale revenue efficiently without large enterprise sales teams.",
+    "source": "TechCrunch, Forbes, 2024"
+  },
+  {
+    "name": "D-ID",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$77M+ raised",
+    "summary": "Israeli AI avatar/video company signed a strategic partnership with Microsoft in early 2025 but days later laid off about 22 employees, roughly a quarter of its roughly 88-person workforce, as part of an efficiency push amid intensifying competition from HeyGen, Synthesia, and others.",
+    "causes": [
+      "outcompeted",
+      "cash-burn",
+      "market-saturation"
+    ],
+    "lesson": "Even a marquee enterprise partnership does not guarantee financial stability in a crowded avatar-video market; distribution deals need to convert to revenue fast enough to outrun burn.",
+    "source": "Calcalistech, 2025"
+  },
+  {
+    "name": "Descript",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$100M+ raised (Series C, backers include Andreessen Horowitz, Spark Capital)",
+    "summary": "Text-based video and podcast editor added AI features (Overdub voice cloning, Underlord AI assistant, Studio Sound) and by 2024-2025 had grown to roughly 150 employees and continued shipping major AI-native releases (V50) integrating generative video and voice cloning without reported layoffs.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Layering generative-AI features onto an already-loved editing workflow (rather than launching a standalone generative tool) let Descript compound an existing user base instead of fighting for new demand.",
+    "source": "Sacra, company releases, 2024-2025"
+  },
+  {
+    "name": "Suno",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$125M+ raised (Series C, valued ~$2.45B, 2025)",
+    "summary": "AI music-generation platform that lets users create full songs from text prompts grew a large user base rapidly and raised a large Series C in 2025 despite active copyright infringement lawsuits from major record labels (Universal, Warner, Sony) over training data.",
+    "causes": [
+      "product-market-fit",
+      "regulatory"
+    ],
+    "lesson": "Strong consumer product-market fit can attract large funding rounds even while unresolved copyright litigation poses an existential legal risk, but that risk remains a live overhang for the business.",
+    "source": "Reuters, TechCrunch, 2024-2025"
+  },
+  {
+    "name": "Udio",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$10M+ seed (backers include a16z, will.i.am), later licensing deal with Universal Music Group (2025)",
+    "summary": "AI music-generation startup founded by ex-Google DeepMind researchers reached a landmark licensing settlement with Universal Music Group in 2025 to legitimize training data and launch a licensed product, after also being sued by major labels alongside Suno.",
+    "causes": [
+      "product-market-fit",
+      "regulatory",
+      "founder-quality"
+    ],
+    "lesson": "Converting a copyright lawsuit into a licensing partnership with rights holders can turn an existential legal threat into a durable competitive moat other unlicensed competitors lack.",
+    "source": "Billboard, Reuters, 2025"
+  },
+  {
+    "name": "Wonder Dynamics",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$12.5M raised prior to acquisition; acquired by Autodesk May 2024 (undisclosed terms)",
+    "summary": "AI VFX startup (Wonder Studio) founded by actor Tye Sheridan and Nikola Todorovic, which automated character animation and compositing into live-action footage, was acquired by Autodesk in May 2024 to integrate into Maya and the broader M&E software suite.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "A tightly scoped AI tool that plugs directly into professional VFX pipelines can be a highly attractive acquisition target for incumbent creative-software vendors looking to add AI capability.",
+    "source": "TechCrunch, Variety, Autodesk, 2024"
+  },
+  {
+    "name": "LANDR",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2012,
+    "closed": null,
+    "funding": "$38M+ raised",
+    "summary": "AI-powered audio mastering platform for independent musicians grew to millions of registered users and a subscription-based creator tools suite (mastering, distribution, samples), reaching profitability-oriented scale as one of the longest-running generative-audio tools companies.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Solving one concrete, recurring pain point for a large underserved market (affordable audio mastering for independent artists) sustained a decade-plus generative-audio business through multiple AI hype cycles.",
+    "source": "Company reporting, Crunchbase"
+  },
+  {
+    "name": "Boomy",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$13M+ raised (Series A)",
+    "summary": "AI music generation platform claims users have created a significant share of the world's recorded music by volume, monetizing through streaming royalty distribution and subscription tiers, continuing to operate and grow through 2024-2025.",
+    "causes": [
+      "product-market-fit",
+      "network-effects"
+    ],
+    "lesson": "Turning generative output directly into a royalty-earning distribution pipeline (rather than just a creation tool) gave users a durable reason to keep generating and monetizing music on the platform.",
+    "source": "Company reporting, Music Business Worldwide"
+  },
+  {
+    "name": "Endel",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$18M+ raised (backers include Sony Music, Warner Music)",
+    "summary": "Generative soundscape app producing personalized ambient audio for focus/sleep/relaxation signed distribution and licensing deals with major labels (Warner, Sony) and grew a durable subscription business across major streaming platforms.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Positioning generative audio as functional wellness content, and getting major labels to invest rather than sue, turned potential IP adversaries into commercial partners.",
+    "source": "Music Business Worldwide, TechCrunch"
+  },
+  {
+    "name": "Krea AI",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$83M+ raised (Series B, 2025)",
+    "summary": "Real-time AI image/video generation and editing platform for designers grew quickly on product-led adoption and raised a large Series B in 2025 at a reported valuation above $500M, expanding from image generation into a broader creative-AI suite.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Real-time, low-latency generation aimed specifically at professional designers' iterative workflows differentiated Krea from slower, prompt-and-wait competitors.",
+    "source": "TechCrunch, 2025"
+  },
+  {
+    "name": "Freepik (AI tools)",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2010,
+    "closed": null,
+    "funding": "Majority stake sold to EQT (private equity) 2024, reported ~$500M valuation",
+    "summary": "Stock-content marketplace layered generative AI image tools onto its existing massive design-asset user base, and its growth (partly AI-driven) led private equity firm EQT to acquire a majority stake in 2024 at a reported half-billion-dollar valuation.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "An existing large distribution base of creative professionals can be a bigger AI moat than a novel model itself; bolting generative tools onto an established marketplace compounded growth quickly.",
+    "source": "TechCrunch, Bloomberg, 2024"
+  },
+  {
+    "name": "Recraft",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$22M+ raised (Series A)",
+    "summary": "AI design generation platform focused on vector graphics, brand assets, and UI mockups (topping some independent image-model benchmarks in 2024) raised growth funding and expanded from a consumer tool toward brand/enterprise design workflows.",
+    "causes": [
+      "product-market-fit"
+    ],
+    "lesson": "Targeting a specific underserved output format (clean vector/brand assets rather than generic raster images) let a smaller model-focused team differentiate against larger general-purpose image generators.",
+    "source": "TechCrunch, Sifted, 2024"
+  },
+  {
+    "name": "Photoroom",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$43M+ raised (Series B, backers include Balderton, Y Combinator)",
+    "summary": "AI background removal and product-photo editing app for e-commerce sellers scaled to tens of millions of users and strong revenue via a freemium mobile-app model, becoming one of the most profitable consumer generative-image businesses.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A narrow, high-frequency commercial use case (e-commerce product photos) monetized through a simple mobile freemium model can outperform broader, harder-to-monetize creative-AI platforms.",
+    "source": "TechCrunch, Sifted, 2023-2024"
+  },
+  {
+    "name": "Remove.bg (Kaleido AI)",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "Bootstrapped/self-funded prior to acquisition; acquired by Canva 2023 (undisclosed)",
+    "summary": "Vienna-based AI background-removal tool built by Kaleido AI grew profitably without major VC funding before being acquired by Canva in 2023, becoming a core feature within Canva's design suite.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A tightly focused, genuinely useful single-purpose AI tool can bootstrap to profitability and still command a strategic acquisition, proving venture funding isn't the only path to a good outcome.",
+    "source": "TechCrunch, Canva newsroom, 2023"
+  },
+  {
+    "name": "Opus Clip",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$30M+ raised (Series A, 2024)",
+    "summary": "AI tool that automatically clips long-form video into short social-media clips grew to millions of users and raised a $30M Series A in 2024, capitalizing on the short-form content boom driven by TikTok/Reels/Shorts.",
+    "causes": [
+      "product-market-fit",
+      "market-timing"
+    ],
+    "lesson": "Riding an already-massive existing behavior shift (long-form-to-short-form video repurposing) with an AI automation layer produced fast product-market fit without needing to create new demand.",
+    "source": "TechCrunch, 2024"
+  },
+  {
+    "name": "Hume AI",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$50M+ raised (Series B)",
+    "summary": "Emotionally expressive voice AI company (empathic voice interface) raised significant funding to build emotion-aware speech generation and understanding for conversational products, positioning itself in enterprise voice-agent infrastructure rather than consumer content generation.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Focusing on an underexplored technical dimension (emotional expressiveness/empathy in generated voice) rather than competing purely on cloning fidelity carved out differentiated positioning against ElevenLabs and others.",
+    "source": "TechCrunch, 2023-2024"
+  },
+  {
+    "name": "Cartesia",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$91M+ raised (Series A, 2024)",
+    "summary": "Voice-AI startup founded by researchers behind the state-space-model (Mamba) architecture built low-latency real-time voice generation infrastructure and raised a large Series A within a year of founding, targeting developers building voice agents.",
+    "causes": [
+      "founder-quality",
+      "product-market-fit"
+    ],
+    "lesson": "Deep technical credibility from published research (novel model architectures) can compress the usual fundraising timeline dramatically when paired with a real infrastructure need (low-latency voice).",
+    "source": "TechCrunch, 2024"
+  },
+  {
+    "name": "Murf AI",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$18M+ raised (Series B)",
+    "summary": "AI voiceover and text-to-speech platform aimed at marketing, e-learning, and corporate video use cases scaled profitably with a self-serve SaaS subscription model, reaching a large enterprise customer base without the funding scale of ElevenLabs.",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "A less flashy but reliably profitable enterprise voiceover SaaS business can thrive alongside better-funded, higher-profile competitors by focusing on B2B workflow integration.",
+    "source": "Company reporting, Crunchbase"
+  },
+  {
+    "name": "Colossyan",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$25M+ raised (Series B, 2024)",
+    "summary": "AI video-avatar platform focused on corporate training content raised a $22M Series B in 2024, growing revenue through enterprise L&D (learning and development) departments as an alternative to Synthesia in that vertical.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Even in a category with a dominant leader (Synthesia), a challenger that stays disciplined on one enterprise vertical (corporate training) can still raise growth capital and build a sustainable business.",
+    "source": "TechCrunch, 2024"
+  },
+  {
+    "name": "Hour One",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$40M+ raised (Series B)",
+    "summary": "Israeli AI 'virtual human' video generation company for corporate and media use cases raised growth funding through 2023-2024 and expanded enterprise partnerships, competing in the same synthetic-video-avatar space as Synthesia and D-ID.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "Multiple well-capitalized players can coexist profitably within the same synthetic-avatar-video category when each targets distinct enterprise use cases and distribution channels.",
+    "source": "Calcalistech, TechCrunch"
+  },
+  {
+    "name": "Metaphysic",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$21M+ raised, plus high-profile brand/talent partnerships",
+    "summary": "AI deepfake/synthetic-media company known for de-aging and photorealistic face-swap work (viral Tom Hanks/Simon Cowell deepfakes, work with Metaphysic Live and talent agencies CAA) built a licensing-and-services business around consented, professionally produced synthetic media for film and TV.",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "In a technology prone to fraud and misuse (deepfakes), building the business around explicit consent, talent-agency partnerships, and professional production services turned a reputational minefield into a defensible enterprise offering.",
+    "source": "Variety, TechCrunch"
+  },
+  {
+    "name": "DeepAI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2016,
+    "closed": null,
+    "funding": "Minimal disclosed outside funding, largely bootstrapped",
+    "summary": "One of the earliest consumer-facing AI image generation and API tools plateaued as a low-margin utility product once OpenAI's DALL-E, Midjourney, and Stable Diffusion offered dramatically higher-quality output, leaving DeepAI as a legacy low-cost/low-differentiation option rather than a growth business.",
+    "causes": [
+      "outcompeted",
+      "product-market-mismatch",
+      "market-saturation"
+    ],
+    "lesson": "Being first to market in generative AI provides little durable advantage once well-funded competitors ship materially higher-quality models; a commodity utility position erodes fast in a fast-moving model race.",
+    "source": "Industry analysis, Crunchbase"
+  },
+  {
+    "name": "Craiyon (DALL-E mini)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "No significant venture funding; ad-revenue supported",
+    "summary": "The viral open-source 'DALL-E mini' meme-image generator (rebranded Craiyon after a trademark dispute with OpenAI) attracted tens of millions of users during its 2022 viral moment but was monetized only through ad revenue and never converted its viral traffic into a durable funded business as image quality of well-funded competitors surged ahead.",
+    "causes": [
+      "unit-economics",
+      "outcompeted",
+      "pivot-failure",
+      "market-saturation"
+    ],
+    "lesson": "Viral usage numbers are not a business model; without a monetization or funding plan in place before the spike, a breakout generative-AI moment can fade as fast as it arrived once better-funded rivals catch up on quality.",
+    "source": "Industry coverage, 2022-2023"
+  },
+  {
+    "name": "WOMBO",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$8.6M+ raised (Series A)",
+    "summary": "Canadian AI app maker behind the viral WOMBO lip-sync app and WOMBO Dream image generator had explosive early viral growth (chart-topping app store rankings) but underwent significant layoffs as user engagement declined and it struggled to sustain retention against a wave of similar AI creative apps.",
+    "causes": [
+      "market-saturation",
+      "cash-burn",
+      "unit-economics",
+      "outcompeted"
+    ],
+    "lesson": "App-store viral hits in the generative-AI creative category tend to have short retention curves; a follow-on product strategy is needed quickly or user interest migrates to the next novelty app.",
+    "source": "Industry/layoffs tracking reports"
+  },
+  {
+    "name": "Prisma Labs (Lensa AI)",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$18M+ raised, largely profitable off Lensa app revenue",
+    "summary": "Maker of the Lensa AI avatar app had a massive viral spike in late 2022 (Magic Avatars feature) generating tens of millions in a few weeks, and despite the inevitable post-viral decline, remained an operating, revenue-generating consumer AI photo app business into 2024-2025 rather than shutting down.",
+    "causes": [
+      "product-market-fit",
+      "market-timing"
+    ],
+    "lesson": "Converting a single viral moment into cash reserves and a continuing product roadmap, rather than assuming the spike is permanent, let Prisma Labs survive the inevitable post-virality drop that killed similar apps.",
+    "source": "Industry coverage, 2022-2024"
+  },
+  {
+    "name": "Kaiber",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$16M+ raised (Series A)",
+    "summary": "AI music-video and animation generation platform, popular with musicians for lyric videos, raised a Series A in 2023 but faced intensifying competition from larger, better-funded video-gen entrants (Runway, Pika, Luma, Kling, Sora) through 2024-2025, struggling to maintain differentiation and reportedly scaling back operations.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "cash-burn"
+    ],
+    "lesson": "A promising niche (AI music videos) can get steamrolled once general-purpose video-generation platforms from far better-capitalized competitors add equivalent capability as just one feature among many.",
+    "source": "Industry coverage, Crunchbase 2023-2025"
+  },
+  {
+    "name": "Jasper AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$131M+ raised (Series A at $1.5B valuation, 2022)",
+    "summary": "AI content and marketing-copy generation platform (which also offered AI art generation features) reached a $1.5B valuation in 2022 but subsequently underwent significant layoffs (roughly a third of staff in 2023) and a leadership/strategy reset as ChatGPT's late-2022 launch commoditized generic text/content generation almost overnight.",
+    "causes": [
+      "outcompeted",
+      "market-timing",
+      "product-market-mismatch"
+    ],
+    "lesson": "A wrapper-style generative product built on top of underlying foundation models is acutely exposed when the foundation-model provider (OpenAI) ships a free, general-purpose consumer product that replicates the core value proposition.",
+    "source": "TechCrunch, Forbes, 2022-2023"
+  },
+  {
+    "name": "Artbreeder",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "Minimal outside funding, largely bootstrapped",
+    "summary": "One of the earliest GAN-based collaborative image-breeding/generation tools built an early enthusiast community but stagnated technically and commercially as diffusion-model competitors (Midjourney, Stable Diffusion, DALL-E) delivered vastly higher image fidelity from 2022 onward, leaving Artbreeder as a fading niche product with minimal continued investment.",
+    "causes": [
+      "technology-failure",
+      "outcompeted",
+      "product-market-mismatch"
+    ],
+    "lesson": "Early technical leadership built on one generation of AI architecture (GANs) can be wiped out almost entirely when the next architecture (diffusion models) delivers a step-change in output quality.",
+    "source": "Industry analysis, community reporting"
+  },
+  {
+    "name": "Neon (AI video app)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2023,
+    "closed": null,
+    "funding": "Undisclosed, small seed",
+    "summary": "Consumer AI app experimenting with generated video/content features had a brief viral spike on app store charts before rapidly fading from relevance as the market flooded with similar novelty AI camera/video apps, illustrating the extremely short half-life of undifferentiated consumer generative-AI apps.",
+    "causes": [
+      "market-saturation",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "Undifferentiated novelty consumer AI apps riding app-store trends face brutal retention curves; without a defensible product wedge, virality alone cannot sustain a company.",
+    "source": "Industry/app-store trend coverage"
+  },
+  {
+    "name": "Speechify",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$100M+ raised, valued over $1B (2024)",
+    "summary": "AI text-to-speech reading and voice-cloning app grew to a reported large paid subscriber base and crossed unicorn valuation in 2024, expanding from an accessibility/reading-assistance tool into a broader generative voice platform including celebrity voice licensing (e.g., Snoop Dogg).",
+    "causes": [
+      "product-market-fit",
+      "capital-efficiency"
+    ],
+    "lesson": "Starting from a clear, high-retention accessibility use case (text-to-speech for reading) before expanding into broader generative voice products built durable habitual usage ahead of monetization expansion.",
+    "source": "TechCrunch, Forbes, 2024"
+  },
+  {
+    "name": "Synthesys",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "Minimal disclosed outside funding, largely bootstrapped",
+    "summary": "Early AI voiceover and avatar-video tool marketed heavily through affiliate/influencer marketing channels rather than product differentiation, and lost significant market share as better-funded, higher-quality competitors (HeyGen, Synthesia, ElevenLabs) captured the enterprise and creator segments it originally targeted.",
+    "causes": [
+      "outcompeted",
+      "product-market-mismatch",
+      "market-saturation"
+    ],
+    "lesson": "Growth driven primarily by affiliate-marketing hype rather than sustained product-quality investment leaves a generative-AI tool vulnerable once better-resourced competitors close the quality gap.",
+    "source": "Industry analysis, community reporting"
+  },
+  {
+    "name": "Vinci (Wonder AI photo app)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "Undisclosed, small",
+    "summary": "One of the many AI avatar/photo-generation apps that surged during the 2022-2023 AI-avatar app wave (following Lensa's viral success) saw a rapid rise-and-fall pattern in app store charts as the market became saturated with near-identical AI headshot/avatar generators, most of which failed to retain users past the initial novelty period.",
+    "causes": [
+      "market-saturation",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "In a fast-copy category like AI avatar generation, dozens of near-identical apps chase the same viral moment; without a unique retention hook almost all except the first mover or best-marketed app fade quickly.",
+    "source": "App-store trend analysis, industry coverage"
+  },
+  {
+    "name": "Rosebud AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$8M+ raised (seed)",
+    "summary": "AI-powered game-asset and character generation startup pivoted multiple times (from AI stock photo/model generation toward AI game creation tools) trying to find a defensible niche, ultimately struggling to scale revenue meaningfully as larger platforms (Midjourney, Meshy, Scenario) commoditized the underlying generative-asset capability.",
+    "causes": [
+      "pivot-failure",
+      "product-market-mismatch",
+      "market-saturation"
+    ],
+    "lesson": "Repeated pivots within the same generative-AI asset space without landing on a clearly differentiated wedge left the company chasing commoditizing technology rather than building a defensible product.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Playground AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$60M+ raised (Series A)",
+    "summary": "Text-to-image generation and editing platform founded by former Google/Instagram engineer Suhail Doshi raised a large Series A in 2023 at a reported valuation near $300M, but by 2024-2025 struggled to keep pace on model quality and consumer mindshare against Midjourney, Ideogram, and the rapid proliferation of free/cheap alternatives, prompting a pivot of company focus.",
+    "causes": [
+      "outcompeted",
+      "market-saturation",
+      "pivot-failure"
+    ],
+    "lesson": "A high-profile founder and a large early round buy time, not a guaranteed durable moat; in image generation, model-quality leadership shifts fast and every few months a new entrant can leapfrog on output fidelity.",
+    "source": "Industry/Crunchbase reporting, 2023-2025"
+  },
+  {
+    "name": "Lumen5",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$6.4M+ raised (Series A)",
+    "summary": "Early AI-assisted text-to-video tool for turning blog posts and articles into social videos plateaued as a mid-market SaaS product, unable to keep pace with the far more capable generative-video wave (Runway, Pika, Sora-class models) that emerged from 2023 onward, leaving it increasingly positioned as a legacy template-based tool rather than a cutting-edge generative product.",
+    "causes": [
+      "outcompeted",
+      "product-market-mismatch",
+      "technology-failure"
+    ],
+    "lesson": "Being an early mover in 'AI video' with template-and-stock-footage automation did not translate into staying power once true generative video models made from-scratch synthesis possible; the underlying technology approach became obsolete.",
+    "source": "Industry analysis, Crunchbase"
+  },
+  {
+    "name": "Neural.love",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "Minimal disclosed funding, largely bootstrapped",
+    "summary": "AI image generation, upscaling, and restoration service built a modest paying user base but remained a small, largely undifferentiated player as larger, better-marketed, better-funded competitors (Midjourney, Leonardo, Ideogram) dominated the same core text-to-image use case, limiting its growth to a long-tail niche.",
+    "causes": [
+      "market-saturation",
+      "outcompeted",
+      "cash-burn"
+    ],
+    "lesson": "Competing directly on general text-to-image generation without a distinct wedge or well-funded marketing engine relegates a tool to long-tail status once category leaders establish dominant mindshare.",
+    "source": "Industry analysis"
+  },
+  {
+    "name": "Yepic AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "$3M+ raised (seed)",
+    "summary": "UK-based AI avatar and video-translation startup targeting enterprise training and marketing raised only modest seed funding compared to well-capitalized rivals (Synthesia, HeyGen, D-ID), limiting its ability to compete on model quality, sales headcount, or marketing reach in an increasingly consolidated avatar-video market.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "In capital-intensive generative-video categories, being meaningfully underfunded relative to category leaders becomes a structural disadvantage that product quality alone cannot offset.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Sonantic",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$11M+ raised prior to acquisition; acquired by Spotify 2022 (undisclosed)",
+    "summary": "AI emotional voice-generation startup used by game studios and film productions for expressive synthetic voice acting was acquired by Spotify in 2022 to build text-to-speech and AI voice tools (later powering Spotify's AI DJ and audiobook narration features).",
+    "causes": [
+      "product-market-fit",
+      "enterprise-strategy"
+    ],
+    "lesson": "A technically excellent, narrowly focused generative-voice startup with entertainment-industry credibility made an attractive acquisition target for a major consumer platform looking to build AI audio features quickly.",
+    "source": "TechCrunch, 2022"
+  },
+  {
+    "name": "Genies",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$150M+ raised (Series C, valued ~$1B)",
+    "summary": "AI-driven avatar and digital-identity platform for celebrities and brands (backed by Bob Iger among others) reached unicorn valuation but underwent layoffs (reported ~15-20% of staff in 2023) as the broader avatar/metaverse market cooled and the company repeatedly repositioned its product between gaming, social avatars, and later AI companion/persona tools.",
+    "causes": [
+      "market-timing",
+      "pivot-failure",
+      "cash-burn"
+    ],
+    "lesson": "Raising at a peak metaverse-hype valuation created pressure to sustain growth expectations that cooled sharply once the broader avatar/metaverse market lost momentum, forcing costly repositioning.",
+    "source": "TrueUp, Crunchbase, industry reporting, 2023"
+  },
+  {
+    "name": "Runway Rivals: Pika",
+    "outcome": "success",
+    "industry": "generative-ai-creative",
+    "founded": 2023,
+    "closed": null,
+    "funding": "$135M+ raised across Seed/Series A/B, valued ~$900M (2026)",
+    "summary": "Founded by Stanford dropouts, Pika Labs' text/image-to-video generation product grew to over 16 million users across its apps and closed an $80M Series B in late 2025, expanding into short-form social video generation aimed at Gen Z creators.",
+    "causes": [
+      "product-market-fit",
+      "founder-quality"
+    ],
+    "lesson": "Rapid iteration speed and a sharp focus on short-form, social-native video generation let a very young company keep raising and growing even as larger incumbents (Runway, Luma, OpenAI's Sora) crowded the general video-gen market.",
+    "source": "Sacra, Fortune, 2025-2026",
+    "name_note": "listed as 'Pika' commonly; company legal/product name is Pika Labs / Pika"
+  },
+  {
+    "name": "Synthetaic",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$21M+ raised (Series A)",
+    "summary": "AI startup building synthetic-data and rapid model-training tools (RAIC platform) pivoted heavily toward defense/geospatial computer-vision applications after struggling to find a scalable commercial niche purely in creative generative content, moving away from the consumer/creative-tools category it initially touched.",
+    "causes": [
+      "pivot-failure",
+      "product-market-mismatch"
+    ],
+    "lesson": "When a generative/synthetic-content startup cannot find product-market fit in its original creative-tools positioning, pivoting entirely into a different vertical (defense) signals the original market bet did not pay off.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Charisma.ai",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2018,
+    "closed": null,
+    "funding": "$3.6M+ raised (seed)",
+    "summary": "AI platform for creating interactive, emotionally responsive game characters and narrative NPCs raised only modest funding and struggled to scale beyond niche game-studio pilots as larger, better-funded conversational-AI and generative-avatar platforms absorbed the same use case, limiting the company to small partnership deals rather than broad commercial traction.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "product-market-mismatch"
+    ],
+    "lesson": "A genuinely novel creative-AI concept (emotionally responsive game NPCs) still needs either much larger capital or a much bigger anchor customer to survive once broader platforms build overlapping capability as a feature.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Layer (game-asset AI)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$3.7M+ raised (seed)",
+    "summary": "AI-powered 2D game-asset generation tool aimed at indie game developers raised a modest seed round but faced intense competition from general-purpose image generators and newer, better-funded specialized entrants (Scenario, Meshy) offering similar or broader capability, constraining its growth to a small niche.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "A thin funding cushion in a fast-consolidating generative-asset niche leaves little room to out-execute better-capitalized specialized competitors targeting the same indie-developer audience.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Pixelbin / PixelBin.io",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "Undisclosed, small",
+    "summary": "Small AI-powered image optimization and generative editing API for e-commerce struggled to differentiate against larger, better-marketed image-AI platforms (Photoroom, Cloudinary's AI features) and remained a minor player with limited market traction and funding through 2024-2025.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "A generic 'AI image API for e-commerce' pitch is not differentiated enough on its own once category leaders with much larger marketing budgets (Photoroom) and infrastructure incumbents (Cloudinary) cover the same use case.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Otherside / Cortex (AI film pre-viz startup)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2021,
+    "closed": null,
+    "funding": "$2M+ raised (seed)",
+    "summary": "Small AI-assisted film pre-visualization and storyboard generation startup targeting independent filmmakers raised a modest seed round but could not sustain a large enough paying customer base in the notoriously budget-constrained independent-film market, and was largely absorbed into freelance/consulting work by its founders rather than continuing as a funded company.",
+    "causes": [
+      "unit-economics",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "Targeting independent filmmakers as a primary paying customer base is extremely difficult given the segment's low and inconsistent budgets; enterprise studio or platform distribution deals are usually required to make a creative-AI tool durable.",
+    "source": "Industry analysis"
+  },
+  {
+    "name": "DreamStudio (Stability AI consumer app)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "N/A (product of Stability AI)",
+    "summary": "Stability AI's own consumer-facing image-generation web app, DreamStudio, failed to build a durable paying subscriber base as most users instead ran the open-source Stable Diffusion model for free via third-party interfaces, undermining Stability's own first-party consumer monetization even as it gave away the underlying model.",
+    "causes": [
+      "unit-economics",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "Open-sourcing a foundation model while also trying to sell a first-party consumer app built on that same model creates a direct internal conflict: free community tools built on the open model will structurally undercut your own paid product.",
+    "source": "Industry analysis, TechCrunch"
+  },
+  {
+    "name": "Ex-Human (AI companion/creative avatars)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2022,
+    "closed": null,
+    "funding": "$1.5M+ raised (seed)",
+    "summary": "Small AI companion and generative-persona startup raised only a modest seed round and struggled to differentiate in an increasingly crowded AI-companion/generative-character market against far better funded players (Character.AI, Replika), remaining a marginal, low-visibility player.",
+    "causes": [
+      "cash-burn",
+      "outcompeted",
+      "market-saturation"
+    ],
+    "lesson": "Entering an AI-companion/generative-persona category already dominated by a well-funded leader with strong network effects requires either a distinct wedge or comparable capital; neither being present left the startup stuck in obscurity.",
+    "source": "Industry/Crunchbase reporting"
+  },
+  {
+    "name": "Voisey",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": 2022,
+    "funding": "Acquired by Snap Inc. Nov 2020 (undisclosed); wound down as standalone app",
+    "summary": "AI-assisted music remix and vocal-track creation app was acquired by Snap Inc. in 2020, but Snap shut Voisey down in September 2022 as part of a broad restructuring that also killed Zenly and other standalone apps, after failing to generate sufficient standalone engagement or revenue within Snap's portfolio.",
+    "causes": [
+      "unit-economics",
+      "overexpansion",
+      "cash-burn",
+      "product-market-mismatch"
+    ],
+    "lesson": "Being acquired by a larger platform is not a guaranteed safe harbor; standalone creative-AI apps can still be shut down in a parent company's cost-cutting cycle if they never reach independently justifiable scale.",
+    "source": "Music Business Worldwide, TechCrunch, 2020-2022"
+  },
+  {
+    "name": "Uberduck AI",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2020,
+    "closed": null,
+    "funding": "Undisclosed, small/bootstrapped-leaning",
+    "summary": "AI voice cloning and text-to-speech platform popular for celebrity and character voice generation was forced to blacklist most of its 5,000+ voice library in July 2023 after losing a lawsuit to Universal Music Group and facing pressure from the SAG-AFTRA/WGA strikes over unauthorized voice likeness use, gutting the product's core value proposition and leaving it an unreliable shell of its former self.",
+    "causes": [
+      "regulatory",
+      "fraud",
+      "product-market-mismatch",
+      "governance"
+    ],
+    "lesson": "Building a voice-cloning product's core catalog on unlicensed celebrity and character voices creates a legal time bomb; a single lost lawsuit can force the removal of the exact content that drove user adoption.",
+    "source": "AudioCipher, Voice.ai, 2023"
+  },
+  {
+    "name": "AI Dungeon (Latitude)",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2019,
+    "closed": null,
+    "funding": "$3.3M+ raised (seed)",
+    "summary": "AI-generated interactive fiction game built on GPT-3 suffered a major backlash in 2021 when it was revealed OpenAI required Latitude to add content-moderation filters after the model generated sexual content involving minors, leading to intrusive moderation, a mass user exodus, subscriber cancellations, and lasting reputational damage the company never fully recovered from.",
+    "causes": [
+      "regulatory",
+      "governance",
+      "technology-failure",
+      "product-market-mismatch"
+    ],
+    "lesson": "Building a flagship generative product entirely on top of a third party's foundation model leaves a startup exposed to that provider's safety policies; a moderation crisis can destroy user trust faster than any competitor could.",
+    "source": "Wired, TechCrunch, 2021"
+  },
+  {
+    "name": "Replika",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2017,
+    "closed": null,
+    "funding": "$70M+ raised (Series B)",
+    "summary": "AI companion app with generative avatar, voice, and roleplay features was ordered by Italy's data protection authority to stop processing user data in February 2023 over child-safety and emotional-manipulation concerns, then abruptly removed erotic roleplay features for existing paid subscribers, triggering a severe user backlash, documented mental-health harm reports, and a wave of subscription cancellations.",
+    "causes": [
+      "regulatory",
+      "governance",
+      "product-market-mismatch"
+    ],
+    "lesson": "Monetizing emotionally intimate generative content creates acute regulatory and ethical exposure; abrupt product changes to address that exposure can alienate the exact paying users the business depends on.",
+    "source": "Reuters, Vice, 2023"
+  },
+  {
+    "name": "Fable Studio",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2016,
+    "closed": null,
+    "funding": "$9M+ raised (seed/Series A)",
+    "summary": "VR interactive-storytelling studio (Wolves in the Walls, Emmy-winning work) built early AI-driven virtual characters (Lucy) but the VR content market never reached the scale needed to sustain the business; the company abandoned its original VR/AI-character studio model entirely in 2021 to relaunch as an unrelated AI-powered social reading app under the same 'Fable' name.",
+    "causes": [
+      "market-timing",
+      "pivot-failure",
+      "product-market-mismatch",
+      "capital-intensity"
+    ],
+    "lesson": "Pioneering AI-driven characters for an immersive medium (VR) ahead of that medium's mainstream adoption left the original business without a large enough addressable market, forcing a full identity pivot rather than incremental iteration.",
+    "source": "Fast Company, TechCrunch, 2018-2021"
+  },
+  {
+    "name": "Baobab Studios",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2015,
+    "closed": null,
+    "funding": "$28M+ raised (Series A/B)",
+    "summary": "VR/AI animated storytelling studio founded by former Pixar and DreamWorks veterans raised significant funding and won industry awards for immersive animated shorts, but the VR content market failed to scale into a sustainable distribution business, leading to a scaled-back operation and pivot toward smaller-scale interactive/AI content projects rather than continued large VR productions.",
+    "causes": [
+      "market-timing",
+      "capital-intensity",
+      "product-market-mismatch",
+      "cash-burn"
+    ],
+    "lesson": "Prestige and creative pedigree (ex-Pixar/DreamWorks talent) can win awards and funding, but without a scaled distribution platform for the target medium, a capital-intensive content studio cannot sustain its cost structure.",
+    "source": "TechCrunch, Variety industry reporting"
+  },
+  {
+    "name": "8i",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2014,
+    "closed": null,
+    "funding": "$65M+ raised (Series B/C)",
+    "summary": "Volumetric video capture and AI-driven 3D human hologram company raised significant venture funding and partnered with major brands for early AR/VR content, but repeatedly pivoted its product (from consumer volumetric capture to enterprise AR tools to metaverse infrastructure) without finding a durable scaled market, quietly winding down its original ambitious hologram-video business.",
+    "causes": [
+      "capital-intensity",
+      "pivot-failure",
+      "market-timing",
+      "cash-burn"
+    ],
+    "lesson": "Being years ahead of the hardware ecosystem (AR/VR headset adoption) needed to consume your generative content format forces repeated expensive pivots that burn through funding faster than the market matures.",
+    "source": "TechCrunch, industry reporting, 2014-2021"
+  },
+  {
+    "name": "Magisto",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2010,
+    "closed": 2022,
+    "funding": "$46M+ raised prior to acquisition; acquired by Vimeo 2019 (~$200M reported)",
+    "summary": "Early AI-powered automatic video-editing app for consumers and small businesses was acquired by Vimeo in 2019 for a reported ~$200M, but Vimeo discontinued the standalone Magisto product and brand in 2022, folding its remaining functionality into Vimeo's broader Create tools as newer generative-video technology made Magisto's template-based automated editing approach obsolete.",
+    "causes": [
+      "outcompeted",
+      "technology-failure",
+      "overexpansion",
+      "product-market-mismatch"
+    ],
+    "lesson": "Even a well-priced acquisition exit is not a permanent success if the underlying product's technology approach (template-driven automated editing) is later made obsolete by newer generative techniques, leading the acquirer to shut the brand down.",
+    "source": "Industry M&A reporting, 2019-2022"
+  },
+  {
+    "name": "DeepArt.io",
+    "outcome": "failed",
+    "industry": "generative-ai-creative",
+    "founded": 2015,
+    "closed": null,
+    "funding": "Minimal/no disclosed outside funding, research-project origin",
+    "summary": "One of the very first neural style-transfer web apps (built by the Tuebingen researchers behind the original neural style transfer paper) attracted major early attention for turning photos into paintings, but never built a sustainable commercial model, was overtaken by dramatically higher-quality diffusion-based tools like Prisma and Midjourney, and the service eventually went offline.",
+    "causes": [
+      "unit-economics",
+      "outcompeted",
+      "technology-failure",
+      "product-market-mismatch"
+    ],
+    "lesson": "Being the original research demo that sparks a whole product category (neural style transfer) does not guarantee commercial survival once better-funded, better-designed consumer products (Prisma, then diffusion models) commercialize the same underlying idea more effectively.",
+    "source": "Industry/AI-art history reporting"
+  }
+]
